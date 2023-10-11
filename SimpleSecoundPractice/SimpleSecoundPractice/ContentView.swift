@@ -15,45 +15,63 @@ struct ContentView: View {
     @FocusState private var isFocused: Bool
     
    var body: some View {
-        VStack {
-            Text("초 나누기")
-                .font(.custom("YanoljaYacheB", size: 60))
-                .padding(20)
-            
-            HStack{
-                Image(systemName: "clock")
-                    .resizable(resizingMode: .tile)
-                    .frame(width: 40.0, height: 50.0)
-                    .foregroundStyle(.black)
-                    .padding(.leading, 50)
-                    .padding(10)
-                
-                TextField("초 입력", text: $number)
-                    .modifier(StandardCustomFont())
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .keyboardType(.numberPad)
-                    .multilineTextAlignment(.leading)
-                    .border(.gray, width: 2)
-                    .cornerRadius(5.0)
-                    .padding(.top, -2)
-                    .padding(.trailing, 60)
-                    .focused($isFocused)
-            }
-            
-            if number != "" {
-                Button(action: self.touchInSide, label: {
-                    Text("↓")
-                        .font(.custom("YanoljaYacheB", size: 60))
-                        .modifier(StandardCustomFont())
-                        .multilineTextAlignment(.center)
-                })
-            }
-            
-            Text("\(result)")
-                .font(.custom("YanoljaYacheB", size: 60))
-                .modifier(StandardCustomFont())
-                .padding(20)
-        }
+       
+       NavigationView {
+           VStack {
+               Text("초 나누기")
+                   .font(.custom("YanoljaYacheB", size: 60))
+                   .padding(20)
+               
+               HStack{
+                   Image(systemName: "clock")
+                       .resizable(resizingMode: .tile)
+                       .frame(width: 40.0, height: 40.0)
+                       .foregroundStyle(.black)
+                       .padding(.leading, 55)
+                       .padding(5)
+                   
+                   TextField("초 입력", text: $number)
+                       .modifier(StandardCustomFont())
+                       .textFieldStyle(RoundedBorderTextFieldStyle())
+                       .keyboardType(.numberPad)
+                       .multilineTextAlignment(.leading)
+                       .border(.gray, width: 2)
+                       .cornerRadius(5.0)
+                       .padding(.trailing, 60)
+                       .focused($isFocused)
+               }
+               
+               if number != "" {
+                   Button(action: self.touchInSide, label: {
+                       Text("↓")
+                           .font(.custom("YanoljaYacheB", size: 60))
+                           .modifier(StandardCustomFont())
+                           .multilineTextAlignment(.center)
+                   })
+               }
+               
+               Text("\(result)")
+                   .font(.custom("YanoljaYacheB", size: 60))
+                   .modifier(StandardCustomFont())
+                   .padding(20)
+               
+               
+               if result != ""{
+                   NavigationLink(destination: ContentView2(), label: {
+                       Text("다음 화면")
+                           .modifier(StandardCustomFont())
+                   })
+                   .padding(.top, 150)
+               }
+           }
+           .background(Image("glass")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .opacity(0.6)
+            .ignoresSafeArea())
+       }
+       .tint(.black)
     }
     //화살표 버튼 메서드
     func touchInSide(){
