@@ -25,8 +25,8 @@ struct ContentView2: View {
                 Image(systemName: "clock")
                     .resizable(resizingMode: .tile)
                     .modifier(standardCustomImage())
-                    .padding(.leading, 50)
-                    .padding(10)
+                    .padding(.leading, 55)
+                    .padding(5)
                 
                 TextField("시간", text: $time)
                     .modifier(StandardCustomFont())
@@ -35,7 +35,6 @@ struct ContentView2: View {
                     .multilineTextAlignment(.leading)
                     .border(.gray, width: 2)
                     .cornerRadius(5.0)
-                    .padding(.top, -2)
                     .padding(.trailing, 60)
                     .focused($isFocused)
             }
@@ -44,8 +43,8 @@ struct ContentView2: View {
                 Image(systemName: "dollarsign.circle")
                     .resizable(resizingMode: .tile)
                     .modifier(standardCustomImage())
-                    .padding(.leading, 50)
-                    .padding(10)
+                    .padding(.leading, 55)
+                    .padding(5)
                 
                 TextField("시급", text: $money)
                     .modifier(StandardCustomFont())
@@ -54,7 +53,6 @@ struct ContentView2: View {
                     .multilineTextAlignment(.leading)
                     .border(.gray, width: 2)
                     .cornerRadius(5.0)
-                    .padding(.top, -2)
                     .padding(.trailing, 60)
                     .focused($isFocused)
             }
@@ -99,7 +97,7 @@ struct standardCustomImage: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .frame(width: 40.0, height: 50.0)
+            .frame(width: 40.0, height: 40.0)
             .foregroundStyle(.black)
     }
 }
