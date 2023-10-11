@@ -11,6 +11,7 @@
 		73E0EF822AD63C17005A0F8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E0EF812AD63C17005A0F8B /* ContentView.swift */; };
 		73E0EF842AD63C18005A0F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E0EF832AD63C18005A0F8B /* Assets.xcassets */; };
 		73E0EF872AD63C18005A0F8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E0EF862AD63C18005A0F8B /* Preview Assets.xcassets */; };
+		73E0EF8E2AD63CB5005A0F8B /* yanolja.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73E0EF8D2AD63CB5005A0F8B /* yanolja.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		73E0EF812AD63C17005A0F8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73E0EF832AD63C18005A0F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73E0EF862AD63C18005A0F8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73E0EF8D2AD63CB5005A0F8B /* yanolja.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yanolja.ttf; sourceTree = "<group>"; };
+		73E0EF8F2AD63CC9005A0F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +54,11 @@
 		73E0EF7E2AD63C17005A0F8B /* SimpleSecoundPractice */ = {
 			isa = PBXGroup;
 			children = (
+				73E0EF8F2AD63CC9005A0F8B /* Info.plist */,
 				73E0EF7F2AD63C17005A0F8B /* SimpleSecoundPracticeApp.swift */,
 				73E0EF812AD63C17005A0F8B /* ContentView.swift */,
 				73E0EF832AD63C18005A0F8B /* Assets.xcassets */,
+				73E0EF8D2AD63CB5005A0F8B /* yanolja.ttf */,
 				73E0EF852AD63C18005A0F8B /* Preview Content */,
 			);
 			path = SimpleSecoundPractice;
@@ -127,6 +132,7 @@
 			files = (
 				73E0EF872AD63C18005A0F8B /* Preview Assets.xcassets in Resources */,
 				73E0EF842AD63C18005A0F8B /* Assets.xcassets in Resources */,
+				73E0EF8E2AD63CB5005A0F8B /* yanolja.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +280,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleSecoundPractice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleSecoundPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleSecoundPractice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleSecoundPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
