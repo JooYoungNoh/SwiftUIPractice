@@ -12,6 +12,7 @@
 		73E0EF842AD63C18005A0F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E0EF832AD63C18005A0F8B /* Assets.xcassets */; };
 		73E0EF872AD63C18005A0F8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E0EF862AD63C18005A0F8B /* Preview Assets.xcassets */; };
 		73E0EF8E2AD63CB5005A0F8B /* yanolja.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73E0EF8D2AD63CB5005A0F8B /* yanolja.ttf */; };
+		73E0EF912AD667DD005A0F8B /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E0EF902AD667DD005A0F8B /* ContentView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		73E0EF862AD63C18005A0F8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73E0EF8D2AD63CB5005A0F8B /* yanolja.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yanolja.ttf; sourceTree = "<group>"; };
 		73E0EF8F2AD63CC9005A0F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		73E0EF902AD667DD005A0F8B /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				73E0EF8F2AD63CC9005A0F8B /* Info.plist */,
 				73E0EF7F2AD63C17005A0F8B /* SimpleSecoundPracticeApp.swift */,
 				73E0EF812AD63C17005A0F8B /* ContentView.swift */,
+				73E0EF902AD667DD005A0F8B /* ContentView2.swift */,
 				73E0EF832AD63C18005A0F8B /* Assets.xcassets */,
 				73E0EF8D2AD63CB5005A0F8B /* yanolja.ttf */,
 				73E0EF852AD63C18005A0F8B /* Preview Content */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E0EF912AD667DD005A0F8B /* ContentView2.swift in Sources */,
 				73E0EF822AD63C17005A0F8B /* ContentView.swift in Sources */,
 				73E0EF802AD63C17005A0F8B /* SimpleSecoundPracticeApp.swift in Sources */,
 			);
