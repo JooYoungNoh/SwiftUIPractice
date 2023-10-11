@@ -74,6 +74,12 @@ struct ContentView2: View {
                 .modifier(StandardCustomFont())
                 .padding(20)
         }
+        .background(Image("glass")
+         .resizable()
+         .aspectRatio(contentMode: .fill)
+         .frame(maxWidth: .infinity, maxHeight: .infinity)
+         .opacity(0.6)
+         .ignoresSafeArea())
     }
     //화살표 버튼 메서드
     func touchInSide(){
