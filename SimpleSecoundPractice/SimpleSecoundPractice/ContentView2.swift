@@ -79,8 +79,6 @@ struct ContentView2: View {
     func touchInSide(){
         guard let changeTime = Double(self.time) else { return }
         guard let changeMoney = Double(self.money) else { return }
-        print(changeTime)
-        print(changeMoney)
         
         if changeTime > 8 {
             self.result = "총 급여 :  \(Int(changeMoney*8 + changeMoney*(changeTime-8)*1.5))"
