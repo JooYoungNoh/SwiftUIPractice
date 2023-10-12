@@ -10,7 +10,7 @@ import SwiftUI
 //예제 9
 struct ContentView: View {
     @State private var number: String = ""
-    @State private var result: String = ""
+    @State private var result: String = "대기중..."
     @FocusState private var isFocused: Bool
     
     var body: some View {
@@ -40,23 +40,19 @@ struct ContentView: View {
                             .focused($isFocused)
                     }
                     
-                    if number != "" {
-                        Button(action: self.touchInSide, label: {
-                            Text("↓")
-                                .font(.custom("BazziRegular", size: 60))
-                                .modifier(StandardCustomFont())
-                                .multilineTextAlignment(.center)
-                        })
-                    }
-                    
-                    if result != ""{
-                        Text("\(result)")
+                    Button(action: self.touchInSide, label: {
+                        Text("↓")
                             .font(.custom("BazziRegular", size: 60))
                             .modifier(StandardCustomFont())
-                            .padding(20)
-                    }
+                            .multilineTextAlignment(.center)
+                    })
+                    
+                    Text("\(result)")
+                        .font(.custom("BazziRegular", size: 60))
+                        .modifier(StandardCustomFont())
+                        .padding(20)
                 }
-                .padding(.top, 200)
+                .padding(.top, 120)
                 
                 GeometryReader{ geometry in
                     HStack{
@@ -82,13 +78,13 @@ struct ContentView: View {
     }
     //화살표 버튼 메서드
     func touchInSide(){
+        isFocused = false
         if let changeNumber = Int(self.number){
             if changeNumber > 0 {
                 self.result = changeNumber%2 == 0 ? "짝수" : "홀수"
             } else {
                 self.result = "0보다 커야됩니다!!"
             }
-            isFocused = false
         }
     }
 }

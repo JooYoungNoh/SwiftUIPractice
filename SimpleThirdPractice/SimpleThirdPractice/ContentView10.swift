@@ -12,7 +12,7 @@ struct ContentView10: View {
     
     @State private var number1: String = ""
     @State private var number2: String = ""
-    @State private var result: String = ""
+    @State private var result: String = "대기중..."
     @FocusState private var isFocused: Bool
     
     var body: some View {
@@ -60,23 +60,19 @@ struct ContentView10: View {
                         .focused($isFocused)
                 }
                 
-                if number1 != "" && number2 != ""{
-                    Button(action: self.touchInSide, label: {
-                        Text("↓")
-                            .font(.custom("BazziRegular", size: 60))
-                            .modifier(StandardCustomFont())
-                            .multilineTextAlignment(.center)
-                    })
-                }
-                
-                if result != ""{
-                    Text("\(result)")
+                Button(action: self.touchInSide, label: {
+                    Text("↓")
                         .font(.custom("BazziRegular", size: 60))
                         .modifier(StandardCustomFont())
-                        .padding(20)
-                }
+                        .multilineTextAlignment(.center)
+                })
+                
+                Text("\(result)")
+                    .font(.custom("BazziRegular", size: 60))
+                    .modifier(StandardCustomFont())
+                    .padding(20)
             }
-            .padding(.top, 200)
+            .padding(.top, 120)
             
             GeometryReader{ geometry in
                 HStack{
@@ -104,11 +100,11 @@ struct ContentView10: View {
     }
     
     func touchInSide(){
+        isFocused = false
         guard let intNum1 = Int(self.number1) else { return }
         guard let intNum2 = Int(self.number2) else { return }
         
         self.result = intNum1 > intNum2 ? "\(intNum1-intNum2)" : "\(intNum2-intNum1)"
-        isFocused = false
     }
 }
 
