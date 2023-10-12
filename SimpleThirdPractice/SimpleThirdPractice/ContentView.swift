@@ -59,11 +59,17 @@ struct ContentView: View {
                 .padding(.top, 200)
                 
                 GeometryReader{ geometry in
-                    NavigationLink(destination: ContentView10(), label: {
-                        Text("다음 화면")
+                    HStack{
+                        Text("")
                             .modifier(StandardCustomFont())
-                            .frame(width: geometry.size.width*5/3, height: geometry.size.height*5/3)
-                    })
+                            .frame(width: geometry.size.width/2, height: geometry.size.height*5/3)
+                        
+                        NavigationLink(destination: ContentView10(), label: {
+                            Text("다음 화면")
+                                .modifier(StandardCustomFont())
+                                .frame(width: geometry.size.width/2, height: geometry.size.height*5/3+20)
+                        })
+                    }
                 }
             }
             .background(Image("skyGlass")
