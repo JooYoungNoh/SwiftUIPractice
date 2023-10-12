@@ -11,6 +11,7 @@
 		732E611F2AD7CC3200FE0F1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E611E2AD7CC3200FE0F1F /* ContentView.swift */; };
 		732E61212AD7CC3300FE0F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732E61202AD7CC3300FE0F1F /* Assets.xcassets */; };
 		732E61242AD7CC3300FE0F1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732E61232AD7CC3300FE0F1F /* Preview Assets.xcassets */; };
+		732E612B2AD7CC8700FE0F1F /* Bazzi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E612A2AD7CC8700FE0F1F /* Bazzi.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		732E611E2AD7CC3200FE0F1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		732E61202AD7CC3300FE0F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		732E61232AD7CC3300FE0F1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		732E612A2AD7CC8700FE0F1F /* Bazzi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bazzi.ttf; sourceTree = "<group>"; };
+		732E612C2AD7CC9E00FE0F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +54,11 @@
 		732E611B2AD7CC3200FE0F1F /* SimpleThirdPractice */ = {
 			isa = PBXGroup;
 			children = (
+				732E612C2AD7CC9E00FE0F1F /* Info.plist */,
 				732E611C2AD7CC3200FE0F1F /* SimpleThirdPracticeApp.swift */,
 				732E611E2AD7CC3200FE0F1F /* ContentView.swift */,
 				732E61202AD7CC3300FE0F1F /* Assets.xcassets */,
+				732E612A2AD7CC8700FE0F1F /* Bazzi.ttf */,
 				732E61222AD7CC3300FE0F1F /* Preview Content */,
 			);
 			path = SimpleThirdPractice;
@@ -126,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				732E61242AD7CC3300FE0F1F /* Preview Assets.xcassets in Resources */,
+				732E612B2AD7CC8700FE0F1F /* Bazzi.ttf in Resources */,
 				732E61212AD7CC3300FE0F1F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +280,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleThirdPractice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleThirdPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleThirdPractice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleThirdPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
