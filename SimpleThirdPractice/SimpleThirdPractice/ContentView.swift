@@ -85,14 +85,14 @@ struct ContentView: View {
             isFocused = false
         }
     }
-    
-    struct StandardCustomFont: ViewModifier{
-        func body(content: Content) -> some View {
-            content
-                .font(.custom("BazziRegular", size: 30))
-                .fontWeight(.bold)
-                .foregroundColor(.black)
-        }
+}
+
+struct StandardCustomFont: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .font(.custom("BazziRegular", size: 30))
+            .fontWeight(.bold)
+            .foregroundColor(.black)
     }
 }
 
