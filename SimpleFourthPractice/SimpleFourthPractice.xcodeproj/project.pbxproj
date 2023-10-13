@@ -11,6 +11,7 @@
 		732B13AA2AD91FB7007FE083 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B13A92AD91FB7007FE083 /* ContentView.swift */; };
 		732B13AC2AD91FB8007FE083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732B13AB2AD91FB8007FE083 /* Assets.xcassets */; };
 		732B13AF2AD91FB8007FE083 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732B13AE2AD91FB8007FE083 /* Preview Assets.xcassets */; };
+		732B13B92AD92401007FE083 /* CookieRun.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732B13B82AD92401007FE083 /* CookieRun.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		732B13A92AD91FB7007FE083 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		732B13AB2AD91FB8007FE083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		732B13AE2AD91FB8007FE083 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		732B13B72AD921E2007FE083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		732B13B82AD92401007FE083 /* CookieRun.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CookieRun.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +54,11 @@
 		732B13A62AD91FB7007FE083 /* SimpleFourthPractice */ = {
 			isa = PBXGroup;
 			children = (
+				732B13B72AD921E2007FE083 /* Info.plist */,
 				732B13A72AD91FB7007FE083 /* SimpleFourthPracticeApp.swift */,
 				732B13A92AD91FB7007FE083 /* ContentView.swift */,
 				732B13AB2AD91FB8007FE083 /* Assets.xcassets */,
+				732B13B82AD92401007FE083 /* CookieRun.ttf */,
 				732B13AD2AD91FB8007FE083 /* Preview Content */,
 			);
 			path = SimpleFourthPractice;
@@ -126,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				732B13AF2AD91FB8007FE083 /* Preview Assets.xcassets in Resources */,
+				732B13B92AD92401007FE083 /* CookieRun.ttf in Resources */,
 				732B13AC2AD91FB8007FE083 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +280,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleFourthPractice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleFourthPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleFourthPractice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleFourthPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
