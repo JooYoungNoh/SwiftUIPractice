@@ -14,63 +14,65 @@ struct ContentView: View {
     
     
     var body: some View {
-        VStack {
-            Image("cute")
-                .resizable()
-                .frame(maxWidth: .infinity, maxHeight: 1000)
-                .cornerRadius(20)
-                .aspectRatio(contentMode: .fit)
-                .padding(.horizontal, 10)
-                .padding(.top, 20)
-            
-            HStack{
-                Button(action: {}, label: {
-                    Text("Home")
-                        .padding(10)
-                        .modifier(StandardFontCustom())
-                        .cornerRadius(5)
-                })
+        NavigationView{
+            VStack {
+                Image("cute")
+                    .resizable()
+                    .frame(maxWidth: .infinity, maxHeight: 1000)
+                    .cornerRadius(20)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.horizontal, 10)
+                    .padding(.top, 20)
                 
-                Spacer()
-                Text(self.text)
-                    .padding(10)
-                    .font(.custom("BazziRegular", size: 25))
-                
-                Spacer()
-                Button(action: {}, label: {
-                    Text("Call")
-                        .padding(10)
-                        .padding(.horizontal, 10)
-                        .modifier(StandardFontCustom())
-                        .cornerRadius(5)
-                })
-            }
-            .padding(.horizontal, 10)
-            
-            Spacer()
-            
-            HStack{
-                TextField(self.textFieldText, text: $textFieldText)
-                    .font(.custom("BazziRegular", size: 25))
-                    .cornerRadius(5)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .focused($isFocused)
-                    .padding(.leading, 10)
+                HStack{
+                    NavigationLink(destination: UIExampleTwo(), label: {
+                        Text("Home")
+                            .padding(10)
+                            .modifier(StandardFontCustom())
+                            .cornerRadius(5)
+                    })
                     
-                
-                Button(action: self.touchInSide, label: {
-                    Text("Hello Button")
+                    Spacer()
+                    Text(self.text)
                         .padding(10)
-                        .modifier(StandardFontCustom())
+                        .font(.custom("BazziRegular", size: 25))
+                    
+                    Spacer()
+                    Button(action: {}, label: {
+                        Text("Call")
+                            .padding(10)
+                            .padding(.horizontal, 10)
+                            .modifier(StandardFontCustom())
+                            .cornerRadius(5)
+                    })
+                }
+                .padding(.horizontal, 10)
+                
+                Spacer()
+                
+                HStack{
+                    TextField(self.textFieldText, text: $textFieldText)
+                        .font(.custom("BazziRegular", size: 25))
                         .cornerRadius(5)
-                })
-                .padding(.trailing, 10)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .focused($isFocused)
+                        .padding(.leading, 10)
+                        
+                    
+                    Button(action: self.touchInSide, label: {
+                        Text("Hello Button")
+                            .padding(10)
+                            .modifier(StandardFontCustom())
+                            .cornerRadius(5)
+                    })
+                    .padding(.trailing, 10)
+                }
+                .padding(.bottom, 20)
             }
-            .padding(.bottom, 20)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.teal)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.teal)
-    }
+        }
     
     func touchInSide(){
         text = textFieldText
