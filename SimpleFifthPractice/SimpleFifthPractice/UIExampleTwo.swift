@@ -22,6 +22,7 @@ struct UIExampleTwo: View {
                         .cornerRadius(5)
                 })
                 .padding(.leading, 10)
+                .padding(.top, 10)
                 Spacer()
             }
             
