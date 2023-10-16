@@ -11,6 +11,7 @@
 		73E9D13D2ADCD77A00B40D14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E9D13C2ADCD77A00B40D14 /* ContentView.swift */; };
 		73E9D13F2ADCD77B00B40D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E9D13E2ADCD77B00B40D14 /* Assets.xcassets */; };
 		73E9D1422ADCD77B00B40D14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E9D1412ADCD77B00B40D14 /* Preview Assets.xcassets */; };
+		73E9D1492ADCD84B00B40D14 /* Bazzi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73E9D1482ADCD84B00B40D14 /* Bazzi.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		73E9D13C2ADCD77A00B40D14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73E9D13E2ADCD77B00B40D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73E9D1412ADCD77B00B40D14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73E9D1482ADCD84B00B40D14 /* Bazzi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bazzi.ttf; sourceTree = "<group>"; };
+		73E9D14A2ADCD86500B40D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +54,11 @@
 		73E9D1392ADCD77A00B40D14 /* SimpleFifthPractice */ = {
 			isa = PBXGroup;
 			children = (
+				73E9D14A2ADCD86500B40D14 /* Info.plist */,
 				73E9D13A2ADCD77A00B40D14 /* SimpleFifthPracticeApp.swift */,
 				73E9D13C2ADCD77A00B40D14 /* ContentView.swift */,
 				73E9D13E2ADCD77B00B40D14 /* Assets.xcassets */,
+				73E9D1482ADCD84B00B40D14 /* Bazzi.ttf */,
 				73E9D1402ADCD77B00B40D14 /* Preview Content */,
 			);
 			path = SimpleFifthPractice;
@@ -126,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E9D1422ADCD77B00B40D14 /* Preview Assets.xcassets in Resources */,
+				73E9D1492ADCD84B00B40D14 /* Bazzi.ttf in Resources */,
 				73E9D13F2ADCD77B00B40D14 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +280,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleFifthPractice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleFifthPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleFifthPractice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleFifthPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
