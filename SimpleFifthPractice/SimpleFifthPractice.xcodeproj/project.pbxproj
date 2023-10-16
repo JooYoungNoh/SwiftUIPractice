@@ -13,6 +13,7 @@
 		73E9D1422ADCD77B00B40D14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E9D1412ADCD77B00B40D14 /* Preview Assets.xcassets */; };
 		73E9D1492ADCD84B00B40D14 /* Bazzi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73E9D1482ADCD84B00B40D14 /* Bazzi.ttf */; };
 		73E9D14C2ADCF06300B40D14 /* UIExampleTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E9D14B2ADCF06300B40D14 /* UIExampleTwo.swift */; };
+		73E9D14E2ADCF6DF00B40D14 /* UIExampleThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E9D14D2ADCF6DF00B40D14 /* UIExampleThree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		73E9D1482ADCD84B00B40D14 /* Bazzi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bazzi.ttf; sourceTree = "<group>"; };
 		73E9D14A2ADCD86500B40D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		73E9D14B2ADCF06300B40D14 /* UIExampleTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleTwo.swift; sourceTree = "<group>"; };
+		73E9D14D2ADCF6DF00B40D14 /* UIExampleThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleThree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				73E9D13A2ADCD77A00B40D14 /* SimpleFifthPracticeApp.swift */,
 				73E9D13C2ADCD77A00B40D14 /* ContentView.swift */,
 				73E9D14B2ADCF06300B40D14 /* UIExampleTwo.swift */,
+				73E9D14D2ADCF6DF00B40D14 /* UIExampleThree.swift */,
 				73E9D13E2ADCD77B00B40D14 /* Assets.xcassets */,
 				73E9D1482ADCD84B00B40D14 /* Bazzi.ttf */,
 				73E9D1402ADCD77B00B40D14 /* Preview Content */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E9D13D2ADCD77A00B40D14 /* ContentView.swift in Sources */,
+				73E9D14E2ADCF6DF00B40D14 /* UIExampleThree.swift in Sources */,
 				73E9D14C2ADCF06300B40D14 /* UIExampleTwo.swift in Sources */,
 				73E9D13B2ADCD77A00B40D14 /* SimpleFifthPracticeApp.swift in Sources */,
 			);
