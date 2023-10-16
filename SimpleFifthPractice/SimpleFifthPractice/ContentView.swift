@@ -38,7 +38,7 @@ struct ContentView: View {
                         .font(.custom("BazziRegular", size: 25))
                     
                     Spacer()
-                    Button(action: {}, label: {
+                    NavigationLink(destination: UIExampleThree(), label: {
                         Text("Call")
                             .padding(10)
                             .padding(.horizontal, 10)
@@ -72,7 +72,7 @@ struct ContentView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.teal)
         }
-        }
+    }
     
     func touchInSide(){
         text = textFieldText
