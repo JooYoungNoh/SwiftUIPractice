@@ -22,16 +22,22 @@ struct ContentView: View {
         .padding()
     }
     
-    //비동기 함수 선언 async
-    //비동기 함수 호출 await
+    // async-let 바인딩
+    // 비동기 함수를 호출하고 주변의 코드와 병렬로 실행하려면(동시 실행)
+    // 상수를 정의할 때 let 앞에 async를 작성하고, 상수를 사용할 때마다 await를 작성
     func doSomething() async {
         print("Start \(Date())")
-        await takeTooLong()
-        print("Start \(Date())")
+        async let result = takeTooLong()
+        print("After async-let \(Date())")
+        
+        //비동기 함수와 동시에 실행할 추가 코드
+        for i in 1...10 { print(i) }
+        
+        print("End \(await result)")
     }
-    func takeTooLong() async {
+    func takeTooLong() async -> Date {
         sleep(5)
-        print("Async task completed at \(Date())")
+        return Date()
     }
 }
 
