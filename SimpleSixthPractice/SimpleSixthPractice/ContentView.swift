@@ -34,6 +34,9 @@ struct ContentView: View {
         for i in 1...10 { print(i) }
         
         print("End \(await result)")
+        
+        //비동기 함수와 동시에 실행할 추가 코드
+        for i in 10...20 { print(i) }
     }
     func takeTooLong() async -> Date {
         sleep(5)
