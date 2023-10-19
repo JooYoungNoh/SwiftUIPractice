@@ -10,12 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button(action: {doSomething()}, label: {
+                Text("Do Something")
+            })
         }
         .padding()
+    }
+    
+    func doSomething(){
+        print("Start \(Date())")
+        takeTooLong()
+        print("Start \(Date())")
+    }
+    func takeTooLong(){
+        sleep(5)
+        print("Async task completed at \(Date())")
     }
 }
 
