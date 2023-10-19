@@ -11,7 +11,7 @@ import SwiftUI
 struct SimpleSixthPracticeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ExampleOne()
         }
     }
 }
