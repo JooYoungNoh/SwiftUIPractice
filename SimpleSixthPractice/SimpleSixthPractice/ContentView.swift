@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+enum DurationError: Error {
+    case tooLong
+    case tooShort
+}
+
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -27,20 +32,26 @@ struct ContentView: View {
     // 상수를 정의할 때 let 앞에 async를 작성하고, 상수를 사용할 때마다 await를 작성
     func doSomething() async {
         print("Start \(Date())")
-        async let result = takeTooLong()
-        print("After async-let \(Date())")
-        
-        //비동기 함수와 동시에 실행할 추가 코드
-        for i in 1...10 { print(i) }
-        
-        print("End \(await result)")
-        
-        //비동기 함수와 동시에 실행할 추가 코드
-        for i in 10...20 { print(i) }
+        do {
+            try await takeTooLong(delay: 15)
+            print("성공")
+        } catch DurationError.tooShort {
+            print("너무 짧습니다")
+        } catch DurationError.tooLong {
+            print("너무 깁니다")
+        } catch {
+            print("알 수 없는 에러")
+        }
+        print("End: \(Date())")
     }
-    func takeTooLong() async -> Date {
+    func takeTooLong(delay: UInt32) async throws {
+        if delay < 5 {
+            throw DurationError.tooShort
+        } else if delay > 20 {
+            throw DurationError.tooLong
+        }
         sleep(5)
-        return Date()
+        print("Async tack complated at \(Date())")
     }
 }
 
