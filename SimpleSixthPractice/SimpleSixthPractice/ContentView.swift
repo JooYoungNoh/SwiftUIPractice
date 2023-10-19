@@ -27,31 +27,28 @@ struct ContentView: View {
         .padding()
     }
     
-    // async-let 바인딩
-    // 비동기 함수를 호출하고 주변의 코드와 병렬로 실행하려면(동시 실행)
-    // 상수를 정의할 때 let 앞에 async를 작성하고, 상수를 사용할 때마다 await를 작성
+    // 작업 그룹
+    // 동적인 조건에 따라 여러 작업을 동시에 생성하고 실행해야 하는 상황
+    // withTaskGroup() 함수 사용
+    // addTask():   함수를 호출하여 각각의 새로운 작업을 추가
+    // cancelAll(): 그룹의 모든 작업을 취소하는 메서드
+    // isCancelled: 작업 그룹이 이미 취소되었는지 여부를 확인하는 속성
+    // isEmpty:     작업 그룹 내에 작업이 남아 있는지 여부를 확이하는 속성
     func doSomething() async {
         print("Start \(Date())")
-        do {
-            try await takeTooLong(delay: 15)
-            print("성공")
-        } catch DurationError.tooShort {
-            print("너무 짧습니다")
-        } catch DurationError.tooLong {
-            print("너무 깁니다")
-        } catch {
-            print("알 수 없는 에러")
+        
+        await withTaskGroup(of: Void.self) { group in
+            for i in 1...5 {
+                group.addTask {
+                    let result = await takeTooLong()
+                    print("Completed Task \(i) = \(result)")
+                }
+            }
         }
-        print("End: \(Date())")
     }
-    func takeTooLong(delay: UInt32) async throws {
-        if delay < 5 {
-            throw DurationError.tooShort
-        } else if delay > 20 {
-            throw DurationError.tooLong
-        }
-        sleep(5)
-        print("Async tack complated at \(Date())")
+    func takeTooLong() async -> Date {
+        sleep(UInt32.random(in: 1...5))
+        return Date()
     }
 }
 
