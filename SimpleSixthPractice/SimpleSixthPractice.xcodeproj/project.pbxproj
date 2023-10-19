@@ -11,6 +11,7 @@
 		73E24C8E2AE0ED7E00CE8601 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E24C8D2AE0ED7E00CE8601 /* ContentView.swift */; };
 		73E24C902AE0ED7F00CE8601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E24C8F2AE0ED7F00CE8601 /* Assets.xcassets */; };
 		73E24C932AE0ED7F00CE8601 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E24C922AE0ED7F00CE8601 /* Preview Assets.xcassets */; };
+		73E24C9A2AE116FF00CE8601 /* ExampleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E24C992AE116FF00CE8601 /* ExampleOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		73E24C8D2AE0ED7E00CE8601 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73E24C8F2AE0ED7F00CE8601 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73E24C922AE0ED7F00CE8601 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73E24C992AE116FF00CE8601 /* ExampleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				73E24C8B2AE0ED7E00CE8601 /* SimpleSixthPracticeApp.swift */,
 				73E24C8D2AE0ED7E00CE8601 /* ContentView.swift */,
+				73E24C992AE116FF00CE8601 /* ExampleOne.swift */,
 				73E24C8F2AE0ED7F00CE8601 /* Assets.xcassets */,
 				73E24C912AE0ED7F00CE8601 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E24C8E2AE0ED7E00CE8601 /* ContentView.swift in Sources */,
+				73E24C9A2AE116FF00CE8601 /* ExampleOne.swift in Sources */,
 				73E24C8C2AE0ED7E00CE8601 /* SimpleSixthPracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
