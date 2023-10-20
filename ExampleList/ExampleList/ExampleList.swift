@@ -7,11 +7,18 @@
 
 import SwiftUI
 
+enum changeStringToFileName: String {
+    case FourBasicOperations = "FourOperations"
+    case DivideOranges = "DivideOranges"
+    case ThrowHundred = "ThrowHundred"
+    case SeatOne = "SeatOne"
+    case Average = "Average"
+}
 
 
 
 struct ExampleList: View {
-    private var list: [String] = ["exam1", "exam2", "exam3", "exam4"]
+    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average"]
     private let layouts : [GridItem] = [GridItem(.flexible()) ,GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -44,7 +51,7 @@ struct ExampleList: View {
                                         })
                                     } else {
                                         ForEach(0..<self.list.count) { i in
-                                            Button(action: {}, label: {
+                                            NavigationLink(destination: selectDestination(changeStringToFileName(rawValue: self.list[i])!), label: {
                                                 VStack {
                                                     Image(systemName: "folder.fill")
                                                         .font(.system(size: 80))
@@ -70,9 +77,27 @@ struct ExampleList: View {
     }
 }
 
+//MARK: ExampleList View 함수
+extension ExampleList {
+    @ViewBuilder
+    func selectDestination(_ fileName: changeStringToFileName) -> some View {
+        switch fileName {
+        case .FourBasicOperations:
+            FourBasicOperations()
+        case .DivideOranges:
+            DivideOranges()
+        case .ThrowHundred:
+            ThrowHundred()
+        case .SeatOne:
+            SeatOne()
+        case .Average:
+            Average()
+        }
+    }
+}
+
 //MARK: LazyVGridView
 //LazyVGridHeader
-
 struct Header: View {
     var body: some View {
         VStack {
