@@ -18,7 +18,7 @@ struct StandardCustomFontTitle: ViewModifier {
 struct StandardCustomFontText: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.custom("MaplestoryOTFLight", size: 20))
+            .font(.custom("MaplestoryOTFLight", size: 15))
             .foregroundColor(.black)
     }
 }
