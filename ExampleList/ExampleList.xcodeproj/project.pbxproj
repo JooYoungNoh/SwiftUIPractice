@@ -101,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				731A3DE72AE278370044B2BA /* FourBasicOperations.swift */,
-				731A3DEB2AE278E60044B2BA /* ThrowHundred.swift */,
 				731A3DF12AE2A36C0044B2BA /* DivideOranges.swift */,
+				731A3DEB2AE278E60044B2BA /* ThrowHundred.swift */,
 				731A3DED2AE279170044B2BA /* SeatOne.swift */,
 				731A3DEF2AE2793A0044B2BA /* Average.swift */,
 			);
