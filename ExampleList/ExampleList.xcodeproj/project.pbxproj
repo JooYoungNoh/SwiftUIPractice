@@ -13,6 +13,7 @@
 		731A3DDC2AE2309B0044B2BA /* ExampleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DDB2AE2309B0044B2BA /* ExampleList.swift */; };
 		731A3DE02AE232FB0044B2BA /* Maplestory OTF Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 731A3DDF2AE232FB0044B2BA /* Maplestory OTF Bold.otf */; };
 		731A3DE22AE233030044B2BA /* Maplestory OTF Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 731A3DE12AE233030044B2BA /* Maplestory OTF Light.otf */; };
+		731A3DE52AE234A70044B2BA /* FontViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DE42AE234A70044B2BA /* FontViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		731A3DDF2AE232FB0044B2BA /* Maplestory OTF Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maplestory OTF Bold.otf"; sourceTree = "<group>"; };
 		731A3DE12AE233030044B2BA /* Maplestory OTF Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maplestory OTF Light.otf"; sourceTree = "<group>"; };
 		731A3DE32AE233170044B2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		731A3DE42AE234A70044B2BA /* FontViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				731A3DCD2AE2306F0044B2BA /* ExampleListApp.swift */,
 				731A3DD12AE2306F0044B2BA /* Assets.xcassets */,
 				731A3DDB2AE2309B0044B2BA /* ExampleList.swift */,
+				731A3DE42AE234A70044B2BA /* FontViewModifier.swift */,
 				731A3DDE2AE232950044B2BA /* FontFile */,
 				731A3DD32AE2306F0044B2BA /* Preview Content */,
 			);
@@ -157,6 +160,7 @@
 			files = (
 				731A3DDC2AE2309B0044B2BA /* ExampleList.swift in Sources */,
 				731A3DCE2AE2306F0044B2BA /* ExampleListApp.swift in Sources */,
+				731A3DE52AE234A70044B2BA /* FontViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
