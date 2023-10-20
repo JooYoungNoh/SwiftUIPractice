@@ -41,6 +41,7 @@ struct FourBasicOperations: View {
                 
                 HStack{
                     TextField("1", text: $number1)
+                        .modifier(StandardCustomFontText())
                         .multilineTextAlignment(.center)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .border(.black, width: 2)
@@ -49,6 +50,7 @@ struct FourBasicOperations: View {
                         .focused($isFocused)
                     
                     TextField("2", text: $number2)
+                        .modifier(StandardCustomFontText())
                         .multilineTextAlignment(.center)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .border(.black, width: 2)

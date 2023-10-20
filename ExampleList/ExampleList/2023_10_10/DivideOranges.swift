@@ -42,6 +42,7 @@ struct DivideOranges: View{
                         .frame(width: 40.0, height: 50.0)
                     
                     TextField("오렌지 갯수", text: $orangeCount)
+                        .modifier(StandardCustomFontText())
                         .multilineTextAlignment(.center)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .border(.black, width: 2)
@@ -60,6 +61,7 @@ struct DivideOranges: View{
                         .frame(width: 40.0, height: 50.0)
                     
                     TextField("박스의 수", text: $boxCount)
+                        .modifier(StandardCustomFontText())
                         .multilineTextAlignment(.center)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .border(.black, width: 2)
@@ -114,9 +116,9 @@ struct DivideOranges: View{
                     
                 }
             }
-            
             Spacer()
         }
+        .navigationBarBackButtonHidden()
     }
     
     func touchInSide(){
