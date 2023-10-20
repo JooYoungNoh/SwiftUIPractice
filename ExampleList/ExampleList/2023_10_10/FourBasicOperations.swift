@@ -32,7 +32,6 @@ struct FourBasicOperations: View {
                 })
                 Spacer()
             }
-            .font(.custom("MaplestoryOTFLight", size: 24))
             .padding(.horizontal, 20)
             
             Spacer()

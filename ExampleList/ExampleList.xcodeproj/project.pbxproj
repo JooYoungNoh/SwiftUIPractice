@@ -15,10 +15,10 @@
 		731A3DE22AE233030044B2BA /* Maplestory OTF Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 731A3DE12AE233030044B2BA /* Maplestory OTF Light.otf */; };
 		731A3DE52AE234A70044B2BA /* FontViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DE42AE234A70044B2BA /* FontViewModifier.swift */; };
 		731A3DE82AE278370044B2BA /* FourBasicOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DE72AE278370044B2BA /* FourBasicOperations.swift */; };
-		731A3DEA2AE278960044B2BA /* DivideOranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DE92AE278960044B2BA /* DivideOranges.swift */; };
 		731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DEB2AE278E60044B2BA /* ThrowHundred.swift */; };
 		731A3DEE2AE279170044B2BA /* SeatOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DED2AE279170044B2BA /* SeatOne.swift */; };
 		731A3DF02AE2793A0044B2BA /* Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DEF2AE2793A0044B2BA /* Average.swift */; };
+		731A3DF22AE2A36C0044B2BA /* DivideOranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DF12AE2A36C0044B2BA /* DivideOranges.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +32,10 @@
 		731A3DE32AE233170044B2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		731A3DE42AE234A70044B2BA /* FontViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewModifier.swift; sourceTree = "<group>"; };
 		731A3DE72AE278370044B2BA /* FourBasicOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourBasicOperations.swift; sourceTree = "<group>"; };
-		731A3DE92AE278960044B2BA /* DivideOranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideOranges.swift; sourceTree = "<group>"; };
 		731A3DEB2AE278E60044B2BA /* ThrowHundred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowHundred.swift; sourceTree = "<group>"; };
 		731A3DED2AE279170044B2BA /* SeatOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatOne.swift; sourceTree = "<group>"; };
 		731A3DEF2AE2793A0044B2BA /* Average.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Average.swift; sourceTree = "<group>"; };
+		731A3DF12AE2A36C0044B2BA /* DivideOranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideOranges.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				731A3DE72AE278370044B2BA /* FourBasicOperations.swift */,
-				731A3DE92AE278960044B2BA /* DivideOranges.swift */,
 				731A3DEB2AE278E60044B2BA /* ThrowHundred.swift */,
+				731A3DF12AE2A36C0044B2BA /* DivideOranges.swift */,
 				731A3DED2AE279170044B2BA /* SeatOne.swift */,
 				731A3DEF2AE2793A0044B2BA /* Average.swift */,
 			);
@@ -182,8 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				731A3DDC2AE2309B0044B2BA /* ExampleList.swift in Sources */,
-				731A3DEA2AE278960044B2BA /* DivideOranges.swift in Sources */,
 				731A3DCE2AE2306F0044B2BA /* ExampleListApp.swift in Sources */,
+				731A3DF22AE2A36C0044B2BA /* DivideOranges.swift in Sources */,
 				731A3DF02AE2793A0044B2BA /* Average.swift in Sources */,
 				731A3DEE2AE279170044B2BA /* SeatOne.swift in Sources */,
 				731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */,
