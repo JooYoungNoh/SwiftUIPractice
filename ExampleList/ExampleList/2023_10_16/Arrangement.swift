@@ -8,8 +8,60 @@
 import SwiftUI
 
 struct Arrangement: View {
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack {
+                Button(action: {dismiss()}, label: {
+                    Text("< Back")
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.black)
+                        .bold()
+                    
+                })
+                Spacer()
+            }
+            .padding(.horizontal, 20)
+            
+            Button(action: {}, label: {
+                Text("Button")
+                    .padding(10)
+                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .modifier(StandardCustomFontTitle())
+                    .cornerRadius(5)
+            })
+            .background(.indigo)
+            .padding(.horizontal, 10)
+            .padding(.top, 10)
+            
+            Spacer()
+            Button(action: {}, label: {
+                Text("Button")
+                    .padding(10)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .modifier(StandardCustomFontTitle())
+                    .cornerRadius(5)
+            })
+            .background(.indigo)
+            .padding(.vertical, 40)
+            .padding(.horizontal, 10)
+            
+            Spacer()
+            Button(action: {}, label: {
+                Text("Button")
+                    .padding(10)
+                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .modifier(StandardCustomFontTitle())
+                    .cornerRadius(5)
+            })
+            .background(.indigo)
+            .padding(.horizontal, 10)
+            .padding(.bottom, 10)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.teal)
+        .navigationBarBackButtonHidden()
     }
 }
 
