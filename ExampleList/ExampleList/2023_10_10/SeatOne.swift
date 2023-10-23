@@ -67,6 +67,7 @@ struct SeatOne: View {
     func touchInSide(){
         self.result = String(Int(self.number1)!/10*10+1)
         self.number1 = ""
+        isFocused = false
     }
 }
 

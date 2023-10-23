@@ -67,6 +67,7 @@ struct ThrowHundred: View {
     func touchInSide(){
         self.result = String(Int(self.number1)!/10/10*10*10)
         self.number1 = ""
+        isFocused = false
     }
 }
 
