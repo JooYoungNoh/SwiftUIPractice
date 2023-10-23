@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		73144CD02AE626DB00F0D819 /* DivideSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CCF2AE626DB00F0D819 /* DivideSeconds.swift */; };
 		73144CD22AE6271600F0D819 /* HourlyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CD12AE6271600F0D819 /* HourlyRate.swift */; };
+		73144CD52AE636AB00F0D819 /* OddEven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CD42AE636AB00F0D819 /* OddEven.swift */; };
+		73144CD72AE6370500F0D819 /* SubSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CD62AE6370500F0D819 /* SubSmall.swift */; };
+		73144CD92AE6373700F0D819 /* NumberOfBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CD82AE6373700F0D819 /* NumberOfBox.swift */; };
 		731A3DCE2AE2306F0044B2BA /* ExampleListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DCD2AE2306F0044B2BA /* ExampleListApp.swift */; };
 		731A3DD22AE2306F0044B2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731A3DD12AE2306F0044B2BA /* Assets.xcassets */; };
 		731A3DD52AE2306F0044B2BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731A3DD42AE2306F0044B2BA /* Preview Assets.xcassets */; };
@@ -26,6 +29,9 @@
 /* Begin PBXFileReference section */
 		73144CCF2AE626DB00F0D819 /* DivideSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideSeconds.swift; sourceTree = "<group>"; };
 		73144CD12AE6271600F0D819 /* HourlyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyRate.swift; sourceTree = "<group>"; };
+		73144CD42AE636AB00F0D819 /* OddEven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEven.swift; sourceTree = "<group>"; };
+		73144CD62AE6370500F0D819 /* SubSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSmall.swift; sourceTree = "<group>"; };
+		73144CD82AE6373700F0D819 /* NumberOfBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfBox.swift; sourceTree = "<group>"; };
 		731A3DCA2AE2306F0044B2BA /* ExampleList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		731A3DCD2AE2306F0044B2BA /* ExampleListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListApp.swift; sourceTree = "<group>"; };
 		731A3DD12AE2306F0044B2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +68,16 @@
 			path = 2023_10_11;
 			sourceTree = "<group>";
 		};
+		73144CD32AE6363F00F0D819 /* 2023_10_12 */ = {
+			isa = PBXGroup;
+			children = (
+				73144CD42AE636AB00F0D819 /* OddEven.swift */,
+				73144CD62AE6370500F0D819 /* SubSmall.swift */,
+				73144CD82AE6373700F0D819 /* NumberOfBox.swift */,
+			);
+			path = 2023_10_12;
+			sourceTree = "<group>";
+		};
 		731A3DC12AE2306F0044B2BA = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +104,7 @@
 				731A3DE42AE234A70044B2BA /* FontViewModifier.swift */,
 				731A3DE62AE277E20044B2BA /* 2023_10_10 */,
 				73144CCE2AE6263900F0D819 /* 2023_10_11 */,
+				73144CD32AE6363F00F0D819 /* 2023_10_12 */,
 				731A3DDE2AE232950044B2BA /* FontFile */,
 				731A3DD32AE2306F0044B2BA /* Preview Content */,
 			);
@@ -199,11 +216,14 @@
 				731A3DCE2AE2306F0044B2BA /* ExampleListApp.swift in Sources */,
 				731A3DF22AE2A36C0044B2BA /* DivideOranges.swift in Sources */,
 				731A3DF02AE2793A0044B2BA /* Average.swift in Sources */,
+				73144CD92AE6373700F0D819 /* NumberOfBox.swift in Sources */,
+				73144CD72AE6370500F0D819 /* SubSmall.swift in Sources */,
 				731A3DEE2AE279170044B2BA /* SeatOne.swift in Sources */,
 				731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */,
 				73144CD22AE6271600F0D819 /* HourlyRate.swift in Sources */,
 				73144CD02AE626DB00F0D819 /* DivideSeconds.swift in Sources */,
 				731A3DE82AE278370044B2BA /* FourBasicOperations.swift in Sources */,
+				73144CD52AE636AB00F0D819 /* OddEven.swift in Sources */,
 				731A3DE52AE234A70044B2BA /* FontViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
