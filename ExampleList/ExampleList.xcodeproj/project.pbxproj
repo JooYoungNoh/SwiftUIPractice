@@ -13,6 +13,9 @@
 		73144CD72AE6370500F0D819 /* SubSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CD62AE6370500F0D819 /* SubSmall.swift */; };
 		73144CD92AE6373700F0D819 /* NumberOfBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CD82AE6373700F0D819 /* NumberOfBox.swift */; };
 		73144CDC2AE64AED00F0D819 /* Variousfunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CDB2AE64AED00F0D819 /* Variousfunction.swift */; };
+		73144CDF2AE6525500F0D819 /* UIPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CDE2AE6525500F0D819 /* UIPractice.swift */; };
+		73144CE12AE6526900F0D819 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CE02AE6526900F0D819 /* Counter.swift */; };
+		73144CE32AE6528F00F0D819 /* Arrangement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73144CE22AE6528F00F0D819 /* Arrangement.swift */; };
 		731A3DCE2AE2306F0044B2BA /* ExampleListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DCD2AE2306F0044B2BA /* ExampleListApp.swift */; };
 		731A3DD22AE2306F0044B2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731A3DD12AE2306F0044B2BA /* Assets.xcassets */; };
 		731A3DD52AE2306F0044B2BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731A3DD42AE2306F0044B2BA /* Preview Assets.xcassets */; };
@@ -34,6 +37,9 @@
 		73144CD62AE6370500F0D819 /* SubSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSmall.swift; sourceTree = "<group>"; };
 		73144CD82AE6373700F0D819 /* NumberOfBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfBox.swift; sourceTree = "<group>"; };
 		73144CDB2AE64AED00F0D819 /* Variousfunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variousfunction.swift; sourceTree = "<group>"; };
+		73144CDE2AE6525500F0D819 /* UIPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPractice.swift; sourceTree = "<group>"; };
+		73144CE02AE6526900F0D819 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		73144CE22AE6528F00F0D819 /* Arrangement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrangement.swift; sourceTree = "<group>"; };
 		731A3DCA2AE2306F0044B2BA /* ExampleList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		731A3DCD2AE2306F0044B2BA /* ExampleListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListApp.swift; sourceTree = "<group>"; };
 		731A3DD12AE2306F0044B2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +94,16 @@
 			path = 2023_10_13;
 			sourceTree = "<group>";
 		};
+		73144CDD2AE651E400F0D819 /* 2023_10_16 */ = {
+			isa = PBXGroup;
+			children = (
+				73144CDE2AE6525500F0D819 /* UIPractice.swift */,
+				73144CE02AE6526900F0D819 /* Counter.swift */,
+				73144CE22AE6528F00F0D819 /* Arrangement.swift */,
+			);
+			path = 2023_10_16;
+			sourceTree = "<group>";
+		};
 		731A3DC12AE2306F0044B2BA = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +132,7 @@
 				73144CCE2AE6263900F0D819 /* 2023_10_11 */,
 				73144CD32AE6363F00F0D819 /* 2023_10_12 */,
 				73144CDA2AE64A8F00F0D819 /* 2023_10_13 */,
+				73144CDD2AE651E400F0D819 /* 2023_10_16 */,
 				731A3DDE2AE232950044B2BA /* FontFile */,
 				731A3DD32AE2306F0044B2BA /* Preview Content */,
 			);
@@ -228,8 +245,11 @@
 				731A3DF22AE2A36C0044B2BA /* DivideOranges.swift in Sources */,
 				731A3DF02AE2793A0044B2BA /* Average.swift in Sources */,
 				73144CD92AE6373700F0D819 /* NumberOfBox.swift in Sources */,
+				73144CDF2AE6525500F0D819 /* UIPractice.swift in Sources */,
 				73144CD72AE6370500F0D819 /* SubSmall.swift in Sources */,
+				73144CE32AE6528F00F0D819 /* Arrangement.swift in Sources */,
 				731A3DEE2AE279170044B2BA /* SeatOne.swift in Sources */,
+				73144CE12AE6526900F0D819 /* Counter.swift in Sources */,
 				731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */,
 				73144CD22AE6271600F0D819 /* HourlyRate.swift in Sources */,
 				73144CD02AE626DB00F0D819 /* DivideSeconds.swift in Sources */,
