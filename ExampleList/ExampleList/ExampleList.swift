@@ -13,12 +13,14 @@ enum changeStringToFileName: String {
     case ThrowHundred = "ThrowHundred"
     case SeatOne = "SeatOne"
     case Average = "Average"
+    case DivideSeconds = "DivideSeconds"
+    case HourlyRate = "HourlyRate"
 }
 
 
 
 struct ExampleList: View {
-    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average"]
+    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate"]
     private let layouts : [GridItem] = [GridItem(.flexible()) ,GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -92,6 +94,10 @@ extension ExampleList {
             SeatOne()
         case .Average:
             Average()
+        case .DivideSeconds:
+            DivideSeconds()
+        case .HourlyRate:
+            HourlyRate()
         }
     }
 }
