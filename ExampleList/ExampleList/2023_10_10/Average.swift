@@ -110,6 +110,7 @@ struct Average: View {
             }
             Spacer()
         }
+        .navigationBarBackButtonHidden()
     }
     func touchInSide(){
         isFocused = false
