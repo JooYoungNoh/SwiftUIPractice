@@ -30,7 +30,7 @@ struct ThrowHundred: View {
             
             Spacer()
             VStack {
-                Text("일의 자리 1로 바꾸기")
+                Text("백의 자리 밑 버리기")
                     .modifier(StandardCustomFontTitle())
                     .multilineTextAlignment(.center)
                 
@@ -65,7 +65,7 @@ struct ThrowHundred: View {
         .navigationBarBackButtonHidden()
     }
     func touchInSide(){
-        self.result = String(Int(self.number1)!/10*10+1)
+        self.result = String(Int(self.number1)!/10/10*10*10)
         self.number1 = ""
     }
 }
