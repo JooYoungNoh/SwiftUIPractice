@@ -28,6 +28,8 @@
 		731A3DEE2AE279170044B2BA /* SeatOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DED2AE279170044B2BA /* SeatOne.swift */; };
 		731A3DF02AE2793A0044B2BA /* Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DEF2AE2793A0044B2BA /* Average.swift */; };
 		731A3DF22AE2A36C0044B2BA /* DivideOranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DF12AE2A36C0044B2BA /* DivideOranges.swift */; };
+		7329000D2AE7428D007112CB /* AsyncPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329000C2AE7428D007112CB /* AsyncPractice.swift */; };
+		7329000F2AE742B1007112CB /* WithTaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329000E2AE742B1007112CB /* WithTaskGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		731A3DED2AE279170044B2BA /* SeatOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatOne.swift; sourceTree = "<group>"; };
 		731A3DEF2AE2793A0044B2BA /* Average.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Average.swift; sourceTree = "<group>"; };
 		731A3DF12AE2A36C0044B2BA /* DivideOranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideOranges.swift; sourceTree = "<group>"; };
+		7329000C2AE7428D007112CB /* AsyncPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPractice.swift; sourceTree = "<group>"; };
+		7329000E2AE742B1007112CB /* WithTaskGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithTaskGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 				73144CD32AE6363F00F0D819 /* 2023_10_12 */,
 				73144CDA2AE64A8F00F0D819 /* 2023_10_13 */,
 				73144CDD2AE651E400F0D819 /* 2023_10_16 */,
+				7329000B2AE74243007112CB /* 2023_10_19 */,
 				731A3DDE2AE232950044B2BA /* FontFile */,
 				731A3DD32AE2306F0044B2BA /* Preview Content */,
 			);
@@ -166,6 +171,15 @@
 				731A3DEF2AE2793A0044B2BA /* Average.swift */,
 			);
 			path = 2023_10_10;
+			sourceTree = "<group>";
+		};
+		7329000B2AE74243007112CB /* 2023_10_19 */ = {
+			isa = PBXGroup;
+			children = (
+				7329000C2AE7428D007112CB /* AsyncPractice.swift */,
+				7329000E2AE742B1007112CB /* WithTaskGroup.swift */,
+			);
+			path = 2023_10_19;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,10 +259,12 @@
 				731A3DF22AE2A36C0044B2BA /* DivideOranges.swift in Sources */,
 				731A3DF02AE2793A0044B2BA /* Average.swift in Sources */,
 				73144CD92AE6373700F0D819 /* NumberOfBox.swift in Sources */,
+				7329000D2AE7428D007112CB /* AsyncPractice.swift in Sources */,
 				73144CDF2AE6525500F0D819 /* UIPractice.swift in Sources */,
 				73144CD72AE6370500F0D819 /* SubSmall.swift in Sources */,
 				73144CE32AE6528F00F0D819 /* Arrangement.swift in Sources */,
 				731A3DEE2AE279170044B2BA /* SeatOne.swift in Sources */,
+				7329000F2AE742B1007112CB /* WithTaskGroup.swift in Sources */,
 				73144CE12AE6526900F0D819 /* Counter.swift in Sources */,
 				731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */,
 				73144CD22AE6271600F0D819 /* HourlyRate.swift in Sources */,
