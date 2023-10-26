@@ -21,7 +21,7 @@ struct AppStorageView: View {
         }
         .modifier(StandardCustomFontText())
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(vm.colors[vm.colorIndex])
+        .background(vm.colorSelect)
     }
 }
 

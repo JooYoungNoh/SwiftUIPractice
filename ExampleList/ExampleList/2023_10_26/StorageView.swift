@@ -8,17 +8,27 @@
 import SwiftUI
 
 class colorVM: ObservableObject {
-    @Published var colorIndex = 0
+    @Published var colorSelect: Color = .white
     
-    var colorNames: [String] = ["white", "Black", "Red", "Green", "Blue", "Yellow", "Cyan"]
-    var colors: [Color] = [.white, .black, .red, .green, .blue, .yellow, .cyan]
+    func changeStr(_ color: Color) -> String {
+        if let rgb = color.cgColor?.components {
+            return "\(rgb[0]) \(rgb[1]) \(rgb[2])"
+        }
+        return ""
+    }
+    
+    func changeColor(_ str: String) -> Color {
+        let strArr = str.components(separatedBy: " ")
+        print(str)
+        return Color(red: Double(strArr[0]) ?? 1, green: Double(strArr[1]) ?? 1, blue: Double(strArr[2]) ?? 1)
+    }
 }
 
 struct StorageView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.scenePhase) private var scencePhase
     
-    @AppStorage("myColor") private var saveColor: Int = 0
+    @AppStorage("myColor") private var saveColor: String = "1 1 1"
     @AppStorage("sceneIndex") private var sceneIndex: Int = 0
     
     @State private var bindIndex: Int = 0
@@ -30,27 +40,16 @@ struct StorageView: View {
                 Button(action: {dismiss()}, label: {
                     Text("< Back")
                         .font(.custom("MaplestoryOTFLight", size: 25))
-                        .foregroundStyle(vm.colorIndex == 1 ? .white : .black)
+                        .foregroundStyle(.black)
                         .bold()
                 })
                 Spacer()
                 
             }
             .padding(.horizontal, 20)
-            
-            Picker(selection: $vm.colorIndex, label: Text("Color")){
-                ForEach(0..<vm.colorNames.count, id: \.self) {
-                    Text(vm.colorNames[$0])
-                        .font(.custom("MaplestoryOTFBold", size: 40))
-                        .foregroundStyle(vm.colors[$0])
-                }
-            }
-            .background(.gray)
-            .opacity(0.8)
-            .cornerRadius(30)
-            .pickerStyle(.wheel)
-            .padding(.vertical, 10)
-            .padding(.horizontal, 20)
+    
+            ColorPicker(selection: $vm.colorSelect, supportsOpacity: false, label: {})
+            .frame(width: 300, height: 300)
             
             Spacer()
             TabView(selection: $bindIndex) {
@@ -70,22 +69,23 @@ struct StorageView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(vm.colors[vm.colorIndex])
+        .background(vm.colorSelect)
         .modifier(StandardCustomFontText())
         
         .onAppear(perform: {
             bindIndex = sceneIndex
-            vm.colorIndex = saveColor
+            vm.colorSelect = vm.changeColor(saveColor)
         })
         .onDisappear(perform: {
             sceneIndex = bindIndex
-            saveColor = vm.colorIndex
+            print(vm.changeStr(vm.colorSelect))
+            saveColor = vm.changeStr(vm.colorSelect)
         })
         .onChange(of: scencePhase){ phase in
             switch phase {
             case .background: 
                 sceneIndex = bindIndex
-                saveColor = vm.colorIndex
+                saveColor = vm.changeStr(vm.colorSelect)
             default:
                 break
             }

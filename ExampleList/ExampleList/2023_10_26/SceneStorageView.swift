@@ -22,7 +22,7 @@ struct SceneStorageView: View {
                 .padding(20)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(vm.colors[vm.colorIndex])
+        .background(vm.colorSelect)
     }
 }
 
