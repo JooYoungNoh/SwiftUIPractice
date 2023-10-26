@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct SceneStorageView: View {
-    @SceneStorage("mytext") private var editorText: String = ""
+    @AppStorage("mytext") private var editorText: String = ""
+    
+    @StateObject var vm: colorVM
     
     var body: some View {
         VStack {
-            TextEditor(text: $editorText)
-                .padding(30)
+            TextField("입력해주세요~", text: $editorText)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .border(.gray, width: 3)
+                .cornerRadius(5)
+                .modifier(StandardCustomFontTitle())
+                .padding(20)
         }
-        .modifier(StandardCustomFontText())
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(vm.colors[vm.colorIndex])
     }
 }
 
 #Preview {
-    SceneStorageView()
+    SceneStorageView(vm: colorVM())
 }

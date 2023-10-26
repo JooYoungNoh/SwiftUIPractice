@@ -10,15 +10,19 @@ import SwiftUI
 struct AppStorageView: View {
     @AppStorage("apptext") private var editorText: String = ""
     
+    @StateObject var vm: colorVM
+    
     var body: some View {
         VStack {
             TextEditor(text: $editorText)
                 .padding(30)
         }
         .modifier(StandardCustomFontText())
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(vm.colors[vm.colorIndex])
     }
 }
 
 #Preview {
-    AppStorageView()
+    AppStorageView(vm: colorVM())
 }
