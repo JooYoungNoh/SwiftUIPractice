@@ -37,6 +37,8 @@
 		73796E6E2AEA2DE70007A5D9 /* ObservableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E6D2AEA2DE70007A5D9 /* ObservableVM.swift */; };
 		73796E702AEA32280007A5D9 /* ObservableSecound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E6F2AEA32280007A5D9 /* ObservableSecound.swift */; };
 		73796E722AEA417A0007A5D9 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E712AEA417A0007A5D9 /* StorageView.swift */; };
+		73796E742AEA43700007A5D9 /* SceneStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E732AEA43700007A5D9 /* SceneStorageView.swift */; };
+		73796E762AEA43850007A5D9 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E752AEA43850007A5D9 /* AppStorageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		73796E6D2AEA2DE70007A5D9 /* ObservableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableVM.swift; sourceTree = "<group>"; };
 		73796E6F2AEA32280007A5D9 /* ObservableSecound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableSecound.swift; sourceTree = "<group>"; };
 		73796E712AEA417A0007A5D9 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
+		73796E732AEA43700007A5D9 /* SceneStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStorageView.swift; sourceTree = "<group>"; };
+		73796E752AEA43850007A5D9 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +211,8 @@
 				73796E6F2AEA32280007A5D9 /* ObservableSecound.swift */,
 				73796E6D2AEA2DE70007A5D9 /* ObservableVM.swift */,
 				73796E712AEA417A0007A5D9 /* StorageView.swift */,
+				73796E732AEA43700007A5D9 /* SceneStorageView.swift */,
+				73796E752AEA43850007A5D9 /* AppStorageView.swift */,
 			);
 			path = 2023_10_26;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 				73796E6A2AEA1C110007A5D9 /* SecondTabView.swift in Sources */,
 				731A3DF22AE2A36C0044B2BA /* DivideOranges.swift in Sources */,
 				731A3DF02AE2793A0044B2BA /* Average.swift in Sources */,
+				73796E742AEA43700007A5D9 /* SceneStorageView.swift in Sources */,
 				73144CD92AE6373700F0D819 /* NumberOfBox.swift in Sources */,
 				7329000D2AE7428D007112CB /* AsyncPractice.swift in Sources */,
 				73144CDF2AE6525500F0D819 /* UIPractice.swift in Sources */,
@@ -302,6 +309,7 @@
 				731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */,
 				73796E682AEA1BF70007A5D9 /* FirstTabView.swift in Sources */,
 				73144CD22AE6271600F0D819 /* HourlyRate.swift in Sources */,
+				73796E762AEA43850007A5D9 /* AppStorageView.swift in Sources */,
 				73144CD02AE626DB00F0D819 /* DivideSeconds.swift in Sources */,
 				731A3DE82AE278370044B2BA /* FourBasicOperations.swift in Sources */,
 				73144CD52AE636AB00F0D819 /* OddEven.swift in Sources */,
