@@ -30,6 +30,9 @@
 		731A3DF22AE2A36C0044B2BA /* DivideOranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DF12AE2A36C0044B2BA /* DivideOranges.swift */; };
 		7329000D2AE7428D007112CB /* AsyncPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329000C2AE7428D007112CB /* AsyncPractice.swift */; };
 		7329000F2AE742B1007112CB /* WithTaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329000E2AE742B1007112CB /* WithTaskGroup.swift */; };
+		73796E662AEA1BE40007A5D9 /* Lifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E652AEA1BE40007A5D9 /* Lifecycle.swift */; };
+		73796E682AEA1BF70007A5D9 /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E672AEA1BF70007A5D9 /* FirstTabView.swift */; };
+		73796E6A2AEA1C110007A5D9 /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E692AEA1C110007A5D9 /* SecondTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		731A3DF12AE2A36C0044B2BA /* DivideOranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideOranges.swift; sourceTree = "<group>"; };
 		7329000C2AE7428D007112CB /* AsyncPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPractice.swift; sourceTree = "<group>"; };
 		7329000E2AE742B1007112CB /* WithTaskGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithTaskGroup.swift; sourceTree = "<group>"; };
+		73796E652AEA1BE40007A5D9 /* Lifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifecycle.swift; sourceTree = "<group>"; };
+		73796E672AEA1BF70007A5D9 /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
+		73796E692AEA1C110007A5D9 /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,7 @@
 				73144CDA2AE64A8F00F0D819 /* 2023_10_13 */,
 				73144CDD2AE651E400F0D819 /* 2023_10_16 */,
 				7329000B2AE74243007112CB /* 2023_10_19 */,
+				73796E642AEA1BAA0007A5D9 /* 2023_10_26 */,
 				731A3DDE2AE232950044B2BA /* FontFile */,
 				731A3DD32AE2306F0044B2BA /* Preview Content */,
 			);
@@ -180,6 +187,16 @@
 				7329000E2AE742B1007112CB /* WithTaskGroup.swift */,
 			);
 			path = 2023_10_19;
+			sourceTree = "<group>";
+		};
+		73796E642AEA1BAA0007A5D9 /* 2023_10_26 */ = {
+			isa = PBXGroup;
+			children = (
+				73796E652AEA1BE40007A5D9 /* Lifecycle.swift */,
+				73796E672AEA1BF70007A5D9 /* FirstTabView.swift */,
+				73796E692AEA1C110007A5D9 /* SecondTabView.swift */,
+			);
+			path = 2023_10_26;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +273,7 @@
 			files = (
 				731A3DDC2AE2309B0044B2BA /* ExampleList.swift in Sources */,
 				731A3DCE2AE2306F0044B2BA /* ExampleListApp.swift in Sources */,
+				73796E6A2AEA1C110007A5D9 /* SecondTabView.swift in Sources */,
 				731A3DF22AE2A36C0044B2BA /* DivideOranges.swift in Sources */,
 				731A3DF02AE2793A0044B2BA /* Average.swift in Sources */,
 				73144CD92AE6373700F0D819 /* NumberOfBox.swift in Sources */,
@@ -267,11 +285,13 @@
 				7329000F2AE742B1007112CB /* WithTaskGroup.swift in Sources */,
 				73144CE12AE6526900F0D819 /* Counter.swift in Sources */,
 				731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */,
+				73796E682AEA1BF70007A5D9 /* FirstTabView.swift in Sources */,
 				73144CD22AE6271600F0D819 /* HourlyRate.swift in Sources */,
 				73144CD02AE626DB00F0D819 /* DivideSeconds.swift in Sources */,
 				731A3DE82AE278370044B2BA /* FourBasicOperations.swift in Sources */,
 				73144CD52AE636AB00F0D819 /* OddEven.swift in Sources */,
 				731A3DE52AE234A70044B2BA /* FontViewModifier.swift in Sources */,
+				73796E662AEA1BE40007A5D9 /* Lifecycle.swift in Sources */,
 				73144CDC2AE64AED00F0D819 /* Variousfunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
