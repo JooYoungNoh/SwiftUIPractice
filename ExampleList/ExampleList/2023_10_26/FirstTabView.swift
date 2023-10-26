@@ -9,7 +9,15 @@ import SwiftUI
 
 struct FirstTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("View One")
+                .onAppear(perform: {
+                    print("onAppear triggered")
+                })
+                .onDisappear(perform: {
+                    print("onDisappeared triggered")
+                })
+        }
     }
 }
 
