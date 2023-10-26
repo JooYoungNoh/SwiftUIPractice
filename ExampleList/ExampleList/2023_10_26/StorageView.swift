@@ -30,7 +30,7 @@ struct StorageView: View {
                 Button(action: {dismiss()}, label: {
                     Text("< Back")
                         .font(.custom("MaplestoryOTFLight", size: 25))
-                        .foregroundStyle(.black)
+                        .foregroundStyle(vm.colorIndex == 1 ? .white : .black)
                         .bold()
                 })
                 Spacer()
@@ -49,7 +49,8 @@ struct StorageView: View {
             .opacity(0.8)
             .cornerRadius(30)
             .pickerStyle(.wheel)
-            .padding()
+            .padding(.vertical, 10)
+            .padding(.horizontal, 20)
             
             Spacer()
             TabView(selection: $bindIndex) {

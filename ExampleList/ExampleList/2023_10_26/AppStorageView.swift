@@ -15,7 +15,9 @@ struct AppStorageView: View {
     var body: some View {
         VStack {
             TextEditor(text: $editorText)
-                .padding(30)
+                .border(.gray, width: 3)
+                .cornerRadius(5)
+                .padding(20)
         }
         .modifier(StandardCustomFontText())
         .frame(maxWidth: .infinity, maxHeight: .infinity)
