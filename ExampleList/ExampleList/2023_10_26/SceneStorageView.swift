@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct SceneStorageView: View {
+    @SceneStorage("mytext") private var editorText: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextEditor(text: $editorText)
+                .padding(30)
+        }
+        .modifier(StandardCustomFontText())
     }
 }
 
