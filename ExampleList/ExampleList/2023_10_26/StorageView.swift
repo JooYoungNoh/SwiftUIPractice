@@ -8,8 +8,37 @@
 import SwiftUI
 
 struct StorageView: View {
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Button(action: {dismiss()}, label: {
+                    Text("< Back")
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.black)
+                        .bold()
+                })
+                Spacer()
+                
+            }
+            .padding(.horizontal, 20)
+            
+            Spacer()
+            TabView {
+                SceneStorageView()
+                    .tabItem {
+                        Image(systemName: "circle.fill")
+                        Text("ScenceStorage")
+                    }
+                AppStorageView()
+                    .tabItem {
+                        Image(systemName: "square.fill")
+                        Text("AppStorage")
+                    }
+            }
+        }
+        .navigationBarBackButtonHidden()
     }
 }
 
