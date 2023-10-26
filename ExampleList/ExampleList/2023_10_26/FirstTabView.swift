@@ -31,6 +31,7 @@ struct FirstTabView: View {
                     title = await changeTitle()
                 }
         }
+        .modifier(StandardCustomFontTitle())
     }
     func changeTitle() async -> String {
         sleep(5)

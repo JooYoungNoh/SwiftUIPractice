@@ -27,6 +27,7 @@ struct SecondTabView: View {
                     print("onChange triggered")
                 }
         }
+        .modifier(StandardCustomFontText())
     }
 }
 
