@@ -8,11 +8,37 @@
 import SwiftUI
 
 struct ObservableSecound: View {
+    @Environment(\.dismiss) private var dismiss
+    
+    @StateObject var vm: ObservableVM
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Button(action: {dismiss()}, label: {
+                    Text("< Back")
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.black)
+                        .bold()
+                    
+                })
+                Spacer()
+            }
+            .padding(.horizontal, 20)
+            
+            Spacer()
+            VStack {
+                Text("Timer Count = \(vm.timeCount)")
+            }
+            .padding()
+            
+            Spacer()
+        }
+        .modifier(StandardCustomFontTitle())
+        .navigationBarBackButtonHidden()
     }
 }
 
 #Preview {
-    ObservableSecound()
+    ObservableSecound(vm: ObservableVM())
 }

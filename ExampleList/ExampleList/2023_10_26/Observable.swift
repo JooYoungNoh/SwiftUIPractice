@@ -20,9 +20,15 @@ struct Observable: View {
                         .font(.custom("MaplestoryOTFLight", size: 25))
                         .foregroundStyle(.black)
                         .bold()
-                    
                 })
                 Spacer()
+                
+                NavigationLink(destination: ObservableSecound(vm: vm), label: {
+                    Text("Next >")
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.black)
+                        .bold()
+                })
             }
             .padding(.horizontal, 20)
             
@@ -36,7 +42,7 @@ struct Observable: View {
                 })
                 .border(.black, width: 5)
                 .cornerRadius(3)
-                .padding(.top, 20)
+                .padding(.top, 50)
             }
             .modifier(StandardCustomFontTitle())
             .padding()
