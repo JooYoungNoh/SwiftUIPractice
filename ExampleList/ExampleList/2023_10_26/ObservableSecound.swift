@@ -10,7 +10,7 @@ import SwiftUI
 struct ObservableSecound: View {
     @Environment(\.dismiss) private var dismiss
     
-    @StateObject var vm: ObservableVM
+    @EnvironmentObject var vm: ObservableVM
     
     var body: some View {
         VStack {
@@ -34,11 +34,12 @@ struct ObservableSecound: View {
             
             Spacer()
         }
+        
         .modifier(StandardCustomFontTitle())
         .navigationBarBackButtonHidden()
     }
 }
 
 #Preview {
-    ObservableSecound(vm: ObservableVM())
+    ObservableSecound().environmentObject(ObservableVM())
 }

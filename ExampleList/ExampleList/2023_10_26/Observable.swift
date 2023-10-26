@@ -23,7 +23,7 @@ struct Observable: View {
                 })
                 Spacer()
                 
-                NavigationLink(destination: ObservableSecound(vm: vm), label: {
+                NavigationLink(destination: ObservableSecound().environmentObject(vm), label: {
                     Text("Next >")
                         .font(.custom("MaplestoryOTFLight", size: 25))
                         .foregroundStyle(.black)
@@ -49,6 +49,7 @@ struct Observable: View {
             
             Spacer()
         }
+        .environmentObject(vm)
         .navigationBarBackButtonHidden()
     }
 }
