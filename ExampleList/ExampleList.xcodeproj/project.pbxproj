@@ -35,6 +35,7 @@
 		73796E6A2AEA1C110007A5D9 /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E692AEA1C110007A5D9 /* SecondTabView.swift */; };
 		73796E6C2AEA2D0C0007A5D9 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E6B2AEA2D0C0007A5D9 /* Observable.swift */; };
 		73796E6E2AEA2DE70007A5D9 /* ObservableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E6D2AEA2DE70007A5D9 /* ObservableVM.swift */; };
+		73796E702AEA32280007A5D9 /* ObservableSecound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E6F2AEA32280007A5D9 /* ObservableSecound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		73796E692AEA1C110007A5D9 /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
 		73796E6B2AEA2D0C0007A5D9 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		73796E6D2AEA2DE70007A5D9 /* ObservableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableVM.swift; sourceTree = "<group>"; };
+		73796E6F2AEA32280007A5D9 /* ObservableSecound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableSecound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				73796E672AEA1BF70007A5D9 /* FirstTabView.swift */,
 				73796E692AEA1C110007A5D9 /* SecondTabView.swift */,
 				73796E6B2AEA2D0C0007A5D9 /* Observable.swift */,
+				73796E6F2AEA32280007A5D9 /* ObservableSecound.swift */,
 				73796E6D2AEA2DE70007A5D9 /* ObservableVM.swift */,
 			);
 			path = 2023_10_26;
@@ -290,6 +293,7 @@
 				731A3DEE2AE279170044B2BA /* SeatOne.swift in Sources */,
 				7329000F2AE742B1007112CB /* WithTaskGroup.swift in Sources */,
 				73144CE12AE6526900F0D819 /* Counter.swift in Sources */,
+				73796E702AEA32280007A5D9 /* ObservableSecound.swift in Sources */,
 				73796E6E2AEA2DE70007A5D9 /* ObservableVM.swift in Sources */,
 				731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */,
 				73796E682AEA1BF70007A5D9 /* FirstTabView.swift in Sources */,
