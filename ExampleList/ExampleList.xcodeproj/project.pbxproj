@@ -36,6 +36,7 @@
 		73796E6C2AEA2D0C0007A5D9 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E6B2AEA2D0C0007A5D9 /* Observable.swift */; };
 		73796E6E2AEA2DE70007A5D9 /* ObservableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E6D2AEA2DE70007A5D9 /* ObservableVM.swift */; };
 		73796E702AEA32280007A5D9 /* ObservableSecound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E6F2AEA32280007A5D9 /* ObservableSecound.swift */; };
+		73796E722AEA417A0007A5D9 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E712AEA417A0007A5D9 /* StorageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		73796E6B2AEA2D0C0007A5D9 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		73796E6D2AEA2DE70007A5D9 /* ObservableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableVM.swift; sourceTree = "<group>"; };
 		73796E6F2AEA32280007A5D9 /* ObservableSecound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableSecound.swift; sourceTree = "<group>"; };
+		73796E712AEA417A0007A5D9 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				73796E6B2AEA2D0C0007A5D9 /* Observable.swift */,
 				73796E6F2AEA32280007A5D9 /* ObservableSecound.swift */,
 				73796E6D2AEA2DE70007A5D9 /* ObservableVM.swift */,
+				73796E712AEA417A0007A5D9 /* StorageView.swift */,
 			);
 			path = 2023_10_26;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				731A3DDC2AE2309B0044B2BA /* ExampleList.swift in Sources */,
 				731A3DCE2AE2306F0044B2BA /* ExampleListApp.swift in Sources */,
+				73796E722AEA417A0007A5D9 /* StorageView.swift in Sources */,
 				73796E6A2AEA1C110007A5D9 /* SecondTabView.swift in Sources */,
 				731A3DF22AE2A36C0044B2BA /* DivideOranges.swift in Sources */,
 				731A3DF02AE2793A0044B2BA /* Average.swift in Sources */,
