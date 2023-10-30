@@ -10,11 +10,11 @@ import SwiftUI
 class colorVM: ObservableObject {
     @Published var colorSelect: Color = .white
     
-    func changeStr(_ color: Color) -> String {
+    func changeStr(_ color: Color) -> [CGFloat] {
         if let rgb = color.cgColor?.components {
-            return "\(rgb[0]) \(rgb[1]) \(rgb[2])"
+            return rgb
         }
-        return ""
+        return []
     }
     
     func changeColor(_ str: String) -> Color {
@@ -79,13 +79,13 @@ struct StorageView: View {
         .onDisappear(perform: {
             sceneIndex = bindIndex
             print(vm.changeStr(vm.colorSelect))
-            saveColor = vm.changeStr(vm.colorSelect)
+            saveColor = "\(vm.changeStr(vm.colorSelect)[0]) \(vm.changeStr(vm.colorSelect)[1]) \(vm.changeStr(vm.colorSelect)[2])"
         })
         .onChange(of: scencePhase){ phase in
             switch phase {
             case .background: 
                 sceneIndex = bindIndex
-                saveColor = vm.changeStr(vm.colorSelect)
+                saveColor = "\(vm.changeStr(vm.colorSelect)[0]) \(vm.changeStr(vm.colorSelect)[1]) \(vm.changeStr(vm.colorSelect)[2])"
             default:
                 break
             }
