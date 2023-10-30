@@ -10,7 +10,7 @@ import SwiftUI
 struct AppStorageView: View {
     @AppStorage("apptext") private var editorText: String = ""
     
-    @StateObject var vm: colorVM
+    @StateObject var vm: ColorVM
     
     var body: some View {
         VStack {
@@ -26,5 +26,5 @@ struct AppStorageView: View {
 }
 
 #Preview {
-    AppStorageView(vm: colorVM())
+    AppStorageView(vm: ColorVM())
 }

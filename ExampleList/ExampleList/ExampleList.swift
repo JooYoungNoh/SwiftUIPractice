@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum changeStringToFileName: String {
+enum ChangeStringToFileName: String {
     case FourBasicOperations = "FourOperations"
     case DivideOranges = "DivideOranges"
     case ThrowHundred = "ThrowHundred"
@@ -65,7 +65,7 @@ struct ExampleList: View {
                                         })
                                     } else {
                                         ForEach(0..<self.list.count) { i in
-                                            NavigationLink(destination: selectDestination(changeStringToFileName(rawValue: self.list[i])!), label: {
+                                            NavigationLink(destination: selectDestination(ChangeStringToFileName(rawValue: self.list[i])!), label: {
                                                 VStack {
                                                     Image(systemName: "folder.fill")
                                                         .font(.system(size: 80))
@@ -94,7 +94,7 @@ struct ExampleList: View {
 //MARK: ExampleList View 함수
 extension ExampleList {
     @ViewBuilder
-    func selectDestination(_ fileName: changeStringToFileName) -> some View {
+    func selectDestination(_ fileName: ChangeStringToFileName) -> some View {
         switch fileName {
         case .FourBasicOperations:
             FourBasicOperations()

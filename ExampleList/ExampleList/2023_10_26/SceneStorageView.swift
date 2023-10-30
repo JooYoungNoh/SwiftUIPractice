@@ -10,7 +10,7 @@ import SwiftUI
 struct SceneStorageView: View {
     @AppStorage("mytext") private var editorText: String = ""
     
-    @StateObject var vm: colorVM
+    @StateObject var vm: ColorVM
     
     var body: some View {
         VStack {
@@ -27,5 +27,5 @@ struct SceneStorageView: View {
 }
 
 #Preview {
-    SceneStorageView(vm: colorVM())
+    SceneStorageView(vm: ColorVM())
 }

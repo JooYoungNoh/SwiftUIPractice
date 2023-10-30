@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class colorVM: ObservableObject {
+class ColorVM: ObservableObject {
     @Published var colorSelect: Color = .white
     
     func changeColor(_ str: String) -> Color {
@@ -36,7 +36,7 @@ struct StorageView: View {
     @AppStorage("sceneIndex") private var sceneIndex: Int = 0
     
     @State private var bindIndex: Int = 0
-    @StateObject private var vm: colorVM = colorVM()
+    @StateObject private var vm: ColorVM = ColorVM()
     
     var body: some View {
         VStack {
