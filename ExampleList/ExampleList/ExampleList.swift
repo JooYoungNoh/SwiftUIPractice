@@ -7,34 +7,8 @@
 
 import SwiftUI
 
-enum ChangeStringToFileName: String {
-    case FourBasicOperations = "FourOperations"
-    case DivideOranges = "DivideOranges"
-    case ThrowHundred = "ThrowHundred"
-    case SeatOne = "SeatOne"
-    case Average = "Average"
-    case DivideSeconds = "DivideSeconds"
-    case HourlyRate = "HourlyRate"
-    case OddEven = "OddEven"
-    case SubSmall = "SubSmall"
-    case NumberOfBox = "NumberOfBox"
-    case Variousfunction = "Variousfunction"
-    case UIPractice = "UIPractice"
-    case Counter = "Counter"
-    case Arrangement = "Arrangement"
-    case AsyncPractice = "AsyncPractice"
-    case WithTaskGroup = "WithTaskGroup"
-    case Lifecycle = "Lifecycle"
-    case Observable = "Observable"
-    case StorageView = "StorageView"
-    case SortExampleOne = "SortExampleOne"
-    case SortExampleTwo = "SortExampleTwo"
-}
-
-
-
 struct ExampleList: View {
-    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate", "OddEven", "SubSmall", "NumberOfBox", "Variousfunction", "UIPractice", "Counter", "Arrangement", "AsyncPractice", "WithTaskGroup", "Lifecycle", "Observable", "StorageView", "SortExampleOne", "SortExampleTwo"]
+    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate", "OddEven", "SubSmall", "NumberOfBox", "Variousfunction", "UIPractice", "Counter", "Arrangement", "AsyncPractice", "WithTaskGroup", "Lifecycle", "Observable", "StorageView", "SortExampleOne", "SortExampleTwo", "SortExampleThree", "SortExampleFour", "SortExampleFive", "SortExampleSix", "SortExampleSeven"]
     private let layouts : [GridItem] = [GridItem(.flexible()) ,GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -93,6 +67,53 @@ struct ExampleList: View {
     }
 }
 
+
+//MARK: LazyVGridView
+//LazyVGridHeader
+struct Header: View {
+    var body: some View {
+        VStack {
+            Text("")
+                .frame(maxWidth: .infinity, maxHeight: 3)
+                .padding(1)
+                .background(.gray)
+                .border(.gray, width: 1)
+                .padding(.horizontal, 20)
+        }
+        .padding(.bottom, 20)
+        .background(.white)
+    }
+}
+
+enum ChangeStringToFileName: String {
+    case FourBasicOperations = "FourOperations"
+    case DivideOranges = "DivideOranges"
+    case ThrowHundred = "ThrowHundred"
+    case SeatOne = "SeatOne"
+    case Average = "Average"
+    case DivideSeconds = "DivideSeconds"
+    case HourlyRate = "HourlyRate"
+    case OddEven = "OddEven"
+    case SubSmall = "SubSmall"
+    case NumberOfBox = "NumberOfBox"
+    case Variousfunction = "Variousfunction"
+    case UIPractice = "UIPractice"
+    case Counter = "Counter"
+    case Arrangement = "Arrangement"
+    case AsyncPractice = "AsyncPractice"
+    case WithTaskGroup = "WithTaskGroup"
+    case Lifecycle = "Lifecycle"
+    case Observable = "Observable"
+    case StorageView = "StorageView"
+    case SortExampleOne = "SortExampleOne"
+    case SortExampleTwo = "SortExampleTwo"
+    case SortExampleThree = "SortExampleThree"
+    case SortExampleFour = "SortExampleFour"
+    case SortExampleFive = "SortExampleFive"
+    case SortExampleSix = "SortExampleSix"
+    case SortExampleSeven = "SortExampleSeven"
+}
+
 //MARK: ExampleList View 함수
 extension ExampleList {
     @ViewBuilder
@@ -140,24 +161,17 @@ extension ExampleList {
             SortExampleOne()
         case .SortExampleTwo:
             SortExampleTwo()
+        case .SortExampleThree:
+            SortExampleThree()
+        case .SortExampleFour:
+            SortExampleFour()
+        case .SortExampleFive:
+            SortExampleFive()
+        case .SortExampleSix:
+            SortExampleSix()
+        case .SortExampleSeven:
+            SortExampleSeven()
         }
-    }
-}
-
-//MARK: LazyVGridView
-//LazyVGridHeader
-struct Header: View {
-    var body: some View {
-        VStack {
-            Text("")
-                .frame(maxWidth: .infinity, maxHeight: 3)
-                .padding(1)
-                .background(.gray)
-                .border(.gray, width: 1)
-                .padding(.horizontal, 20)
-        }
-        .padding(.bottom, 20)
-        .background(.white)
     }
 }
 
