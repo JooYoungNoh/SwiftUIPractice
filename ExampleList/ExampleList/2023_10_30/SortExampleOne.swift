@@ -33,43 +33,23 @@ struct SortExampleOne: View {
                         .aspectRatio(contentMode: .fit)
                     
                     HStack(spacing: 20) {
-                        Image("pretty")
-                            .resizable()
-                            .frame(maxWidth: 100, maxHeight: 100)
-                            .cornerRadius(20)
-                            .aspectRatio(contentMode: .fit)
-                            
-                        Image("pretty")
-                            .resizable()
-                            .frame(maxWidth: 100, maxHeight: 100)
-                            .cornerRadius(20)
-                            .aspectRatio(contentMode: .fit)
-                            
-                        Image("pretty")
-                            .resizable()
-                            .frame(maxWidth: 100, maxHeight: 100)
-                            .cornerRadius(20)
-                            .aspectRatio(contentMode: .fit)
+                        ForEach(0..<3) { _ in
+                            Image("pretty")
+                                .resizable()
+                                .frame(maxWidth: 100, maxHeight: 100)
+                                .cornerRadius(20)
+                                .aspectRatio(contentMode: .fit)
+                        }
                     }
                     
                     HStack(spacing: 20) {
-                        Image("pretty")
-                            .resizable()
-                            .frame(maxWidth: 100, maxHeight: 100)
-                            .cornerRadius(20)
-                            .aspectRatio(contentMode: .fit)
-                            
-                        Image("pretty")
-                            .resizable()
-                            .frame(maxWidth: 100, maxHeight: 100)
-                            .cornerRadius(20)
-                            .aspectRatio(contentMode: .fit)
-                            
-                        Image("pretty")
-                            .resizable()
-                            .frame(maxWidth: 100, maxHeight: 100)
-                            .cornerRadius(20)
-                            .aspectRatio(contentMode: .fit)
+                        ForEach(0..<3) { _ in
+                            Image("pretty")
+                                .resizable()
+                                .frame(maxWidth: 100, maxHeight: 100)
+                                .cornerRadius(20)
+                                .aspectRatio(contentMode: .fit)
+                        }
                     }
                 }
                 .padding(.top, 20)
@@ -77,32 +57,16 @@ struct SortExampleOne: View {
             
             Spacer()
             HStack(spacing: 50) {
-                Button(action: {}, label: {
-                    Text("Button")
-                        .modifier(StandardCustomFontText())
-                        .bold()
-                        .padding()
-                })
-                .border(.gray, width: 4)
-                .cornerRadius(5)
-                
-                Button(action: {}, label: {
-                    Text("Button")
-                        .modifier(StandardCustomFontText())
-                        .bold()
-                        .padding()
-                })
-                .border(.gray, width: 4)
-                .cornerRadius(5)
-                
-                Button(action: {}, label: {
-                    Text("Button")
-                        .modifier(StandardCustomFontText())
-                        .bold()
-                        .padding()
-                })
-                .border(.gray, width: 4)
-                .cornerRadius(5)
+                ForEach(0..<3) { _ in
+                    Button(action: {}, label: {
+                        Text("Button")
+                            .modifier(StandardCustomFontText())
+                            .bold()
+                            .padding()
+                    })
+                    .border(.gray, width: 4)
+                    .cornerRadius(5)
+                }
             }
             .padding(.bottom)
         }
