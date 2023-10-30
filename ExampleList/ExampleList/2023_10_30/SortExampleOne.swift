@@ -8,8 +8,105 @@
 import SwiftUI
 
 struct SortExampleOne: View {
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            VStack {
+                HStack {
+                    Button(action: {dismiss()}, label: {
+                        Text("< Back")
+                            .font(.custom("MaplestoryOTFLight", size: 25))
+                            .foregroundStyle(.black)
+                            .bold()
+                    })
+                    Spacer()
+                    
+                }
+                .padding(.horizontal, 20)
+                
+                VStack(spacing: 20) {
+                    Image("pretty")
+                        .resizable()
+                        .frame(maxWidth: 100, maxHeight: 100)
+                        .cornerRadius(20)
+                        .aspectRatio(contentMode: .fit)
+                    
+                    HStack(spacing: 20) {
+                        Image("pretty")
+                            .resizable()
+                            .frame(maxWidth: 100, maxHeight: 100)
+                            .cornerRadius(20)
+                            .aspectRatio(contentMode: .fit)
+                            
+                        Image("pretty")
+                            .resizable()
+                            .frame(maxWidth: 100, maxHeight: 100)
+                            .cornerRadius(20)
+                            .aspectRatio(contentMode: .fit)
+                            
+                        Image("pretty")
+                            .resizable()
+                            .frame(maxWidth: 100, maxHeight: 100)
+                            .cornerRadius(20)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    
+                    HStack(spacing: 20) {
+                        Image("pretty")
+                            .resizable()
+                            .frame(maxWidth: 100, maxHeight: 100)
+                            .cornerRadius(20)
+                            .aspectRatio(contentMode: .fit)
+                            
+                        Image("pretty")
+                            .resizable()
+                            .frame(maxWidth: 100, maxHeight: 100)
+                            .cornerRadius(20)
+                            .aspectRatio(contentMode: .fit)
+                            
+                        Image("pretty")
+                            .resizable()
+                            .frame(maxWidth: 100, maxHeight: 100)
+                            .cornerRadius(20)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                }
+                .padding(.top, 20)
+            }
+            
+            Spacer()
+            HStack(spacing: 50) {
+                Button(action: {}, label: {
+                    Text("Button")
+                        .modifier(StandardCustomFontText())
+                        .bold()
+                        .padding()
+                })
+                .border(.gray, width: 4)
+                .cornerRadius(5)
+                
+                Button(action: {}, label: {
+                    Text("Button")
+                        .modifier(StandardCustomFontText())
+                        .bold()
+                        .padding()
+                })
+                .border(.gray, width: 4)
+                .cornerRadius(5)
+                
+                Button(action: {}, label: {
+                    Text("Button")
+                        .modifier(StandardCustomFontText())
+                        .bold()
+                        .padding()
+                })
+                .border(.gray, width: 4)
+                .cornerRadius(5)
+            }
+            .padding(.bottom)
+        }
+        .navigationBarBackButtonHidden()
     }
 }
 
