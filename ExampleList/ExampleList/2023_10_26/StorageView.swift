@@ -10,6 +10,12 @@ import SwiftUI
 class colorVM: ObservableObject {
     @Published var colorSelect: Color = .white
     
+    func changeColor(_ str: String) -> Color {
+        let strArr = str.components(separatedBy: " ")
+        print(str)
+        return Color(red: Double(strArr[0]) ?? 1, green: Double(strArr[1]) ?? 1, blue: Double(strArr[2]) ?? 1)
+    }
+    
     func changeStr(_ color: Color) -> [CGFloat] {
         if let rgb = color.cgColor?.components {
             return rgb
@@ -17,10 +23,8 @@ class colorVM: ObservableObject {
         return []
     }
     
-    func changeColor(_ str: String) -> Color {
-        let strArr = str.components(separatedBy: " ")
-        print(str)
-        return Color(red: Double(strArr[0]) ?? 1, green: Double(strArr[1]) ?? 1, blue: Double(strArr[2]) ?? 1)
+    func changeTintColor(_ cgValues: [CGFloat]) -> Color {
+        return cgValues[0] < 0.3 || cgValues[1] < 0.3 || cgValues[2] < 0.3 ? .white : .black
     }
 }
 
@@ -40,7 +44,7 @@ struct StorageView: View {
                 Button(action: {dismiss()}, label: {
                     Text("< Back")
                         .font(.custom("MaplestoryOTFLight", size: 25))
-                        .foregroundStyle(.black)
+                        .foregroundStyle(vm.changeTintColor(vm.changeStr(vm.colorSelect)))
                         .bold()
                 })
                 Spacer()
@@ -67,6 +71,7 @@ struct StorageView: View {
                     }
                     .tag(1)
             }
+            .accentColor(vm.changeTintColor(vm.changeStr(vm.colorSelect)))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(vm.colorSelect)
