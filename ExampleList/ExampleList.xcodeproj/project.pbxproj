@@ -41,6 +41,11 @@
 		73796E762AEA43850007A5D9 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E752AEA43850007A5D9 /* AppStorageView.swift */; };
 		739B24E52AEF7DF1007D0FC4 /* SortExampleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */; };
 		739B24E72AEF7E25007D0FC4 /* SortExampleTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */; };
+		739B24E92AEFA2A2007D0FC4 /* SortExampleThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */; };
+		739B24EB2AEFA2AB007D0FC4 /* SortExampleFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24EA2AEFA2AB007D0FC4 /* SortExampleFour.swift */; };
+		739B24ED2AEFA2B5007D0FC4 /* SortExampleFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24EC2AEFA2B5007D0FC4 /* SortExampleFive.swift */; };
+		739B24EF2AEFA2BF007D0FC4 /* SortExampleSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24EE2AEFA2BF007D0FC4 /* SortExampleSix.swift */; };
+		739B24F12AEFA2E2007D0FC4 /* SortExampleSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24F02AEFA2E2007D0FC4 /* SortExampleSeven.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +85,11 @@
 		73796E752AEA43850007A5D9 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
 		739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleOne.swift; sourceTree = "<group>"; };
 		739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleTwo.swift; sourceTree = "<group>"; };
+		739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleThree.swift; sourceTree = "<group>"; };
+		739B24EA2AEFA2AB007D0FC4 /* SortExampleFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleFour.swift; sourceTree = "<group>"; };
+		739B24EC2AEFA2B5007D0FC4 /* SortExampleFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleFive.swift; sourceTree = "<group>"; };
+		739B24EE2AEFA2BF007D0FC4 /* SortExampleSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleSix.swift; sourceTree = "<group>"; };
+		739B24F02AEFA2E2007D0FC4 /* SortExampleSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleSeven.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +237,11 @@
 			children = (
 				739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */,
 				739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */,
+				739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */,
+				739B24EA2AEFA2AB007D0FC4 /* SortExampleFour.swift */,
+				739B24EC2AEFA2B5007D0FC4 /* SortExampleFive.swift */,
+				739B24EE2AEFA2BF007D0FC4 /* SortExampleSix.swift */,
+				739B24F02AEFA2E2007D0FC4 /* SortExampleSeven.swift */,
 			);
 			path = 2023_10_30;
 			sourceTree = "<group>";
@@ -303,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739B24EB2AEFA2AB007D0FC4 /* SortExampleFour.swift in Sources */,
 				731A3DDC2AE2309B0044B2BA /* ExampleList.swift in Sources */,
 				739B24E72AEF7E25007D0FC4 /* SortExampleTwo.swift in Sources */,
 				731A3DCE2AE2306F0044B2BA /* ExampleListApp.swift in Sources */,
@@ -315,11 +331,14 @@
 				7329000D2AE7428D007112CB /* AsyncPractice.swift in Sources */,
 				73144CDF2AE6525500F0D819 /* UIPractice.swift in Sources */,
 				73144CD72AE6370500F0D819 /* SubSmall.swift in Sources */,
+				739B24EF2AEFA2BF007D0FC4 /* SortExampleSix.swift in Sources */,
 				73144CE32AE6528F00F0D819 /* Arrangement.swift in Sources */,
 				731A3DEE2AE279170044B2BA /* SeatOne.swift in Sources */,
 				7329000F2AE742B1007112CB /* WithTaskGroup.swift in Sources */,
 				73144CE12AE6526900F0D819 /* Counter.swift in Sources */,
+				739B24E92AEFA2A2007D0FC4 /* SortExampleThree.swift in Sources */,
 				73796E702AEA32280007A5D9 /* ObservableSecound.swift in Sources */,
+				739B24ED2AEFA2B5007D0FC4 /* SortExampleFive.swift in Sources */,
 				73796E6E2AEA2DE70007A5D9 /* ObservableVM.swift in Sources */,
 				731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */,
 				73796E682AEA1BF70007A5D9 /* FirstTabView.swift in Sources */,
@@ -328,6 +347,7 @@
 				739B24E52AEF7DF1007D0FC4 /* SortExampleOne.swift in Sources */,
 				73144CD02AE626DB00F0D819 /* DivideSeconds.swift in Sources */,
 				731A3DE82AE278370044B2BA /* FourBasicOperations.swift in Sources */,
+				739B24F12AEFA2E2007D0FC4 /* SortExampleSeven.swift in Sources */,
 				73144CD52AE636AB00F0D819 /* OddEven.swift in Sources */,
 				731A3DE52AE234A70044B2BA /* FontViewModifier.swift in Sources */,
 				73796E662AEA1BE40007A5D9 /* Lifecycle.swift in Sources */,
