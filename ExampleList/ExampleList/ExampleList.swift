@@ -27,12 +27,14 @@ enum ChangeStringToFileName: String {
     case Lifecycle = "Lifecycle"
     case Observable = "Observable"
     case StorageView = "StorageView"
+    case SortExampleOne = "SortExampleOne"
+    case SortExampleTwo = "SortExampleTwo"
 }
 
 
 
 struct ExampleList: View {
-    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate", "OddEven", "SubSmall", "NumberOfBox", "Variousfunction", "UIPractice", "Counter", "Arrangement", "AsyncPractice", "WithTaskGroup", "Lifecycle", "Observable", "StorageView"]
+    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate", "OddEven", "SubSmall", "NumberOfBox", "Variousfunction", "UIPractice", "Counter", "Arrangement", "AsyncPractice", "WithTaskGroup", "Lifecycle", "Observable", "StorageView", "SortExampleOne", "SortExampleTwo"]
     private let layouts : [GridItem] = [GridItem(.flexible()) ,GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -134,6 +136,10 @@ extension ExampleList {
             Observable()
         case .StorageView:
             StorageView()
+        case .SortExampleOne:
+            SortExampleOne()
+        case .SortExampleTwo:
+            SortExampleTwo()
         }
     }
 }
