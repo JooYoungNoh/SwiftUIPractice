@@ -18,7 +18,6 @@ struct ListPractice: View {
     @Environment(\.dismiss) private var dismiss
     
     @State private var listData: [ToDoItem] = []
-    @State private var saveIndex: Int = 0
     
     var body: some View {
         VStack {
@@ -46,6 +45,14 @@ struct ListPractice: View {
                             .foregroundColor(.blue)
                             .bold(i.wrappedValue.isToggle)
                             .padding()
+                            .onTapGesture { _ in
+                                if let index = listData.firstIndex(of: i.wrappedValue) {
+                                    listData = listData.map{
+                                        return ToDoItem(text: $0.text, isImage: false, isToggle: $0.isToggle)
+                                    }
+                                    listData[index].isImage.toggle()
+                                }
+                            }
                         
                         Spacer()
                         if i.wrappedValue.isImage {
@@ -75,13 +82,6 @@ struct ListPractice: View {
                         .padding(.leading, 10)
                     }
                     .frame(maxWidth: .infinity)
-                    .onTapGesture { _ in
-                        listData[saveIndex].isImage = false
-                        if let index = listData.firstIndex(of: i.wrappedValue) {
-                            listData[index].isImage.toggle()
-                            saveIndex = index
-                        }
-                    }
                 }
                 .onDelete(perform: { indexSet in
                     listData.remove(atOffsets: indexSet)
