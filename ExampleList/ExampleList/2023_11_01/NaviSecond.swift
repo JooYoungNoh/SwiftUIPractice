@@ -8,25 +8,12 @@
 import SwiftUI
 
 struct NaviSecond: View {
-    @Environment(\.dismiss) private var dismiss
     @Environment(\.editMode) private var editMode
     
     @StateObject var changeVM: ChangeVM
     
     var body: some View {
         VStack {
-            HStack {
-                Button(action: {dismiss()}, label: {
-                    Text("< Back")
-                        .font(.custom("MaplestoryOTFLight", size: 25))
-                        .foregroundStyle(.black)
-                        .bold()
-                })
-                Spacer()    
-            }
-            .padding(.horizontal, 20)
-            Spacer()
-            
             ScrollView {
                 VStack {
                     HStack {
@@ -45,7 +32,7 @@ struct NaviSecond: View {
                         .cornerRadius(5.0)
                         .padding(.horizontal, 20)
                 }
-                .padding(.bottom, 40)
+                .padding(.vertical, 20)
                 
                 VStack {
                     HStack {
@@ -56,7 +43,7 @@ struct NaviSecond: View {
                 }
                 .padding(20)
                 .background(changeVM.thirdChangeColor)
-                .padding(.bottom, 40)
+                .padding(.vertical, 20)
                 
                 VStack {
                     HStack {
@@ -81,12 +68,13 @@ struct NaviSecond: View {
                             .foregroundStyle(.black)
                     }
                 }
-                .padding(.bottom, 20)
+                .padding(.vertical, 20)
             }
             .frame(maxWidth: .infinity)
         }
         .toolbar { EditButton() }
-        .navigationBarBackButtonHidden()
+        .navigationTitle("Second View")
+        .navigationBarTitleDisplayMode(.inline)
         .onDisappear(perform: {
             //예제 1
             changeVM.firstNaviText = "First View"
