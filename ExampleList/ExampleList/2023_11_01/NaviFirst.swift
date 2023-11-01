@@ -10,6 +10,7 @@ import SwiftUI
 class ChangeVM: ObservableObject {
     @Published var firstNaviText: String = ""       //예제 1
     @Published var secondChangeText: String = ""    //예제 2
+    @Published var thirdChangeColor: Color = .blue //예제 3
 }
 
 struct NaviFirst: View {

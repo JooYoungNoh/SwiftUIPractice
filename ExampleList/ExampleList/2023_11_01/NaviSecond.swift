@@ -44,6 +44,17 @@ struct NaviSecond: View {
                         .cornerRadius(5.0)
                         .padding(.horizontal, 20)
                 }
+                .padding(.bottom, 20)
+                
+                VStack {
+                    HStack {
+                        Text("Navigation ex 3")
+                            .modifier(StandardCustomFontTitle())
+                        Spacer()
+                    }
+                }
+                .padding(20)
+                .background(changeVM.thirdChangeColor)
             }
             .frame(maxWidth: .infinity)
         }
