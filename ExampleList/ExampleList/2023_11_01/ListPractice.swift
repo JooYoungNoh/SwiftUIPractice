@@ -34,7 +34,7 @@ struct ListPractice: View {
             }
             .padding(.horizontal, 20)
             
-            Text("List Quiz 1, 3, 4")
+            Text("List Quiz 1, 3, 4, 5")
                 .modifier(StandardCustomFontTitle())
                 .padding()
             
@@ -53,10 +53,26 @@ struct ListPractice: View {
                                 .font(.system(size: 30))
                         }
                         
-                        Toggle(isOn: i.isToggle) {
-                            
-                        }
+                        Toggle(isOn: i.isToggle) {}
                         .frame(maxWidth: 50, maxHeight: 30)
+                        
+                        Button(action: {}) {
+                            Text("삭제")
+                                .padding()
+                                .font(.custom("MaplestoryOTFLight", size: 10))
+                                .foregroundColor(.white)
+                                
+                        }
+                        .onTapGesture {
+                            if let index = listData.firstIndex(of: i.wrappedValue) {
+                                listData.remove(at: index)
+                                print("wqweqwe")
+                            }
+                        }
+                        .frame(maxWidth: 50)
+                        .background(.red)
+                        .cornerRadius(10)
+                        .padding(.leading, 10)
                     }
                     .frame(maxWidth: .infinity)
                     .onTapGesture { _ in
@@ -67,6 +83,12 @@ struct ListPractice: View {
                         }
                     }
                 }
+                .onDelete(perform: { indexSet in
+                    listData.remove(atOffsets: indexSet)
+                })
+                .onMove(perform: { indices, newOffset in
+                    listData.move(fromOffsets: indices, toOffset: newOffset)
+                })
             }
             .background(.white)
             .onAppear {
