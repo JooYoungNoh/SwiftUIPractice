@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct NaviSecond: View {
+    @Environment(\.dismiss) private var dismiss
+    
+    @StateObject var changeVM: ChangeVM
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Button(action: {dismiss()}, label: {
+                    Text("< Back")
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.black)
+                        .bold()
+                })
+                Spacer()    
+            }
+            .padding(.horizontal, 20)
+            Spacer()
+        }
+        .navigationBarBackButtonHidden()
+        .onDisappear(perform: {
+            //예제 1
+            changeVM.firstNaviText = "First View"
+        })
     }
 }
 
 #Preview {
-    NaviSecond()
+    NaviSecond(changeVM: ChangeVM())
 }

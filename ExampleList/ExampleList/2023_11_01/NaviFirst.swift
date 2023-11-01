@@ -7,9 +7,52 @@
 
 import SwiftUI
 
+class ChangeVM: ObservableObject {
+    @Published var firstNaviText: String = ""       //예제 1
+}
+
 struct NaviFirst: View {
+    @Environment(\.dismiss) private var dismiss
+    
+    @StateObject private var changeVM: ChangeVM = ChangeVM()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Button(action: {dismiss()}, label: {
+                    Text("< Back")
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.black)
+                        .bold()
+                })
+                
+                Spacer()
+                NavigationLink(destination: NaviSecond(changeVM: changeVM), label: {
+                    Text("Next >")
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.black)
+                        .bold()
+                })
+            }
+            .padding(.horizontal, 20)
+            
+            ScrollView {
+                VStack {
+                    HStack {
+                        Text("Navigation ex 1")
+                            .modifier(StandardCustomFontTitle())
+                        Spacer()
+                    }
+                    .padding(20)
+                    
+                    Text(changeVM.firstNaviText)
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.blue)
+                }
+            }
+            .frame(maxWidth: .infinity)
+        }
+        .navigationBarBackButtonHidden()
     }
 }
 
