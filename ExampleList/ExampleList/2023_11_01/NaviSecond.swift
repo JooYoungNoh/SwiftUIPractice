@@ -25,6 +25,27 @@ struct NaviSecond: View {
             }
             .padding(.horizontal, 20)
             Spacer()
+            
+            ScrollView {
+                VStack {
+                    HStack {
+                        Text("Navigation ex 2")
+                            .modifier(StandardCustomFontTitle())
+                        Spacer()
+                    }
+                    .padding(20)
+                    
+                    TextField("첫번째 화면에 전달할 문자열", text: $changeVM.secondChangeText)
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.black)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .multilineTextAlignment(.leading)
+                        .border(.gray, width: 2)
+                        .cornerRadius(5.0)
+                        .padding(.horizontal, 20)
+                }
+            }
+            .frame(maxWidth: .infinity)
         }
         .navigationBarBackButtonHidden()
         .onDisappear(perform: {

@@ -9,6 +9,7 @@ import SwiftUI
 
 class ChangeVM: ObservableObject {
     @Published var firstNaviText: String = ""       //예제 1
+    @Published var secondChangeText: String = ""    //예제 2
 }
 
 struct NaviFirst: View {
@@ -46,6 +47,19 @@ struct NaviFirst: View {
                     .padding(20)
                     
                     Text(changeVM.firstNaviText)
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.blue)
+                }
+                
+                VStack {
+                    HStack {
+                        Text("Navigation ex 2")
+                            .modifier(StandardCustomFontTitle())
+                        Spacer()
+                    }
+                    .padding(20)
+                    
+                    Text(changeVM.secondChangeText)
                         .font(.custom("MaplestoryOTFLight", size: 25))
                         .foregroundStyle(.blue)
                 }
