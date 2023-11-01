@@ -8,9 +8,11 @@
 import SwiftUI
 
 class ChangeVM: ObservableObject {
-    @Published var firstNaviText: String = ""       //예제 1
-    @Published var secondChangeText: String = ""    //예제 2
-    @Published var thirdChangeColor: Color = .blue //예제 3
+    @Published var firstNaviText: String = ""            //예제 1
+    @Published var secondChangeText: String = ""         //예제 2
+    @Published var thirdChangeColor: Color = .blue       //예제 3
+    @Published var fourthChangeText: String = "Hello"    //예제 4
+    @Published var isFourthChange: Bool = false          //예제 4
 }
 
 struct NaviFirst: View {
@@ -51,6 +53,7 @@ struct NaviFirst: View {
                         .font(.custom("MaplestoryOTFLight", size: 25))
                         .foregroundStyle(.blue)
                 }
+                .padding(.bottom, 40)
                 
                 VStack {
                     HStack {
@@ -64,6 +67,21 @@ struct NaviFirst: View {
                         .font(.custom("MaplestoryOTFLight", size: 25))
                         .foregroundStyle(.blue)
                 }
+                .padding(.bottom, 40)
+                
+                VStack {
+                    HStack {
+                        Text("Navigation ex 4")
+                            .modifier(StandardCustomFontTitle())
+                        Spacer()
+                    }
+                    .padding(20)
+                    
+                    Text(changeVM.fourthChangeText)
+                        .font(.custom("MaplestoryOTFLight", size: 25))
+                        .foregroundStyle(.blue)
+                }
+                .padding(.bottom, 40)
             }
             .frame(maxWidth: .infinity)
         }
