@@ -12,7 +12,6 @@ class ChangeVM: ObservableObject {
     @Published var secondChangeText: String = ""         //예제 2
     @Published var thirdChangeColor: Color = .blue       //예제 3
     @Published var fourthChangeText: String = "Hello"    //예제 4
-    @Published var isFourthChange: Bool = false          //예제 4
 }
 
 struct NaviFirst: View {
