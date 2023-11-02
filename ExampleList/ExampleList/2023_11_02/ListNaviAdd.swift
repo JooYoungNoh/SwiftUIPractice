@@ -15,6 +15,7 @@ struct ListNaviAdd: View {
     @State private var isHybrid = false
     @State private var name: String = ""
     @State private var description: String = ""
+    @State private var showingAlert = false
     
     var body: some View {
         VStack {
@@ -54,7 +55,13 @@ struct ListNaviAdd: View {
                 }
             }
             
-            Button { addNewCar() } label: {
+            Button {
+                if name != "" && description != "" {
+                    addNewCar()
+                } else {
+                    showingAlert = true
+                }
+            } label: {
                 Text("Add Car")
                     .padding()
                     .font(.custom("NotoSansKR-Regular", size: 25))
@@ -65,6 +72,7 @@ struct ListNaviAdd: View {
             .background(Color(uiColor: UIColor.systemGray4))
             .cornerRadius(5)
             .padding(.horizontal, 20)
+            .alert("정보를 입력해주세요", isPresented: $showingAlert, actions: {})
         }
     }
     
