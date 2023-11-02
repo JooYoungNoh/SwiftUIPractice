@@ -10,8 +10,9 @@ import SwiftUI
 struct ListNavi: View {
     @Environment(\.dismiss) private var dismiss
     
-    @State private var isShowModal = false
     @StateObject var carVM: ListNaviViewModel = ListNaviViewModel()
+    
+    @State private var isShowModal = false
 
     var body: some View {
         VStack {
