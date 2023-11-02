@@ -10,13 +10,8 @@ import Foundation
 class ListNaviViewModel: ObservableObject {
     @Published var cars: [Car] = []
     
-    init(cars: [Car]) {
-        self.cars = cars
-    }
-    
-    
     //JSON 파일 로드하기
-    func loadJson<T: Decodable>(_ filename: String) -> T {
+    func loadJson<T: Decodable>(_ filename: String) async -> T {
         var data: Data
         
         guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
