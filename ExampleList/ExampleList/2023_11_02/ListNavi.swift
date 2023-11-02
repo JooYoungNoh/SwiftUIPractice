@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ListNavi: View {
     @Environment(\.dismiss) private var dismiss
+    
+    @State private var isShowModal = false
     @StateObject var carVM: ListNaviViewModel = ListNaviViewModel()
 
     var body: some View {
@@ -21,6 +23,15 @@ struct ListNavi: View {
                         .bold()
                 })
                 Spacer()
+                Button(action: {isShowModal = true}, label: {
+                    Text("Add")
+                        .font(.custom("NotoSansKR-Regular", size: 25))
+                        .foregroundStyle(.black)
+                        .bold()
+                })
+                .sheet(isPresented: $isShowModal) {
+                    ListNaviAdd()
+                }
                 
             }
             .padding(.horizontal, 20)
