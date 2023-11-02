@@ -47,6 +47,9 @@ struct ListNaviDetail: View {
                     }
                 } header: {
                     Text("Car Details")
+                        .font(.custom("NotoSansKR-Bold", size: 20))
+                        .foregroundStyle(.black)
+                        .bold()
                 }
                 
             }
