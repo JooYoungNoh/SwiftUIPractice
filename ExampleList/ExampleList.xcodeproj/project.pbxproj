@@ -275,8 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				73911B6B2AF323070004A50B /* ListNavi.swift */,
-				73911B712AF329140004A50B /* NovemberUseModel.swift */,
 				73911B732AF329740004A50B /* ListNaviViewModel.swift */,
+				73911B712AF329140004A50B /* NovemberUseModel.swift */,
 			);
 			path = 2023_11_02;
 			sourceTree = "<group>";
