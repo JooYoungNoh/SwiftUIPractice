@@ -50,6 +50,8 @@
 		73911B742AF329740004A50B /* ListNaviViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B732AF329740004A50B /* ListNaviViewModel.swift */; };
 		73911B772AF330BC0004A50B /* NotoSansKR-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73911B752AF330BC0004A50B /* NotoSansKR-Regular.ttf */; };
 		73911B782AF330BC0004A50B /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73911B762AF330BC0004A50B /* NotoSansKR-Bold.ttf */; };
+		73911B7A2AF33AF10004A50B /* ListNaviDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B792AF33AF10004A50B /* ListNaviDetail.swift */; };
+		73911B7C2AF33BBB0004A50B /* ListNaviAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B7B2AF33BBB0004A50B /* ListNaviAdd.swift */; };
 		739B24E52AEF7DF1007D0FC4 /* SortExampleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */; };
 		739B24E72AEF7E25007D0FC4 /* SortExampleTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */; };
 		739B24E92AEFA2A2007D0FC4 /* SortExampleThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */; };
@@ -105,6 +107,8 @@
 		73911B732AF329740004A50B /* ListNaviViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNaviViewModel.swift; sourceTree = "<group>"; };
 		73911B752AF330BC0004A50B /* NotoSansKR-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.ttf"; sourceTree = "<group>"; };
 		73911B762AF330BC0004A50B /* NotoSansKR-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.ttf"; sourceTree = "<group>"; };
+		73911B792AF33AF10004A50B /* ListNaviDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNaviDetail.swift; sourceTree = "<group>"; };
+		73911B7B2AF33BBB0004A50B /* ListNaviAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNaviAdd.swift; sourceTree = "<group>"; };
 		739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleOne.swift; sourceTree = "<group>"; };
 		739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleTwo.swift; sourceTree = "<group>"; };
 		739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleThree.swift; sourceTree = "<group>"; };
@@ -275,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				73911B6B2AF323070004A50B /* ListNavi.swift */,
+				73911B792AF33AF10004A50B /* ListNaviDetail.swift */,
+				73911B7B2AF33BBB0004A50B /* ListNaviAdd.swift */,
 				73911B732AF329740004A50B /* ListNaviViewModel.swift */,
 				73911B712AF329140004A50B /* NovemberUseModel.swift */,
 			);
@@ -389,6 +395,7 @@
 				7316F98B2AF1DCFF00657E53 /* ListPractice.swift in Sources */,
 				73144CD72AE6370500F0D819 /* SubSmall.swift in Sources */,
 				7316F9912AF2280700657E53 /* NaviSecond.swift in Sources */,
+				73911B7A2AF33AF10004A50B /* ListNaviDetail.swift in Sources */,
 				739B24EF2AEFA2BF007D0FC4 /* SortExampleSix.swift in Sources */,
 				73144CE32AE6528F00F0D819 /* Arrangement.swift in Sources */,
 				73911B6C2AF323070004A50B /* ListNavi.swift in Sources */,
@@ -413,6 +420,7 @@
 				73796E662AEA1BE40007A5D9 /* Lifecycle.swift in Sources */,
 				73144CDC2AE64AED00F0D819 /* Variousfunction.swift in Sources */,
 				73796E6C2AEA2D0C0007A5D9 /* Observable.swift in Sources */,
+				73911B7C2AF33BBB0004A50B /* ListNaviAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
