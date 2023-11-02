@@ -55,7 +55,7 @@ struct ListNavi: View {
         .navigationBarBackButtonHidden()
         .onAppear {
             Task {
-                carVM.cars = await carVM.loadJson("carData.json")
+                carVM.cars = await carVM.loadJson("carData.json") + carVM.addCars
             }
         }
     }

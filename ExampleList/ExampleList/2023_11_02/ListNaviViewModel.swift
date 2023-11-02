@@ -9,6 +9,7 @@ import Foundation
 
 class ListNaviViewModel: ObservableObject {
     @Published var cars: [Car] = []
+    @Published var addCars: [Car] = []
     
     //JSON 파일 로드하기
     func loadJson<T: Decodable>(_ filename: String) async -> T {

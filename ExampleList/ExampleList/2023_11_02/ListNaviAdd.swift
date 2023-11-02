@@ -74,13 +74,18 @@ struct ListNaviAdd: View {
             .padding(.horizontal, 20)
             .alert("정보를 입력해주세요", isPresented: $showingAlert, actions: {})
         }
+        .onDisappear {
+            Task {
+                carVM.cars = await carVM.loadJson("carData.json") + carVM.addCars
+            }
+        }
     }
     
     func addNewCar() {
         // 프로젝트 간략화를 위해 사진 라이브러리에서 사진을 가져오지 않고 기존 이미지를 재사용
         let newCar = Car(id: UUID().uuidString, name: name, description: description, isHybrid: isHybrid, imageName: "tesla_model_3")
         
-        carVM.cars.append(newCar)
+        carVM.addCars.append(newCar)
         dismiss()
     }
 }
