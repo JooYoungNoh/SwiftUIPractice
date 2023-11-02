@@ -52,6 +52,7 @@
 		73911B782AF330BC0004A50B /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73911B762AF330BC0004A50B /* NotoSansKR-Bold.ttf */; };
 		73911B7A2AF33AF10004A50B /* ListNaviDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B792AF33AF10004A50B /* ListNaviDetail.swift */; };
 		73911B7C2AF33BBB0004A50B /* ListNaviAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B7B2AF33BBB0004A50B /* ListNaviAdd.swift */; };
+		73911B7E2AF35BF30004A50B /* ListNaviAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B7D2AF35BF30004A50B /* ListNaviAddViewModel.swift */; };
 		739B24E52AEF7DF1007D0FC4 /* SortExampleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */; };
 		739B24E72AEF7E25007D0FC4 /* SortExampleTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */; };
 		739B24E92AEFA2A2007D0FC4 /* SortExampleThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */; };
@@ -109,6 +110,7 @@
 		73911B762AF330BC0004A50B /* NotoSansKR-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.ttf"; sourceTree = "<group>"; };
 		73911B792AF33AF10004A50B /* ListNaviDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNaviDetail.swift; sourceTree = "<group>"; };
 		73911B7B2AF33BBB0004A50B /* ListNaviAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNaviAdd.swift; sourceTree = "<group>"; };
+		73911B7D2AF35BF30004A50B /* ListNaviAddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNaviAddViewModel.swift; sourceTree = "<group>"; };
 		739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleOne.swift; sourceTree = "<group>"; };
 		739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleTwo.swift; sourceTree = "<group>"; };
 		739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleThree.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				73911B792AF33AF10004A50B /* ListNaviDetail.swift */,
 				73911B7B2AF33BBB0004A50B /* ListNaviAdd.swift */,
 				73911B732AF329740004A50B /* ListNaviViewModel.swift */,
+				73911B7D2AF35BF30004A50B /* ListNaviAddViewModel.swift */,
 				73911B712AF329140004A50B /* NovemberUseModel.swift */,
 			);
 			path = 2023_11_02;
@@ -413,6 +416,7 @@
 				73796E762AEA43850007A5D9 /* AppStorageView.swift in Sources */,
 				739B24E52AEF7DF1007D0FC4 /* SortExampleOne.swift in Sources */,
 				73144CD02AE626DB00F0D819 /* DivideSeconds.swift in Sources */,
+				73911B7E2AF35BF30004A50B /* ListNaviAddViewModel.swift in Sources */,
 				731A3DE82AE278370044B2BA /* FourBasicOperations.swift in Sources */,
 				739B24F12AEFA2E2007D0FC4 /* SortExampleSeven.swift in Sources */,
 				73144CD52AE636AB00F0D819 /* OddEven.swift in Sources */,

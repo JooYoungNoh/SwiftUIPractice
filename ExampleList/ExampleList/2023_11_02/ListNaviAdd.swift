@@ -17,6 +17,8 @@ struct ListNaviAdd: View {
     @State private var description: String = ""
     @State private var showingAlert = false
     
+    var addVM: ListNaviAddViewModel = ListNaviAddViewModel()
+    
     var body: some View {
         VStack {
             HStack {
@@ -57,7 +59,8 @@ struct ListNaviAdd: View {
             
             Button {
                 if name != "" && description != "" {
-                    addNewCar()
+                    addVM.addNewCar(carVM: carVM, name: name, description: description, isHybrid: isHybrid)
+                    dismiss()
                 } else {
                     showingAlert = true
                 }
@@ -79,14 +82,6 @@ struct ListNaviAdd: View {
                 carVM.cars = await carVM.loadJson("carData.json") + carVM.addCars
             }
         }
-    }
-    
-    func addNewCar() {
-        // 프로젝트 간략화를 위해 사진 라이브러리에서 사진을 가져오지 않고 기존 이미지를 재사용
-        let newCar = Car(id: UUID().uuidString, name: name, description: description, isHybrid: isHybrid, imageName: "tesla_model_3")
-        
-        carVM.addCars.append(newCar)
-        dismiss()
     }
 }
 
