@@ -28,11 +28,13 @@ struct ListNavi: View {
             List {
                 Section(content: {
                     ForEach(0..<carVM.cars.count, id: \.self) { i in
-                        ListCell(car: carVM.cars[i])
+                        NavigationLink(destination: ListNaviDetail(selectedCar: carVM.cars[i]), label: {
+                            ListCell(car: carVM.cars[i])
+                        })
                     }
                 },header: {
                     Text("Car Type")
-                        .font(.custom("NotoSansKR-Bold", size: 25))
+                        .font(.custom("NotoSansKR-Bold", size: 20))
                         .foregroundStyle(.black)
                         .bold()
                 })
