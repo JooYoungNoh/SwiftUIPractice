@@ -48,6 +48,8 @@
 		73911B702AF3267F0004A50B /* carData.json in Resources */ = {isa = PBXBuildFile; fileRef = 73911B6F2AF3267F0004A50B /* carData.json */; };
 		73911B722AF329140004A50B /* NovemberUseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B712AF329140004A50B /* NovemberUseModel.swift */; };
 		73911B742AF329740004A50B /* ListNaviViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B732AF329740004A50B /* ListNaviViewModel.swift */; };
+		73911B772AF330BC0004A50B /* NotoSansKR-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73911B752AF330BC0004A50B /* NotoSansKR-Regular.ttf */; };
+		73911B782AF330BC0004A50B /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73911B762AF330BC0004A50B /* NotoSansKR-Bold.ttf */; };
 		739B24E52AEF7DF1007D0FC4 /* SortExampleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */; };
 		739B24E72AEF7E25007D0FC4 /* SortExampleTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */; };
 		739B24E92AEFA2A2007D0FC4 /* SortExampleThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */; };
@@ -101,6 +103,8 @@
 		73911B6F2AF3267F0004A50B /* carData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carData.json; sourceTree = "<group>"; };
 		73911B712AF329140004A50B /* NovemberUseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovemberUseModel.swift; sourceTree = "<group>"; };
 		73911B732AF329740004A50B /* ListNaviViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNaviViewModel.swift; sourceTree = "<group>"; };
+		73911B752AF330BC0004A50B /* NotoSansKR-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.ttf"; sourceTree = "<group>"; };
+		73911B762AF330BC0004A50B /* NotoSansKR-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.ttf"; sourceTree = "<group>"; };
 		739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleOne.swift; sourceTree = "<group>"; };
 		739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleTwo.swift; sourceTree = "<group>"; };
 		739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleThree.swift; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 			children = (
 				731A3DDF2AE232FB0044B2BA /* Maplestory OTF Bold.otf */,
 				731A3DE12AE233030044B2BA /* Maplestory OTF Light.otf */,
+				73911B762AF330BC0004A50B /* NotoSansKR-Bold.ttf */,
+				73911B752AF330BC0004A50B /* NotoSansKR-Regular.ttf */,
 			);
 			path = FontFile;
 			sourceTree = "<group>";
@@ -350,9 +356,11 @@
 				731A3DE22AE233030044B2BA /* Maplestory OTF Light.otf in Resources */,
 				731A3DE02AE232FB0044B2BA /* Maplestory OTF Bold.otf in Resources */,
 				731A3DD52AE2306F0044B2BA /* Preview Assets.xcassets in Resources */,
+				73911B772AF330BC0004A50B /* NotoSansKR-Regular.ttf in Resources */,
 				73911B6E2AF325D00004A50B /* CarAssets.xcassets in Resources */,
 				73911B702AF3267F0004A50B /* carData.json in Resources */,
 				731A3DD22AE2306F0044B2BA /* Assets.xcassets in Resources */,
+				73911B782AF330BC0004A50B /* NotoSansKR-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
