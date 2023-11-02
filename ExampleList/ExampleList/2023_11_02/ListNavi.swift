@@ -31,7 +31,7 @@ struct ListNavi: View {
                         .bold()
                 })
                 .sheet(isPresented: $isShowModal) {
-                    ListNaviAdd()
+                    ListNaviAdd(carVM: carVM)
                 }
                 
             }
