@@ -44,6 +44,8 @@
 		73796E742AEA43700007A5D9 /* SceneStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E732AEA43700007A5D9 /* SceneStorageView.swift */; };
 		73796E762AEA43850007A5D9 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E752AEA43850007A5D9 /* AppStorageView.swift */; };
 		73911B6C2AF323070004A50B /* ListNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B6B2AF323070004A50B /* ListNavi.swift */; };
+		73911B6E2AF325D00004A50B /* CarAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73911B6D2AF325CF0004A50B /* CarAssets.xcassets */; };
+		73911B702AF3267F0004A50B /* carData.json in Resources */ = {isa = PBXBuildFile; fileRef = 73911B6F2AF3267F0004A50B /* carData.json */; };
 		739B24E52AEF7DF1007D0FC4 /* SortExampleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */; };
 		739B24E72AEF7E25007D0FC4 /* SortExampleTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */; };
 		739B24E92AEFA2A2007D0FC4 /* SortExampleThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */; };
@@ -93,6 +95,8 @@
 		73796E732AEA43700007A5D9 /* SceneStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStorageView.swift; sourceTree = "<group>"; };
 		73796E752AEA43850007A5D9 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
 		73911B6B2AF323070004A50B /* ListNavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavi.swift; sourceTree = "<group>"; };
+		73911B6D2AF325CF0004A50B /* CarAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CarAssets.xcassets; sourceTree = "<group>"; };
+		73911B6F2AF3267F0004A50B /* carData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carData.json; sourceTree = "<group>"; };
 		739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleOne.swift; sourceTree = "<group>"; };
 		739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleTwo.swift; sourceTree = "<group>"; };
 		739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleThree.swift; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 				731A3DE32AE233170044B2BA /* Info.plist */,
 				731A3DCD2AE2306F0044B2BA /* ExampleListApp.swift */,
 				731A3DD12AE2306F0044B2BA /* Assets.xcassets */,
+				73911B6D2AF325CF0004A50B /* CarAssets.xcassets */,
+				73911B6F2AF3267F0004A50B /* carData.json */,
 				731A3DDB2AE2309B0044B2BA /* ExampleList.swift */,
 				731A3DE42AE234A70044B2BA /* FontViewModifier.swift */,
 				731A3DE62AE277E20044B2BA /* 2023_10_10 */,
@@ -338,6 +344,8 @@
 				731A3DE22AE233030044B2BA /* Maplestory OTF Light.otf in Resources */,
 				731A3DE02AE232FB0044B2BA /* Maplestory OTF Bold.otf in Resources */,
 				731A3DD52AE2306F0044B2BA /* Preview Assets.xcassets in Resources */,
+				73911B6E2AF325D00004A50B /* CarAssets.xcassets in Resources */,
+				73911B702AF3267F0004A50B /* carData.json in Resources */,
 				731A3DD22AE2306F0044B2BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
