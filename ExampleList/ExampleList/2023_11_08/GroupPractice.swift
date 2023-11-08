@@ -25,6 +25,16 @@ let sampleOne = [
     GroupOneModel(title: "F")
 ]
 
+let sampleTwo = [
+    GroupOneModel(title: "Burger"),
+    GroupOneModel(title: "Pizza", children: [
+        GroupOneModel(title: "Cheese"),
+        GroupOneModel(title: "Pepperoni"),
+        GroupOneModel(title: "Veggie")
+        ]),
+    GroupOneModel(title: "Salad")
+]
+
 struct GroupPractice: View {
     @Environment(\.dismiss) private var dismiss
     
@@ -41,6 +51,7 @@ struct GroupPractice: View {
                 Spacer()
             }
             .padding(.horizontal, 20)
+            
             List {
                 ForEach(sampleOne) { sample in
                     OutlineGroup(sample, children: \.children) { children in
@@ -50,6 +61,18 @@ struct GroupPractice: View {
                 }
             }
             .listStyle(InsetListStyle())
+            .padding(.bottom, 20)
+            
+            List {
+                ForEach(sampleTwo) { sample in
+                    OutlineGroup(sample, children: \.children) { children in
+                        Text(children.title)
+                            .modifier(StandardCustomSimpleText())
+                    }
+                }
+            }
+            .listStyle(InsetListStyle())
+            .padding(.bottom, 20)
         }
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
