@@ -7,11 +7,18 @@
 
 import SwiftUI
 
-struct GroupOneModel: Identifiable{
+struct GroupOneModel: Identifiable {
     let id = UUID()
     var title: String
     var children: [GroupOneModel]?
     
+}
+
+struct MenuItem: Identifiable {
+    let id = UUID()
+    var title: String
+    var price: Int
+    var children: [MenuItem]?
 }
 
 let sampleOne = [
@@ -26,13 +33,13 @@ let sampleOne = [
 ]
 
 let sampleTwo = [
-    GroupOneModel(title: "Burger"),
-    GroupOneModel(title: "Pizza", children: [
-        GroupOneModel(title: "Cheese"),
-        GroupOneModel(title: "Pepperoni"),
-        GroupOneModel(title: "Veggie")
+    MenuItem(title: "Burger", price: 6000),
+    MenuItem(title: "Pizza", price: 8000, children: [
+        MenuItem(title: "Cheese", price: 8000),
+        MenuItem(title: "Pepperoni", price: 9000),
+        MenuItem(title: "Veggie", price: 10000)
         ]),
-    GroupOneModel(title: "Salad")
+    MenuItem(title: "Salad", price: 3000)
 ]
 
 struct GroupPractice: View {
@@ -66,15 +73,21 @@ struct GroupPractice: View {
             List {
                 ForEach(sampleTwo) { sample in
                     OutlineGroup(sample, children: \.children) { children in
-                        Text(children.title)
-                            .modifier(StandardCustomSimpleText())
+                        HStack {
+                            Text(children.title)
+                                .frame(width: 100, height: 40, alignment: .leading)
+                                .modifier(StandardCustomSimpleText())
+                                .padding(.trailing, 10)
+                            Text("\(children.price)")
+                                .modifier(StandardCustomSimpleText())
+                        }
                     }
                 }
             }
             .listStyle(InsetListStyle())
             .padding(.bottom, 20)
         }
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        .navigationBarBackButtonHidden()
     }
 }
 
