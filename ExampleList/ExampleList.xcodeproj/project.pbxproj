@@ -61,6 +61,7 @@
 		739B24EF2AEFA2BF007D0FC4 /* SortExampleSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24EE2AEFA2BF007D0FC4 /* SortExampleSix.swift */; };
 		739B24F12AEFA2E2007D0FC4 /* SortExampleSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24F02AEFA2E2007D0FC4 /* SortExampleSeven.swift */; };
 		73A7645C2AFB0F520090B71B /* NaviSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7645B2AFB0F520090B71B /* NaviSplit.swift */; };
+		73A7645E2AFB22AD0090B71B /* NaviSplitOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7645D2AFB22AD0090B71B /* NaviSplitOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +121,7 @@
 		739B24EE2AEFA2BF007D0FC4 /* SortExampleSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleSix.swift; sourceTree = "<group>"; };
 		739B24F02AEFA2E2007D0FC4 /* SortExampleSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleSeven.swift; sourceTree = "<group>"; };
 		73A7645B2AFB0F520090B71B /* NaviSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSplit.swift; sourceTree = "<group>"; };
+		73A7645D2AFB22AD0090B71B /* NaviSplitOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSplitOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				73A7645B2AFB0F520090B71B /* NaviSplit.swift */,
+				73A7645D2AFB22AD0090B71B /* NaviSplitOne.swift */,
 			);
 			path = 2023_11_08;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				7316F98B2AF1DCFF00657E53 /* ListPractice.swift in Sources */,
 				73144CD72AE6370500F0D819 /* SubSmall.swift in Sources */,
 				7316F9912AF2280700657E53 /* NaviSecond.swift in Sources */,
+				73A7645E2AFB22AD0090B71B /* NaviSplitOne.swift in Sources */,
 				73911B7A2AF33AF10004A50B /* ListNaviDetail.swift in Sources */,
 				739B24EF2AEFA2BF007D0FC4 /* SortExampleSix.swift in Sources */,
 				73144CE32AE6528F00F0D819 /* Arrangement.swift in Sources */,
