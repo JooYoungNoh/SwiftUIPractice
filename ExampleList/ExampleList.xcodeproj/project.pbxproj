@@ -62,6 +62,7 @@
 		739B24F12AEFA2E2007D0FC4 /* SortExampleSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24F02AEFA2E2007D0FC4 /* SortExampleSeven.swift */; };
 		73A7645C2AFB0F520090B71B /* NaviSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7645B2AFB0F520090B71B /* NaviSplit.swift */; };
 		73A7645E2AFB22AD0090B71B /* NaviSplitOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7645D2AFB22AD0090B71B /* NaviSplitOne.swift */; };
+		73A764602AFB29900090B71B /* NaviSplitTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7645F2AFB29900090B71B /* NaviSplitTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +123,7 @@
 		739B24F02AEFA2E2007D0FC4 /* SortExampleSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleSeven.swift; sourceTree = "<group>"; };
 		73A7645B2AFB0F520090B71B /* NaviSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSplit.swift; sourceTree = "<group>"; };
 		73A7645D2AFB22AD0090B71B /* NaviSplitOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSplitOne.swift; sourceTree = "<group>"; };
+		73A7645F2AFB29900090B71B /* NaviSplitTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSplitTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +316,7 @@
 			children = (
 				73A7645B2AFB0F520090B71B /* NaviSplit.swift */,
 				73A7645D2AFB22AD0090B71B /* NaviSplitOne.swift */,
+				73A7645F2AFB29900090B71B /* NaviSplitTwo.swift */,
 			);
 			path = 2023_11_08;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7316F98D2AF2057B00657E53 /* DivSection.swift in Sources */,
+				73A764602AFB29900090B71B /* NaviSplitTwo.swift in Sources */,
 				739B24EB2AEFA2AB007D0FC4 /* SortExampleFour.swift in Sources */,
 				731A3DDC2AE2309B0044B2BA /* ExampleList.swift in Sources */,
 				739B24E72AEF7E25007D0FC4 /* SortExampleTwo.swift in Sources */,
