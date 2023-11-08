@@ -60,6 +60,7 @@
 		739B24ED2AEFA2B5007D0FC4 /* SortExampleFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24EC2AEFA2B5007D0FC4 /* SortExampleFive.swift */; };
 		739B24EF2AEFA2BF007D0FC4 /* SortExampleSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24EE2AEFA2BF007D0FC4 /* SortExampleSix.swift */; };
 		739B24F12AEFA2E2007D0FC4 /* SortExampleSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24F02AEFA2E2007D0FC4 /* SortExampleSeven.swift */; };
+		73A7645C2AFB0F520090B71B /* NaviSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7645B2AFB0F520090B71B /* NaviSplit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,7 @@
 		739B24EC2AEFA2B5007D0FC4 /* SortExampleFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleFive.swift; sourceTree = "<group>"; };
 		739B24EE2AEFA2BF007D0FC4 /* SortExampleSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleSix.swift; sourceTree = "<group>"; };
 		739B24F02AEFA2E2007D0FC4 /* SortExampleSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleSeven.swift; sourceTree = "<group>"; };
+		73A7645B2AFB0F520090B71B /* NaviSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSplit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				739B24E32AEF7DC1007D0FC4 /* 2023_10_30 */,
 				7316F9892AF1DB2000657E53 /* 2023_11_01 */,
 				73911B6A2AF322E40004A50B /* 2023_11_02 */,
+				73A7645A2AFB0F1E0090B71B /* 2023_11_08 */,
 				731A3DDE2AE232950044B2BA /* FontFile */,
 				731A3DD32AE2306F0044B2BA /* Preview Content */,
 			);
@@ -302,6 +305,14 @@
 				739B24F02AEFA2E2007D0FC4 /* SortExampleSeven.swift */,
 			);
 			path = 2023_10_30;
+			sourceTree = "<group>";
+		};
+		73A7645A2AFB0F1E0090B71B /* 2023_11_08 */ = {
+			isa = PBXGroup;
+			children = (
+				73A7645B2AFB0F520090B71B /* NaviSplit.swift */,
+			);
+			path = 2023_11_08;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +413,7 @@
 				739B24EF2AEFA2BF007D0FC4 /* SortExampleSix.swift in Sources */,
 				73144CE32AE6528F00F0D819 /* Arrangement.swift in Sources */,
 				73911B6C2AF323070004A50B /* ListNavi.swift in Sources */,
+				73A7645C2AFB0F520090B71B /* NaviSplit.swift in Sources */,
 				731A3DEE2AE279170044B2BA /* SeatOne.swift in Sources */,
 				73911B742AF329740004A50B /* ListNaviViewModel.swift in Sources */,
 				7329000F2AE742B1007112CB /* WithTaskGroup.swift in Sources */,
