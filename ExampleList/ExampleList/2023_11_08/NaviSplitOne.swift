@@ -34,7 +34,7 @@ struct NaviSplitOne: View {
             if let selectedItem {
                 HStack {
                     VStack(alignment: .leading){
-                        Text("Explanation")
+                        Text(selectedItem.name)
                             .modifier(StandardCustomSimpleTitle())
                             .padding()
                         
