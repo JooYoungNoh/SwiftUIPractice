@@ -34,7 +34,7 @@ struct StandardCustomSimpleTitle: ViewModifier {
 struct StandardCustomSimpleText: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.custom("NotoSansKR-Regular", size: 15))
+            .font(.custom("NotoSansKR-Regular", size: 20))
             .foregroundStyle(.black)
     }
 }
