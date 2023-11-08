@@ -47,6 +47,7 @@
 		738CE78A2AFB4EF900FCC504 /* OutLineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CE7892AFB4EF900FCC504 /* OutLineGroupView.swift */; };
 		738CE78C2AFB58AF00FCC504 /* OLGSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CE78B2AFB58AF00FCC504 /* OLGSettings.swift */; };
 		738CE78E2AFB610400FCC504 /* GroupPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CE78D2AFB610400FCC504 /* GroupPractice.swift */; };
+		738CE7902AFB813300FCC504 /* GridPratice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CE78F2AFB813300FCC504 /* GridPratice.swift */; };
 		73911B6C2AF323070004A50B /* ListNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B6B2AF323070004A50B /* ListNavi.swift */; };
 		73911B6E2AF325D00004A50B /* CarAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73911B6D2AF325CF0004A50B /* CarAssets.xcassets */; };
 		73911B702AF3267F0004A50B /* carData.json in Resources */ = {isa = PBXBuildFile; fileRef = 73911B6F2AF3267F0004A50B /* carData.json */; };
@@ -112,6 +113,7 @@
 		738CE7892AFB4EF900FCC504 /* OutLineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutLineGroupView.swift; sourceTree = "<group>"; };
 		738CE78B2AFB58AF00FCC504 /* OLGSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLGSettings.swift; sourceTree = "<group>"; };
 		738CE78D2AFB610400FCC504 /* GroupPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPractice.swift; sourceTree = "<group>"; };
+		738CE78F2AFB813300FCC504 /* GridPratice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPratice.swift; sourceTree = "<group>"; };
 		73911B6B2AF323070004A50B /* ListNavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavi.swift; sourceTree = "<group>"; };
 		73911B6D2AF325CF0004A50B /* CarAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CarAssets.xcassets; sourceTree = "<group>"; };
 		73911B6F2AF3267F0004A50B /* carData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carData.json; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 				738CE7892AFB4EF900FCC504 /* OutLineGroupView.swift */,
 				738CE78B2AFB58AF00FCC504 /* OLGSettings.swift */,
 				738CE78D2AFB610400FCC504 /* GroupPractice.swift */,
+				738CE78F2AFB813300FCC504 /* GridPratice.swift */,
 			);
 			path = 2023_11_08;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				739B24E92AEFA2A2007D0FC4 /* SortExampleThree.swift in Sources */,
 				73796E702AEA32280007A5D9 /* ObservableSecound.swift in Sources */,
 				739B24ED2AEFA2B5007D0FC4 /* SortExampleFive.swift in Sources */,
+				738CE7902AFB813300FCC504 /* GridPratice.swift in Sources */,
 				73796E6E2AEA2DE70007A5D9 /* ObservableVM.swift in Sources */,
 				731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */,
 				73796E682AEA1BF70007A5D9 /* FirstTabView.swift in Sources */,
