@@ -22,3 +22,19 @@ struct StandardCustomFontText: ViewModifier {
             .foregroundColor(.black)
     }
 }
+
+struct StandardCustomSimpleTitle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.custom("NotoSansKR-Bold", size: 40))
+            .foregroundStyle(.black)
+    }
+}
+
+struct StandardCustomSimpleText: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.custom("NotoSansKR-Regular", size: 15))
+            .foregroundStyle(.black)
+    }
+}
