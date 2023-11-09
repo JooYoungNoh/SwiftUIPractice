@@ -35,10 +35,10 @@ struct GridPratice: View {
             ScrollView(.vertical) {
                 LazyVGrid(columns: layouts[Int(rotation)], spacing: 5) {
                     ForEach((0...4), id: \.self) { index in
-                        Rectangle()
+                        Text("1")
                             .frame(width: 60, height: 40)
+                            .background(Color(uiColor: UIColor.systemGray2))
                             .cornerRadius(8)
-                            .tint(.red)
                         
                     }
                 }
