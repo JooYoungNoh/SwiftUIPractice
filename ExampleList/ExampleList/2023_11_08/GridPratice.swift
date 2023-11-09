@@ -10,11 +10,17 @@ import SwiftUI
 struct GridPratice: View {
     @Environment(\.dismiss) private var dismiss
     
-    @State private var layouts: [[GridItem]] = [[GridItem()], [GridItem(), GridItem()], [GridItem(),GridItem(),GridItem()], [GridItem(),GridItem(),GridItem(),GridItem()], [GridItem(),GridItem(),GridItem(),GridItem(),GridItem()]]
     @State private var rotation: Double = 0.0
     
+    private let layouts: [[GridItem]] = [
+        [GridItem()],
+        [GridItem(), GridItem()],
+        [GridItem(), GridItem(), GridItem()],
+        [GridItem(), GridItem(), GridItem(), GridItem()],
+        [GridItem(), GridItem(), GridItem(), GridItem(), GridItem()]
+    ]
+    
     var body: some View {
-        
         VStack {
             HStack {
                 Button(action: {dismiss()}, label: {
@@ -22,7 +28,6 @@ struct GridPratice: View {
                         .font(.custom("NotoSansKR-Bold", size: 25))
                         .foregroundStyle(.black)
                         .bold()
-                    
                 })
                 Spacer()
             }
@@ -39,7 +44,6 @@ struct GridPratice: View {
                             .frame(width: 60, height: 40)
                             .background(Color(uiColor: UIColor.systemGray2))
                             .cornerRadius(8)
-                        
                     }
                 }
                 .padding()
