@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ExampleList: View {
-    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate", "OddEven", "SubSmall", "NumberOfBox", "Variousfunction", "UIPractice", "Counter", "Arrangement", "AsyncPractice", "WithTaskGroup", "Lifecycle", "Observable", "StorageView", "SortExampleOne", "SortExampleTwo", "SortExampleThree", "SortExampleFour", "SortExampleFive", "SortExampleSix", "SortExampleSeven", "ListPractice", "DivSection", "NaviFirst", "ListNavi", "NaviSplit", "NaviSplitOne", "NaviSplitTwo", "NaviSplitThree", "OutLineGroupView", "OLGSettings", "GroupPractice", "GridPratice"]
+    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate", "OddEven", "SubSmall", "NumberOfBox", "Variousfunction", "UIPractice", "Counter", "Arrangement", "AsyncPractice", "WithTaskGroup", "Lifecycle", "Observable", "StorageView", "SortExampleOne", "SortExampleTwo", "SortExampleThree", "SortExampleFour", "SortExampleFive", "SortExampleSix", "SortExampleSeven", "ListPractice", "DivSection", "NaviFirst", "ListNavi", "NaviSplit", "NaviSplitOne", "NaviSplitTwo", "NaviSplitThree", "OutLineGroupView", "OLGSettings", "GroupPractice", "GridPratice", "GridRowView"]
     private let layouts : [GridItem] = [GridItem(.flexible()) ,GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -124,6 +124,7 @@ enum ChangeStringToFileName: String {
     case OLGSettings = "OLGSettings"
     case GroupPractice = "GroupPractice"
     case GridPratice = "GridPratice"
+    case GridRowView = "GridRowView"
 }
 
 //MARK: ExampleList View 함수
@@ -207,6 +208,8 @@ extension ExampleList {
             GroupPractice()
         case .GridPratice:
             GridPratice()
+        case .GridRowView:
+            GridRowView()
         }
     }
 }
