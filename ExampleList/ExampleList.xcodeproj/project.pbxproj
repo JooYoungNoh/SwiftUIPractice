@@ -43,6 +43,7 @@
 		73796E722AEA417A0007A5D9 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E712AEA417A0007A5D9 /* StorageView.swift */; };
 		73796E742AEA43700007A5D9 /* SceneStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E732AEA43700007A5D9 /* SceneStorageView.swift */; };
 		73796E762AEA43850007A5D9 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E752AEA43850007A5D9 /* AppStorageView.swift */; };
+		738660B62B107CE400690D9A /* CombineUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738660B52B107CE400690D9A /* CombineUIKitView.swift */; };
 		738CE7882AFB43F200FCC504 /* NaviSplitThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CE7872AFB43F200FCC504 /* NaviSplitThree.swift */; };
 		738CE78A2AFB4EF900FCC504 /* OutLineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CE7892AFB4EF900FCC504 /* OutLineGroupView.swift */; };
 		738CE78C2AFB58AF00FCC504 /* OLGSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CE78B2AFB58AF00FCC504 /* OLGSettings.swift */; };
@@ -110,6 +111,7 @@
 		73796E712AEA417A0007A5D9 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
 		73796E732AEA43700007A5D9 /* SceneStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStorageView.swift; sourceTree = "<group>"; };
 		73796E752AEA43850007A5D9 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
+		738660B52B107CE400690D9A /* CombineUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineUIKitView.swift; sourceTree = "<group>"; };
 		738CE7872AFB43F200FCC504 /* NaviSplitThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSplitThree.swift; sourceTree = "<group>"; };
 		738CE7892AFB4EF900FCC504 /* OutLineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutLineGroupView.swift; sourceTree = "<group>"; };
 		738CE78B2AFB58AF00FCC504 /* OLGSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLGSettings.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				73911B6A2AF322E40004A50B /* 2023_11_02 */,
 				73A7645A2AFB0F1E0090B71B /* 2023_11_08 */,
 				73F6C9C22AFC67610069DA60 /* 2023_11_09 */,
+				738660B42B107CAF00690D9A /* 2023_11_24 */,
 				731A3DDE2AE232950044B2BA /* FontFile */,
 				731A3DD32AE2306F0044B2BA /* Preview Content */,
 			);
@@ -295,6 +298,14 @@
 				73796E752AEA43850007A5D9 /* AppStorageView.swift */,
 			);
 			path = 2023_10_26;
+			sourceTree = "<group>";
+		};
+		738660B42B107CAF00690D9A /* 2023_11_24 */ = {
+			isa = PBXGroup;
+			children = (
+				738660B52B107CE400690D9A /* CombineUIKitView.swift */,
+			);
+			path = 2023_11_24;
 			sourceTree = "<group>";
 		};
 		73911B6A2AF322E40004A50B /* 2023_11_02 */ = {
@@ -427,6 +438,7 @@
 				73A764602AFB29900090B71B /* NaviSplitTwo.swift in Sources */,
 				739B24EB2AEFA2AB007D0FC4 /* SortExampleFour.swift in Sources */,
 				731A3DDC2AE2309B0044B2BA /* ExampleList.swift in Sources */,
+				738660B62B107CE400690D9A /* CombineUIKitView.swift in Sources */,
 				739B24E72AEF7E25007D0FC4 /* SortExampleTwo.swift in Sources */,
 				731A3DCE2AE2306F0044B2BA /* ExampleListApp.swift in Sources */,
 				738CE78E2AFB610400FCC504 /* GroupPractice.swift in Sources */,
