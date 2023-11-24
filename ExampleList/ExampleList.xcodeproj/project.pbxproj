@@ -45,6 +45,7 @@
 		73796E762AEA43850007A5D9 /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73796E752AEA43850007A5D9 /* AppStorageView.swift */; };
 		738660B62B107CE400690D9A /* CombineUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738660B52B107CE400690D9A /* CombineUIKitView.swift */; };
 		738660B82B107E7800690D9A /* MyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738660B72B107E7800690D9A /* MyScrollView.swift */; };
+		738660BA2B10874000690D9A /* MyImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738660B92B10874000690D9A /* MyImagePicker.swift */; };
 		738CE7882AFB43F200FCC504 /* NaviSplitThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CE7872AFB43F200FCC504 /* NaviSplitThree.swift */; };
 		738CE78A2AFB4EF900FCC504 /* OutLineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CE7892AFB4EF900FCC504 /* OutLineGroupView.swift */; };
 		738CE78C2AFB58AF00FCC504 /* OLGSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CE78B2AFB58AF00FCC504 /* OLGSettings.swift */; };
@@ -114,6 +115,7 @@
 		73796E752AEA43850007A5D9 /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
 		738660B52B107CE400690D9A /* CombineUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineUIKitView.swift; sourceTree = "<group>"; };
 		738660B72B107E7800690D9A /* MyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScrollView.swift; sourceTree = "<group>"; };
+		738660B92B10874000690D9A /* MyImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImagePicker.swift; sourceTree = "<group>"; };
 		738CE7872AFB43F200FCC504 /* NaviSplitThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSplitThree.swift; sourceTree = "<group>"; };
 		738CE7892AFB4EF900FCC504 /* OutLineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutLineGroupView.swift; sourceTree = "<group>"; };
 		738CE78B2AFB58AF00FCC504 /* OLGSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLGSettings.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 			children = (
 				738660B52B107CE400690D9A /* CombineUIKitView.swift */,
 				738660B72B107E7800690D9A /* MyScrollView.swift */,
+				738660B92B10874000690D9A /* MyImagePicker.swift */,
 			);
 			path = 2023_11_24;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				73911B6C2AF323070004A50B /* ListNavi.swift in Sources */,
 				738CE7882AFB43F200FCC504 /* NaviSplitThree.swift in Sources */,
 				73A7645C2AFB0F520090B71B /* NaviSplit.swift in Sources */,
+				738660BA2B10874000690D9A /* MyImagePicker.swift in Sources */,
 				731A3DEE2AE279170044B2BA /* SeatOne.swift in Sources */,
 				73911B742AF329740004A50B /* ListNaviViewModel.swift in Sources */,
 				7329000F2AE742B1007112CB /* WithTaskGroup.swift in Sources */,
