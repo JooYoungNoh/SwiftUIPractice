@@ -62,6 +62,9 @@
 		73911B7C2AF33BBB0004A50B /* ListNaviAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B7B2AF33BBB0004A50B /* ListNaviAdd.swift */; };
 		73911B7E2AF35BF30004A50B /* ListNaviAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73911B7D2AF35BF30004A50B /* ListNaviAddViewModel.swift */; };
 		7391FDC22B186AD400F876ED /* ApiPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391FDC12B186AD400F876ED /* ApiPractice.swift */; };
+		7391FDC42B18716100F876ED /* ApiPracticeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391FDC32B18716100F876ED /* ApiPracticeVM.swift */; };
+		7391FDC62B18796C00F876ED /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7391FDC52B18796C00F876ED /* ApiKeys.plist */; };
+		7391FDC82B187CEB00F876ED /* ApiPracticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391FDC72B187CEB00F876ED /* ApiPracticeModel.swift */; };
 		739B24E52AEF7DF1007D0FC4 /* SortExampleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */; };
 		739B24E72AEF7E25007D0FC4 /* SortExampleTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */; };
 		739B24E92AEFA2A2007D0FC4 /* SortExampleThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */; };
@@ -133,6 +136,9 @@
 		73911B7B2AF33BBB0004A50B /* ListNaviAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNaviAdd.swift; sourceTree = "<group>"; };
 		73911B7D2AF35BF30004A50B /* ListNaviAddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNaviAddViewModel.swift; sourceTree = "<group>"; };
 		7391FDC12B186AD400F876ED /* ApiPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPractice.swift; sourceTree = "<group>"; };
+		7391FDC32B18716100F876ED /* ApiPracticeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPracticeVM.swift; sourceTree = "<group>"; };
+		7391FDC52B18796C00F876ED /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		7391FDC72B187CEB00F876ED /* ApiPracticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPracticeModel.swift; sourceTree = "<group>"; };
 		739B24E42AEF7DF1007D0FC4 /* SortExampleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleOne.swift; sourceTree = "<group>"; };
 		739B24E62AEF7E25007D0FC4 /* SortExampleTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleTwo.swift; sourceTree = "<group>"; };
 		739B24E82AEFA2A2007D0FC4 /* SortExampleThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortExampleThree.swift; sourceTree = "<group>"; };
@@ -334,6 +340,9 @@
 			isa = PBXGroup;
 			children = (
 				7391FDC12B186AD400F876ED /* ApiPractice.swift */,
+				7391FDC32B18716100F876ED /* ApiPracticeVM.swift */,
+				7391FDC72B187CEB00F876ED /* ApiPracticeModel.swift */,
+				7391FDC52B18796C00F876ED /* ApiKeys.plist */,
 			);
 			path = 2023_11_30;
 			sourceTree = "<group>";
@@ -438,6 +447,7 @@
 				731A3DD52AE2306F0044B2BA /* Preview Assets.xcassets in Resources */,
 				73911B772AF330BC0004A50B /* NotoSansKR-Regular.ttf in Resources */,
 				73911B6E2AF325D00004A50B /* CarAssets.xcassets in Resources */,
+				7391FDC62B18796C00F876ED /* ApiKeys.plist in Resources */,
 				73911B702AF3267F0004A50B /* carData.json in Resources */,
 				731A3DD22AE2306F0044B2BA /* Assets.xcassets in Resources */,
 				73911B782AF330BC0004A50B /* NotoSansKR-Bold.ttf in Resources */,
@@ -473,6 +483,7 @@
 				7316F98B2AF1DCFF00657E53 /* ListPractice.swift in Sources */,
 				73144CD72AE6370500F0D819 /* SubSmall.swift in Sources */,
 				7391FDC22B186AD400F876ED /* ApiPractice.swift in Sources */,
+				7391FDC42B18716100F876ED /* ApiPracticeVM.swift in Sources */,
 				7316F9912AF2280700657E53 /* NaviSecond.swift in Sources */,
 				73A7645E2AFB22AD0090B71B /* NaviSplitOne.swift in Sources */,
 				73911B7A2AF33AF10004A50B /* ListNaviDetail.swift in Sources */,
@@ -493,6 +504,7 @@
 				73F6C9C42AFC67900069DA60 /* GridRowView.swift in Sources */,
 				738CE7902AFB813300FCC504 /* GridPratice.swift in Sources */,
 				73796E6E2AEA2DE70007A5D9 /* ObservableVM.swift in Sources */,
+				7391FDC82B187CEB00F876ED /* ApiPracticeModel.swift in Sources */,
 				731A3DEC2AE278E60044B2BA /* ThrowHundred.swift in Sources */,
 				73796E682AEA1BF70007A5D9 /* FirstTabView.swift in Sources */,
 				73144CD22AE6271600F0D819 /* HourlyRate.swift in Sources */,
