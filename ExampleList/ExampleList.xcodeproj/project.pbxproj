@@ -20,7 +20,7 @@
 		7316F98D2AF2057B00657E53 /* DivSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7316F98C2AF2057B00657E53 /* DivSection.swift */; };
 		7316F98F2AF227D900657E53 /* NaviFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7316F98E2AF227D900657E53 /* NaviFirst.swift */; };
 		7316F9912AF2280700657E53 /* NaviSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7316F9902AF2280700657E53 /* NaviSecond.swift */; };
-		73191F6C2B199D7D00E87796 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73191F6B2B199D7D00E87796 /* ApiKeys.plist */; };
+		73191F6E2B19A1A700E87796 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73191F6D2B19A1A700E87796 /* ApiKeys.plist */; };
 		731A3DCE2AE2306F0044B2BA /* ExampleListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A3DCD2AE2306F0044B2BA /* ExampleListApp.swift */; };
 		731A3DD22AE2306F0044B2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731A3DD12AE2306F0044B2BA /* Assets.xcassets */; };
 		731A3DD52AE2306F0044B2BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731A3DD42AE2306F0044B2BA /* Preview Assets.xcassets */; };
@@ -92,7 +92,7 @@
 		7316F98C2AF2057B00657E53 /* DivSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivSection.swift; sourceTree = "<group>"; };
 		7316F98E2AF227D900657E53 /* NaviFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviFirst.swift; sourceTree = "<group>"; };
 		7316F9902AF2280700657E53 /* NaviSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSecond.swift; sourceTree = "<group>"; };
-		73191F6B2B199D7D00E87796 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		73191F6D2B19A1A700E87796 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		731A3DCA2AE2306F0044B2BA /* ExampleList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		731A3DCD2AE2306F0044B2BA /* ExampleListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListApp.swift; sourceTree = "<group>"; };
 		731A3DD12AE2306F0044B2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -235,8 +235,8 @@
 				731A3DD12AE2306F0044B2BA /* Assets.xcassets */,
 				73911B6D2AF325CF0004A50B /* CarAssets.xcassets */,
 				73911B6F2AF3267F0004A50B /* carData.json */,
-				73191F6B2B199D7D00E87796 /* ApiKeys.plist */,
 				731A3DDB2AE2309B0044B2BA /* ExampleList.swift */,
+				73191F6D2B19A1A700E87796 /* ApiKeys.plist */,
 				731A3DE42AE234A70044B2BA /* FontViewModifier.swift */,
 				731A3DE62AE277E20044B2BA /* 2023_10_10 */,
 				73144CCE2AE6263900F0D819 /* 2023_10_11 */,
@@ -447,7 +447,7 @@
 				731A3DD52AE2306F0044B2BA /* Preview Assets.xcassets in Resources */,
 				73911B772AF330BC0004A50B /* NotoSansKR-Regular.ttf in Resources */,
 				73911B6E2AF325D00004A50B /* CarAssets.xcassets in Resources */,
-				73191F6C2B199D7D00E87796 /* ApiKeys.plist in Resources */,
+				73191F6E2B19A1A700E87796 /* ApiKeys.plist in Resources */,
 				73911B702AF3267F0004A50B /* carData.json in Resources */,
 				731A3DD22AE2306F0044B2BA /* Assets.xcassets in Resources */,
 				73911B782AF330BC0004A50B /* NotoSansKR-Bold.ttf in Resources */,
