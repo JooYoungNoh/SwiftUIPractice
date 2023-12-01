@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   ApiKeys.plist
-   ExampleList
-
-   Created by 노주영 on 2023/12/01.
-   Copyright (c) 2023 ___ORGANIZATIONNAME___. All rights reserved.
--->
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>API_KEY</key>
+	<string>86d29ed3caacede80f9a44908764a2a2</string>
+</dict>
 </plist>
