@@ -235,6 +235,7 @@
 				731A3DD12AE2306F0044B2BA /* Assets.xcassets */,
 				73911B6D2AF325CF0004A50B /* CarAssets.xcassets */,
 				73911B6F2AF3267F0004A50B /* carData.json */,
+				73191F6B2B199D7D00E87796 /* ApiKeys.plist */,
 				731A3DDB2AE2309B0044B2BA /* ExampleList.swift */,
 				731A3DE42AE234A70044B2BA /* FontViewModifier.swift */,
 				731A3DE62AE277E20044B2BA /* 2023_10_10 */,
@@ -342,7 +343,6 @@
 				7391FDC12B186AD400F876ED /* ApiPractice.swift */,
 				7391FDC32B18716100F876ED /* ApiPracticeVM.swift */,
 				7391FDC72B187CEB00F876ED /* ApiPracticeModel.swift */,
-				73191F6B2B199D7D00E87796 /* ApiKeys.plist */,
 			);
 			path = 2023_11_30;
 			sourceTree = "<group>";
