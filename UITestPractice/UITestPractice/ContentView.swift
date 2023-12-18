@@ -59,6 +59,7 @@ struct ContentView: View {
                                 .foregroundStyle(.black)
                                 .background(Color(uiColor: .systemGray5))
                                 .cornerRadius(10)
+                                .accessibilityIdentifier("back")
                         }
                         
                         Button {
@@ -72,6 +73,7 @@ struct ContentView: View {
                                 .foregroundStyle(.red)
                                 .background(Color(uiColor: .systemGray5))
                                 .cornerRadius(10)
+                                .accessibilityIdentifier("logout")
                         }
                     }
                     .padding(.top, 30)

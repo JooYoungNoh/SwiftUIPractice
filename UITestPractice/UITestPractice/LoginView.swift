@@ -105,6 +105,7 @@ struct LoginView: View {
                                 .cornerRadius(10)
                         }
                         .padding(.top, 30)
+                        .accessibilityIdentifier("nameYes")
                     }
                     .padding(.top, 10)
                     .padding(20)
@@ -135,6 +136,7 @@ struct LoginView: View {
                                     .cornerRadius(10)
                             }
                             .padding(.top, 30)
+                            .accessibilityIdentifier("passwordYes")
                         }
                         .padding(.top, 10)
                         .padding(20)

@@ -77,6 +77,38 @@ final class UITestPracticeUITests: XCTestCase {
         XCTAssertFalse(login.waitForExistence(timeout: 0.5))
     }
     
+    func testFailedLoginAlert() throws {
+        app.buttons["loginButton"].tap()
+        
+        let name = app.textFields["이름"]
+        name.tap()
+        name.typeText("test")
+        
+        let login = app.buttons["login"]
+        login.tap()
+        
+        let okButton = app.buttons["passwordYes"]
+        okButton.tap()
+        
+        XCTAssertFalse(okButton.waitForExistence(timeout: 0.5))
+    }
+    
+    func testLogout() throws {
+        XCTAssertEqual(app.buttons["loginButton"].label, "로그인")
+        try testLogin()
+        
+        XCTAssertEqual(app.buttons["loginButton"].label, "로그아웃")
+        let login = app.buttons["loginButton"]
+        login.tap()
+        
+        XCTAssert(login.waitForExistence(timeout: 0.5))
+        
+        let logout = app.buttons["logout"]
+        logout.tap()
+        
+        XCTAssertFalse(logout.waitForExistence(timeout: 0.5))
+    }
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
