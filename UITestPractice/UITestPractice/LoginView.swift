@@ -41,6 +41,7 @@ struct LoginView: View {
                     .font(.system(size: 15, weight: .semibold))
                     .background(Color(uiColor: .systemGray5))
                     .cornerRadius(10)
+                    .accessibilityIdentifier("이름")
             }
             .padding(.horizontal, 20)
             
@@ -70,6 +71,7 @@ struct LoginView: View {
                     .background(Color(uiColor: .systemGray5))
                     .cornerRadius(10)
             }
+            .accessibilityIdentifier("login")
             Spacer()
         }
         .padding(.horizontal, 20)

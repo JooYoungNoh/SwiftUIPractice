@@ -10,20 +10,20 @@ import XCTest
 final class UITestPracticeUITests: XCTestCase {
     let app = XCUIApplication()
     
-
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-
+        
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
+        
         app.launch()
     }
-
+    
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    
     func testExample() throws {
         //해당 텍스트 있는지 확인
         //let welcome = app.staticTexts["로그인 해주세요"]
@@ -35,25 +35,48 @@ final class UITestPracticeUITests: XCTestCase {
         XCTAssertEqual(welcome.label, "로그인 해주세요")
     }
     
-    func testLogin() throws {
-        //let login = app.buttons["로그인"]
-        //XCTAssert(login.exists)
-        
-        let login = app.buttons["loginButton"]
-        
-        XCTAssert(login.exists)
-        
-        //버튼의 라벨을 확인
-        XCTAssertEqual(login.label, "로그인")
-    }
-    
     func testLoginViewApperance() throws {
         app.buttons["loginButton"].tap()
         
         let loginButton = app.buttons["로그인"]
         XCTAssert(loginButton.waitForExistence(timeout: 0.5))
     }
-
+    
+    func testUserName() throws {
+        app.buttons["loginButton"].tap()
+        
+        let name = app.textFields["이름"]
+        name.tap()
+        name.typeText("test")
+        
+        XCTAssertNotEqual(name.value as! String, "")
+    }
+    
+    func testPassword() throws {
+        app.buttons["loginButton"].tap()
+        
+        app.secureTextFields.element.tap()
+        app.secureTextFields.element.typeText("1234")
+        
+        XCTAssertNotEqual(app.secureTextFields.element.value as! String, "")
+    }
+    
+    func testLogin() throws {
+        app.buttons["loginButton"].tap()
+        
+        let name = app.textFields["이름"]
+        name.tap()
+        name.typeText("test")
+        
+        app.secureTextFields.element.tap()
+        app.secureTextFields.element.typeText("1234")
+        
+        let login = app.buttons["login"]
+        login.tap()
+        
+        XCTAssertFalse(login.waitForExistence(timeout: 0.5))
+    }
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
