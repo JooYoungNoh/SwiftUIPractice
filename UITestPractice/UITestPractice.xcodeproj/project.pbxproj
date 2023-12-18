@@ -16,6 +16,7 @@
 		73C49A0C2B2FCDB1007D8C75 /* UITestPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C49A0B2B2FCDB1007D8C75 /* UITestPracticeUITestsLaunchTests.swift */; };
 		73C49A1D2B2FE2F8007D8C75 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C49A1C2B2FE2F8007D8C75 /* UserViewModel.swift */; };
 		73C49A1F2B2FE347007D8C75 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C49A1E2B2FE347007D8C75 /* User.swift */; };
+		73C49A212B2FE5FA007D8C75 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C49A202B2FE5FA007D8C75 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		73C49A0B2B2FCDB1007D8C75 /* UITestPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		73C49A1C2B2FE2F8007D8C75 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		73C49A1E2B2FE347007D8C75 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		73C49A202B2FE5FA007D8C75 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				73C499EE2B2FCDAF007D8C75 /* UITestPracticeApp.swift */,
 				73C499F02B2FCDAF007D8C75 /* ContentView.swift */,
+				73C49A202B2FE5FA007D8C75 /* LoginView.swift */,
 				73C49A1C2B2FE2F8007D8C75 /* UserViewModel.swift */,
 				73C49A1E2B2FE347007D8C75 /* User.swift */,
 				73C499F22B2FCDB0007D8C75 /* Assets.xcassets */,
@@ -266,6 +269,7 @@
 				73C49A1F2B2FE347007D8C75 /* User.swift in Sources */,
 				73C499F12B2FCDAF007D8C75 /* ContentView.swift in Sources */,
 				73C49A1D2B2FE2F8007D8C75 /* UserViewModel.swift in Sources */,
+				73C49A212B2FE5FA007D8C75 /* LoginView.swift in Sources */,
 				73C499EF2B2FCDAF007D8C75 /* UITestPracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
