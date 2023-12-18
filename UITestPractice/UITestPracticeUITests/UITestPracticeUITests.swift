@@ -8,6 +8,8 @@
 import XCTest
 
 final class UITestPracticeUITests: XCTestCase {
+    let app = XCUIApplication()
+    
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -15,7 +17,7 @@ final class UITestPracticeUITests: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app.launch()
     }
 
     override func tearDownWithError() throws {
@@ -23,10 +25,6 @@ final class UITestPracticeUITests: XCTestCase {
     }
 
     func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-        
         //해당 텍스트 있는지 확인
         //let welcome = app.staticTexts["로그인 해주세요"]
         //XCTAssert(welcome.exists)
@@ -38,9 +36,6 @@ final class UITestPracticeUITests: XCTestCase {
     }
     
     func testLogin() throws {
-        let app = XCUIApplication()
-        app.launch()
-        
         //let login = app.buttons["로그인"]
         //XCTAssert(login.exists)
         
