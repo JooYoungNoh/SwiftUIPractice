@@ -26,8 +26,15 @@ final class UITestPracticeUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        //해당 텍스트 있는지 확인
+        //let welcome = app.staticTexts["로그인 해주세요"]
+        //XCTAssert(welcome.exists)
+        
+        let welcome = app.staticTexts.element
+        
+        XCTAssert(welcome.exists)
+        XCTAssertEqual(welcome.label, "로그인 해주세요")
     }
 
     func testLaunchPerformance() throws {
