@@ -36,6 +36,15 @@ final class UITestPracticeUITests: XCTestCase {
         XCTAssert(welcome.exists)
         XCTAssertEqual(welcome.label, "로그인 해주세요")
     }
+    
+    func testLogin() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let login = app.buttons["로그인"]
+        
+        XCTAssert(login.exists)
+    }
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
