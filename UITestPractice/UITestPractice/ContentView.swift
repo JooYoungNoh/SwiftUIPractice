@@ -44,7 +44,7 @@ struct ContentView: View {
             }
             
             if isLogout {
-                VStack(spacing: 50){
+                VStack(spacing: 20){
                     Text("로그아웃 하시겠습니까?")
                         .font(.system(size: 20, weight: .bold))
                     
@@ -54,6 +54,7 @@ struct ContentView: View {
                         } label: {
                             Text("돌아가기")
                                 .padding()
+                                .frame(width: (UIScreen.main.bounds.width - 100)/2)
                                 .font(.system(size: 20, weight: .semibold))
                                 .foregroundStyle(.black)
                                 .background(Color(uiColor: .systemGray5))
@@ -66,18 +67,36 @@ struct ContentView: View {
                         } label: {
                             Text("로그아웃")
                                 .padding()
+                                .frame(width: (UIScreen.main.bounds.width - 100)/2)
                                 .font(.system(size: 20, weight: .semibold))
                                 .foregroundStyle(.red)
                                 .background(Color(uiColor: .systemGray5))
                                 .cornerRadius(10)
                         }
                     }
+                    .padding(.top, 30)
                 }
-                .padding(50)
+                .padding(.top, 10)
+                .padding(20)
                 .background(.white)
                 .cornerRadius(10)
+                .onTapGesture {
+                    
+                }
             }
         }
+        .onTapGesture {
+            if isLogout {
+                isLogout = false
+                UIApplication.shared.closeKeyboard()
+            }
+        }
+    }
+}
+
+extension UIApplication {
+    func closeKeyboard() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
