@@ -46,6 +46,13 @@ final class UITestPracticeUITests: XCTestCase {
         //버튼의 라벨을 확인
         XCTAssertEqual(login.label, "로그인")
     }
+    
+    func testLoginViewApperance() throws {
+        app.buttons["loginButton"].tap()
+        
+        let loginButton = app.buttons["로그인"]
+        XCTAssert(loginButton.waitForExistence(timeout: 0.5))
+    }
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
