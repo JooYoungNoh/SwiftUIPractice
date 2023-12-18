@@ -28,6 +28,7 @@ struct ContentView: View {
                     .background(Color(uiColor: .systemGray5))
                     .cornerRadius(10)
             }
+            .accessibilityIdentifier("loginButton")
 
         }
         .padding()

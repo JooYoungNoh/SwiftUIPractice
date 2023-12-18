@@ -41,9 +41,15 @@ final class UITestPracticeUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let login = app.buttons["로그인"]
+        //let login = app.buttons["로그인"]
+        //XCTAssert(login.exists)
+        
+        let login = app.buttons["loginButton"]
         
         XCTAssert(login.exists)
+        
+        //버튼의 라벨을 확인
+        XCTAssertEqual(login.label, "로그인")
     }
 
     func testLaunchPerformance() throws {
