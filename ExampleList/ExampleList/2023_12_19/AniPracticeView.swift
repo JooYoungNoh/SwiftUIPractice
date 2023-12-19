@@ -17,6 +17,8 @@ struct ShapeView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 50) {
+                PathView()
+                Spacer().frame(height: 380)
                 Circle()
                     .fill(.red)
                     .frame(width: 200, height: 200)
@@ -51,5 +53,18 @@ struct ShapeView: View {
             .frame(width: UIScreen.main.bounds.width)
             .padding()
         }
+    }
+}
+
+struct PathView: View {
+    var body: some View {
+        Path { path in
+            path.move(to: CGPoint(x: 10, y: 10))
+            path.addLine(to: CGPoint(x: 10, y: 350))
+            path.addLine(to: CGPoint(x: 300, y: 300))
+            path.addQuadCurve(to: CGPoint(x: 200, y: 200), control: CGPoint(x: 300, y: 200))
+            path.closeSubpath()
+        }
+        .fill(.green)
     }
 }
