@@ -18,7 +18,11 @@ struct ShapeView: View {
         ScrollView {
             VStack(spacing: 50) {
                 PathView()
+                
                 Spacer().frame(height: 380)
+                
+                GradianView()
+                    .padding(.horizontal, 50)
                 Circle()
                     .fill(.red)
                     .frame(width: 200, height: 200)
@@ -65,6 +69,29 @@ struct PathView: View {
             path.addQuadCurve(to: CGPoint(x: 200, y: 200), control: CGPoint(x: 300, y: 200))
             path.closeSubpath()
         }
-        .fill(.green)
+    }
+}
+
+struct GradianView: View {
+    let colors = Gradient(colors: [.red, .yellow, .green, .blue, .purple, .mint, .black])
+    
+    var body: some View {
+        Circle()
+            .fill(.blue.gradient)
+        
+        Circle()
+            .fill(.blue.shadow(.drop(color: .black, radius: 10)))
+        
+        Circle()
+            .fill(.blue.shadow(.inner(color: .black, radius: 10)))
+        
+        Circle()
+            .fill(RadialGradient(gradient: colors, center: .center, startRadius: 0, endRadius: 150))
+        
+        Circle()
+            .fill(AngularGradient(gradient: colors, center: .center))
+        
+        Circle()
+            .fill(LinearGradient(gradient: colors, startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }
