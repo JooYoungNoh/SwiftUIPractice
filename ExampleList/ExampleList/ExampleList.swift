@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ExampleList: View {
-    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate", "OddEven", "SubSmall", "NumberOfBox", "Variousfunction", "UIPractice", "Counter", "Arrangement", "AsyncPractice", "WithTaskGroup", "Lifecycle", "Observable", "StorageView", "SortExampleOne", "SortExampleTwo", "SortExampleThree", "SortExampleFour", "SortExampleFive", "SortExampleSix", "SortExampleSeven", "ListPractice", "DivSection", "NaviFirst", "ListNavi", "NaviSplit", "NaviSplitOne", "NaviSplitTwo", "NaviSplitThree", "OutLineGroupView", "OLGSettings", "GroupPractice", "GridPratice", "GridRowView", "CombineUIKitView", "ApiPractice"]
+    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate", "OddEven", "SubSmall", "NumberOfBox", "Variousfunction", "UIPractice", "Counter", "Arrangement", "AsyncPractice", "WithTaskGroup", "Lifecycle", "Observable", "StorageView", "SortExampleOne", "SortExampleTwo", "SortExampleThree", "SortExampleFour", "SortExampleFive", "SortExampleSix", "SortExampleSeven", "ListPractice", "DivSection", "NaviFirst", "ListNavi", "NaviSplit", "NaviSplitOne", "NaviSplitTwo", "NaviSplitThree", "OutLineGroupView", "OLGSettings", "GroupPractice", "GridPratice", "GridRowView", "CombineUIKitView", "ApiPractice", "AniPracticeView"]
     private let layouts : [GridItem] = [GridItem(.flexible()) ,GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -127,6 +127,7 @@ enum ChangeStringToFileName: String {
     case GridRowView = "GridRowView"
     case CombineUIKitView = "CombineUIKitView"
     case ApiPractice = "ApiPractice"
+    case AniPracticeView = "AniPracticeView"
 }
 
 //MARK: ExampleList View 함수
@@ -216,6 +217,8 @@ extension ExampleList {
             CombineUIKitView()
         case .ApiPractice:
             ApiPractice()
+        case .AniPracticeView:
+            AniPracticeView()
         }
     }
 }
