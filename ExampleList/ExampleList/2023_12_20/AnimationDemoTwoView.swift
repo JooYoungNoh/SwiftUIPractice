@@ -43,10 +43,15 @@ struct AnimationDemoTwoView: View {
                 .padding()
                 .animation(.easeInOut, value: selectIndex)
                 
-                HueGradientView()
-                    .frame(height: 200)
-                
-                Spacer()
+                if selectIndex == 0 {
+                    HueGradientView()
+                        .frame(maxHeight: .infinity)
+                } else if selectIndex == 1 {
+                    AnimatableGradientView()
+                        .frame(maxHeight: .infinity)
+                } else if selectIndex == 2 {
+                    
+                }
             }
         }
         .ignoresSafeArea()
@@ -92,5 +97,63 @@ struct HueGradientView: View {
                 animateGradient.toggle()
             }
         }
+    }
+}
+
+struct AnimatableGradientView: View {
+    @State private var progress: CGFloat = 0.0
+    
+    let gradient1 = Gradient(colors: [.purple, .yellow])
+    let gradient2 = Gradient(colors: [.blue, .shapehatRed])
+    
+    var body: some View {
+        Rectangle()
+            .animatableGradient(fromGradient: gradient1, toGradient: gradient2, progress: progress)
+            .onAppear {
+                withAnimation(.linear(duration: 1).repeatForever(autoreverses: true)) {
+                    progress = 1
+                }
+        }
+    }
+}
+
+extension View {
+    func animatableGradient(fromGradient: Gradient, toGradient: Gradient, progress: CGFloat) -> some View {
+        self.modifier(AniGradientModifier(fromGradient: fromGradient, toGradient: toGradient, progress: progress))
+    }
+}
+
+struct AniGradientModifier: AnimatableModifier {
+    let fromGradient: Gradient
+    let toGradient: Gradient
+    var progress: CGFloat = 0.0
+    
+    var animatableData: CGFloat {
+        get { progress }
+        set { progress = newValue }
+    }
+    
+    func body(content: Content) -> some View {
+        var gradientColors: [Color] = []
+        
+        for i in 0..<fromGradient.stops.count {
+            let fromColor = UIColor(fromGradient.stops[i].color)
+            let toColor = UIColor(toGradient.stops[i].color)
+            
+            gradientColors.append(colorMixer(fromColor: fromColor, toColor: toColor, progress: progress))
+        }
+        
+        return LinearGradient(gradient: Gradient(colors: gradientColors), startPoint: .topLeading, endPoint: .bottomTrailing)
+    }
+    
+    func colorMixer(fromColor: UIColor, toColor: UIColor, progress: CGFloat) -> Color {
+        guard let fromColor = fromColor.cgColor.components else { return Color(fromColor)}
+        guard let toColor = toColor.cgColor.components else { return Color(toColor)}
+        
+        let red = fromColor[0] + (toColor[0] - fromColor[0]) * progress
+        let green = fromColor[1] + (toColor[1] - fromColor[1]) * progress
+        let blue = fromColor[2] + (toColor[2] - fromColor[2]) * progress
+        
+        return Color(uiColor: UIColor(red: red, green: green, blue: blue, alpha: 1))
     }
 }
