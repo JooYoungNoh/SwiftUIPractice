@@ -12,7 +12,7 @@ struct AnimationDemoTwoView: View {
     
     @State var selectIndex: Int = 0
     
-    let menuItems = ["Hue", "Animatable", "Phase"]
+    let menuItems = ["Hue", "Animatable", "Phase", "Multi"]
     
     var body: some View {
         ZStack {
@@ -32,7 +32,7 @@ struct AnimationDemoTwoView: View {
                                 }
                         } else {
                             MenuView(title: menuItems[index])
-                                .background(Capsule().foregroundStyle(Color(uiColor: .systemGray4)))
+                                .background(Capsule().foregroundStyle(Color(uiColor: .systemGray2)))
                                 .onTapGesture {
                                     selectIndex = index
                                 }
@@ -51,7 +51,10 @@ struct AnimationDemoTwoView: View {
                         .frame(maxHeight: .infinity)
                 } else if selectIndex == 2 {
                     PhaseAnimatorView()
-                        .frame(maxHeight: 300)
+                        .frame(maxHeight: .infinity)
+                } else if selectIndex == 3 {
+                    MultiAnimatorView()
+                        .frame(maxHeight: .infinity)
                 }
             }
         }
@@ -67,6 +70,7 @@ struct MenuView: View {
             .padding(.horizontal)
             .padding(.vertical, 5)
             .foregroundStyle(.white)
+            .font(.system(size: 14, weight: .bold))
     }
 }
 
@@ -141,6 +145,32 @@ struct PhaseAnimatorView: View {
     }
 }
 
+struct MultiAnimatorView: View {
+    @State var start: Bool = false
+    
+    var body: some View {
+        Text("🐳")
+            .font(.system(size: 100))
+            .bold()
+            .phaseAnimator(Phase.allCases, trigger: start) { content, phase in
+                content
+                    .scaleEffect(phase.scale)
+                    .rotationEffect(phase.angle)
+                    .offset(y: phase.offset)
+            } animation: { phase in
+                switch phase {
+                case .initial: return .smooth
+                case .rotate:  return .smooth
+                case .jump:    return .smooth
+                case .fall:    return .smooth
+                }
+            }
+            .onTapGesture {
+                start.toggle()
+            }
+    }
+}
+
 
 
 extension View {
@@ -181,5 +211,37 @@ struct AniGradientModifier: AnimatableModifier {
         let blue = fromColor[2] + (toColor[2] - fromColor[2]) * progress
         
         return Color(uiColor: UIColor(red: red, green: green, blue: blue, alpha: 1))
+    }
+}
+
+enum Phase: CaseIterable {
+    case initial
+    case rotate
+    case jump
+    case fall
+    
+    var scale: Double {
+        switch self {
+        case .initial:  1.0
+        case .rotate:   1.5
+        case .jump:     0.8
+        case .fall:     0.5
+        }
+    }
+    
+    var angle: Angle {
+        switch self {
+        case .initial, .jump: Angle(degrees: 0)
+        case .rotate:         Angle(degrees: 720)
+        case .fall:           Angle(degrees: 360)
+        }
+    }
+    
+    var offset: Double {
+        switch self {
+        case .initial, .rotate: 0
+        case .jump:             -200
+        case .fall:             450
+        }
     }
 }
