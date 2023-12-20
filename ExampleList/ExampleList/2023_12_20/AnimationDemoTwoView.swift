@@ -12,7 +12,7 @@ struct AnimationDemoTwoView: View {
     
     @State var selectIndex: Int = 0
     
-    let menuItems = ["Hue", "Able", "Phase", "Multi", "Key"]
+    let menuItems = ["Hue", "Able", "Phase", "Multi", "Key", "SB"]
     
     var body: some View {
         ZStack {
@@ -40,7 +40,7 @@ struct AnimationDemoTwoView: View {
                         Spacer()
                     }
                 }
-                .padding()
+                .padding(.top)
                 .animation(.easeInOut, value: selectIndex)
                 
                 if selectIndex == 0 {
@@ -58,6 +58,9 @@ struct AnimationDemoTwoView: View {
                 } else if selectIndex == 4 {
                     EmoAnimatorView()
                         .frame(maxHeight: .infinity)
+                } else if selectIndex == 5 {
+                    BounceAniSFView()
+                        .frame(maxHeight: .infinity)
                 }
             }
         }
@@ -73,7 +76,7 @@ struct MenuView: View {
             .padding(.horizontal)
             .padding(.vertical, 5)
             .foregroundStyle(.white)
-            .font(.system(size: 13, weight: .bold))
+            .font(.system(size: 10, weight: .bold))
     }
 }
 
@@ -226,6 +229,20 @@ struct EmoAnimatorView: View {
     }
 }
 
+struct BounceAniSFView: View {
+    @State private var start: Bool = false
+    
+    var body: some View {
+        Image(systemName: "ellipsis.message")
+            .font(.system(size: 100))
+            .symbolRenderingMode(.palette)
+            .foregroundStyle(.white.gradient.opacity(0.5), .blue.gradient)
+            .symbolEffect(.bounce, options: .repeat(3).speed(2), value: start)
+            .onTapGesture {
+                start.toggle()
+            }
+    }
+}
 
 
 extension View {
