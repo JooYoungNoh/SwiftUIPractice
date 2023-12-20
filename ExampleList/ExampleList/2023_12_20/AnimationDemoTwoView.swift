@@ -12,7 +12,7 @@ struct AnimationDemoTwoView: View {
     
     @State var selectIndex: Int = 0
     
-    let menuItems = ["Hue", "Animatable", "Phase", "Multi"]
+    let menuItems = ["Hue", "Able", "Phase", "Multi", "Key"]
     
     var body: some View {
         ZStack {
@@ -55,6 +55,9 @@ struct AnimationDemoTwoView: View {
                 } else if selectIndex == 3 {
                     MultiAnimatorView()
                         .frame(maxHeight: .infinity)
+                } else if selectIndex == 4 {
+                    EmoAnimatorView()
+                        .frame(maxHeight: .infinity)
                 }
             }
         }
@@ -70,7 +73,7 @@ struct MenuView: View {
             .padding(.horizontal)
             .padding(.vertical, 5)
             .foregroundStyle(.white)
-            .font(.system(size: 14, weight: .bold))
+            .font(.system(size: 13, weight: .bold))
     }
 }
 
@@ -118,7 +121,7 @@ struct AnimatableGradientView: View {
                 withAnimation(.linear(duration: 1).repeatForever(autoreverses: true)) {
                     progress = 1
                 }
-        }
+            }
     }
 }
 
@@ -171,6 +174,58 @@ struct MultiAnimatorView: View {
     }
 }
 
+struct EmoAnimatorView: View {
+    @State var start: Bool = false
+    
+    var body: some View {
+        VStack {
+            Text("🚀")
+                .font(.system(size: 100))
+                .keyframeAnimator(initialValue: AnimationVaule(), trigger: start) { content, value in
+                    content
+                        .scaleEffect(value.scale)
+                        .scaleEffect(y: value.varticalStretch)
+                        .offset(value.translation)
+                        .opacity(value.opacity)
+                } keyframes: { value in
+                    KeyframeTrack(\.scale) {
+                        CubicKeyframe(0.8, duration: 0.2)
+                        CubicKeyframe(0.6, duration: 0.3)
+                        CubicKeyframe(1.0, duration: 0.3)
+                        
+                        CubicKeyframe(0.8, duration: 0.2)
+                        CubicKeyframe(0.6, duration: 0.3)
+                        CubicKeyframe(1.0, duration: 0.3)
+                    }
+                    
+                    KeyframeTrack(\.varticalStretch) {
+                        LinearKeyframe(1.2, duration: 0.2)
+                        SpringKeyframe(2.0, duration: 0.5, spring: .bouncy)
+                        LinearKeyframe(0.8, duration: 0.2)
+                        CubicKeyframe(0.3, duration: 0.3)
+                        CubicKeyframe(1.0, duration: 0.3)
+                    }
+                    
+                    KeyframeTrack(\.translation) {
+                        CubicKeyframe(CGSize(width: 50, height: 50), duration: 0.3)
+                        CubicKeyframe(CGSize(width: 80, height: 80), duration: 0.2)
+                        CubicKeyframe(CGSize(width: 90, height: 90), duration: 0.2)
+                        
+                        CubicKeyframe(CGSize(width: 10, height: 10), duration: 0.3)
+                        CubicKeyframe(CGSize(width: 30, height: 70), duration: 0.2)
+                        CubicKeyframe(CGSize(width: -50, height: 50), duration: 0.2)
+                        CubicKeyframe(CGSize(width: 300, height: -300), duration: 0.2)
+                        
+                        CubicKeyframe(CGSize(width: 0, height: 0), duration: 3)
+                    }
+                }
+                .onTapGesture {
+                    start.toggle()
+                }
+        }
+    }
+}
+
 
 
 extension View {
@@ -212,6 +267,13 @@ struct AniGradientModifier: AnimatableModifier {
         
         return Color(uiColor: UIColor(red: red, green: green, blue: blue, alpha: 1))
     }
+}
+
+struct AnimationVaule {
+    var scale = 1.0
+    var varticalStretch: CGFloat = 1.0
+    var translation = CGSize.zero
+    var opacity = 1.0
 }
 
 enum Phase: CaseIterable {
