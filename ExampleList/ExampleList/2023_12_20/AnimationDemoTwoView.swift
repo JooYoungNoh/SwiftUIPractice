@@ -12,7 +12,7 @@ struct AnimationDemoTwoView: View {
     
     @State var selectIndex: Int = 0
     
-    let menuItems = ["Travel", "Nature", "Architecture"]
+    let menuItems = ["Hue", "Animatable", "Phase"]
     
     var body: some View {
         ZStack {
@@ -50,7 +50,8 @@ struct AnimationDemoTwoView: View {
                     AnimatableGradientView()
                         .frame(maxHeight: .infinity)
                 } else if selectIndex == 2 {
-                    
+                    PhaseAnimatorView()
+                        .frame(maxHeight: 300)
                 }
             }
         }
@@ -116,6 +117,31 @@ struct AnimatableGradientView: View {
         }
     }
 }
+
+struct PhaseAnimatorView: View {
+    @State var start: Bool = false
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 25)
+            .phaseAnimator([false, true], trigger: start) { content, phase in
+                content
+                    .scaleEffect(phase ? 1.0 : 0.5)
+                    .foregroundStyle(phase ? .mint : .shapeGreen)
+                    .rotation3DEffect(phase ? .degrees(720) : .zero, axis: (x: 0, y: 0, z: 1))
+            } animation: { phase in
+                if phase {
+                    return .smooth.speed(0.3)
+                } else {
+                    return .spring.speed(0.5)
+                }
+            }
+            .onTapGesture {
+                start.toggle()
+            }
+    }
+}
+
+
 
 extension View {
     func animatableGradient(fromGradient: Gradient, toGradient: Gradient, progress: CGFloat) -> some View {
