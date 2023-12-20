@@ -59,8 +59,12 @@ struct AnimationDemoTwoView: View {
                     EmoAnimatorView()
                         .frame(maxHeight: .infinity)
                 } else if selectIndex == 5 {
-                    BounceAniSFView()
-                        .frame(maxHeight: .infinity)
+                    VStack {
+                        BounceAniSFView()
+                        
+                        ContentAniSFView()
+                    }
+                    .frame(maxHeight: .infinity)
                 }
             }
         }
@@ -238,6 +242,22 @@ struct BounceAniSFView: View {
             .symbolRenderingMode(.palette)
             .foregroundStyle(.white.gradient.opacity(0.5), .blue.gradient)
             .symbolEffect(.bounce, options: .repeat(3).speed(2), value: start)
+            .onTapGesture {
+                start.toggle()
+            }
+    }
+}
+
+struct ContentAniSFView: View {
+    @State private var start: Bool = false
+    
+    var body: some View {
+        Image(systemName: start ? "checkmark.circle" : "touchid")
+            .font(.system(size: 100))
+            .symbolRenderingMode(.palette)
+            .foregroundStyle(.white.gradient.opacity(0.5), .blue.gradient)
+            .symbolEffect(.pulse, options: .speed(2), value: start)
+            .contentTransition(.symbolEffect(.replace))
             .onTapGesture {
                 start.toggle()
             }
