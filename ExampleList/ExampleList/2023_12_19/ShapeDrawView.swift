@@ -82,8 +82,11 @@ struct ShapeDrawView: View {
                                 .stroke(.black, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                         }
                     
+                    ShapeFiveBodyLightView()
+                        .fill(.shapeBodyLight)
+                    
                     ShapeFiveHandOneView()
-                        .fill(.shapeGreen)
+                        .fill(.shapeHand)
                         .overlay {
                             ShapeFiveHandOneView()
                                 .stroke(.black, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
@@ -95,8 +98,29 @@ struct ShapeDrawView: View {
                             ShapeFiveHandTwoView()
                                 .stroke(.black, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                         }
+                    
+                    ShapeFiveLegOneView()
+                        .fill(.shapeGreen)
+                        .overlay {
+                            ShapeFiveLegOneView()
+                                .stroke(.black, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+                        }
+                    
+                    ShapeFiveLegTwoView()
+                        .fill(.shapeGreen)
+                        .overlay {
+                            ShapeFiveLegTwoView()
+                                .stroke(.black, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+                        }
+                    
+                    ShapeFivetailView()
+                        .fill(.shapeGreen)
+                        .overlay {
+                            ShapeFivetailView()
+                                .stroke(.black, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+                        }
                 }
-                
+                .padding(.leading, -40)
                 Spacer().frame(height: 600)
             }
         }
@@ -237,34 +261,34 @@ struct FaceView: View {
         Circle()
             .frame(width: 10, height: 10)
             .foregroundStyle(.black)
-            .offset(x: -80, y: 170)
+            .offset(x: -100, y: 170)
         
         Circle()
             .frame(width: 10, height: 10)
             .foregroundStyle(.black)
-            .offset(x: -40, y: 170)
+            .offset(x: -60, y: 170)
         
         //눈
         Capsule()
             .fill(.black)
             .frame(width: 15, height: 22)
-            .offset(x: 10, y: 115)
+            .offset(x: -10, y: 115)
         
         Capsule()
             .fill(.black)
             .frame(width: 15, height: 22)
-            .offset(x: 70, y: 115)
+            .offset(x: 50, y: 115)
         
         //분홍이
         Ellipse()
             .fill(.shapePink)
             .frame(width: 30, height: 15)
-            .offset(x: -8, y: 135)
+            .offset(x: -28, y: 135)
         
         Ellipse()
             .fill(.shapePink)
             .frame(width: 30, height: 15)
-            .offset(x: 85, y: 135)
+            .offset(x: 65, y: 135)
     }
 }
 
@@ -329,6 +353,20 @@ struct ShapeFiveBodyView: Shape {
     }
 }
 
+struct ShapeFiveBodyLightView: Shape {
+    func path(in rect: CGRect) -> Path {
+        
+        var path = Path()
+        
+        path.move(to: CGPoint(x: 167, y: 320))
+        path.addQuadCurve(to: CGPoint(x: 250, y: 393), control: CGPoint(x: 250, y: 320))
+        path.addQuadCurve(to: CGPoint(x: 185, y: 378), control: CGPoint(x: 215, y: 395))
+        path.addQuadCurve(to: CGPoint(x: 167, y: 320), control: CGPoint(x: 167, y: 340))
+        
+        return path
+    }
+}
+
 struct ShapeFiveHandOneView: Shape {
     func path(in rect: CGRect) -> Path {
         
@@ -357,4 +395,45 @@ struct ShapeFiveHandTwoView: Shape {
     }
 }
 
+struct ShapeFiveLegOneView: Shape {
+    func path(in rect: CGRect) -> Path {
+        
+        var path = Path()
+        
+        path.move(to: CGPoint(x: 190, y: 392))
+        path.addQuadCurve(to: CGPoint(x: 195, y: 430), control: CGPoint(x: 187, y: 415))
+        path.addQuadCurve(to: CGPoint(x: 220, y: 430), control: CGPoint(x: 208, y: 440))
+        path.addQuadCurve(to: CGPoint(x: 220, y: 403), control: CGPoint(x: 218, y: 415))
+        
+        return path
+    }
+}
+
+struct ShapeFiveLegTwoView: Shape {
+    func path(in rect: CGRect) -> Path {
+        
+        var path = Path()
+        
+        path.move(to: CGPoint(x: 250, y: 405))
+        path.addQuadCurve(to: CGPoint(x: 255, y: 430), control: CGPoint(x: 250, y: 415))
+        path.addQuadCurve(to: CGPoint(x: 280, y: 430), control: CGPoint(x: 268, y: 440))
+        path.addQuadCurve(to: CGPoint(x: 280, y: 397), control: CGPoint(x: 278, y: 410))
+        
+        return path
+    }
+}
+
+struct ShapeFivetailView: Shape {
+    func path(in rect: CGRect) -> Path {
+        
+        var path = Path()
+        
+        path.move(to: CGPoint(x: 311, y: 380))
+        path.addQuadCurve(to: CGPoint(x: 420, y: 355), control: CGPoint(x: 320, y: 380))
+        path.addQuadCurve(to: CGPoint(x: 323, y: 335), control: CGPoint(x: 330, y: 345))
+        
+        
+        return path
+    }
+}
 
