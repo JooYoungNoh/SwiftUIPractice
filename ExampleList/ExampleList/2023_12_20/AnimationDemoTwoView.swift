@@ -43,6 +43,9 @@ struct AnimationDemoTwoView: View {
                 .padding()
                 .animation(.easeInOut, value: selectIndex)
                 
+                HueGradientView()
+                    .frame(height: 200)
+                
                 Spacer()
             }
         }
@@ -68,6 +71,22 @@ struct AniGradientView: View {
         LinearGradient(colors: [.shapeGreen, .shapePink],
                        startPoint: animateGradient ? .topLeading : .bottomLeading,
                        endPoint: animateGradient ? .bottomTrailing : .topTrailing)
+        .onAppear {
+            withAnimation(.linear(duration: 3).repeatForever(autoreverses: true)) {
+                animateGradient.toggle()
+            }
+        }
+    }
+}
+
+struct HueGradientView: View {
+    @State private var animateGradient: Bool = false
+    
+    var body: some View {
+        LinearGradient(colors: [.yellow, .purple],
+                       startPoint: animateGradient ? .topLeading : .bottomLeading,
+                       endPoint: animateGradient ? .bottomTrailing : .topTrailing)
+        .hueRotation(.degrees(animateGradient ? 45 : 0))
         .onAppear {
             withAnimation(.linear(duration: 1).repeatForever(autoreverses: true)) {
                 animateGradient.toggle()
