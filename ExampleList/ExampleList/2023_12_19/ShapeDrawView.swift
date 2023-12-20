@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ShapeDrawView: View {
+    @State var start: Bool = false
+    @State var back: Bool = false
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -49,6 +52,11 @@ struct ShapeDrawView: View {
                 Spacer().frame(height: 200)
                 
                 ZStack {
+                    if back {
+                        AniGradientView()
+                            .ignoresSafeArea()
+                    }
+                    
                     ShapeFiveHatView()
                         .fill(.shapehatRed)
                         .overlay {
@@ -119,8 +127,18 @@ struct ShapeDrawView: View {
                             ShapeFivetailView()
                                 .stroke(.black, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                         }
+                    
+                    FireAnimatorView(start: $start)
+                        .onTapGesture {
+                            back = false
+                            start.toggle()
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+                                back = true
+                            }
+                        }
                 }
                 .padding(.leading, -40)
+                .frame(height: 500)
                 Spacer().frame(height: 600)
             }
         }
@@ -261,34 +279,34 @@ struct FaceView: View {
         Circle()
             .frame(width: 10, height: 10)
             .foregroundStyle(.black)
-            .offset(x: -100, y: 170)
+            .offset(x: -100, y: -70)
         
         Circle()
             .frame(width: 10, height: 10)
             .foregroundStyle(.black)
-            .offset(x: -60, y: 170)
+            .offset(x: -60, y: -70)
         
         //눈
         Capsule()
             .fill(.black)
             .frame(width: 15, height: 22)
-            .offset(x: -10, y: 115)
+            .offset(x: -10, y: -125)
         
         Capsule()
             .fill(.black)
             .frame(width: 15, height: 22)
-            .offset(x: 50, y: 115)
+            .offset(x: 50, y: -125)
         
         //분홍이
         Ellipse()
             .fill(.shapePink)
             .frame(width: 30, height: 15)
-            .offset(x: -28, y: 135)
+            .offset(x: -28, y: -105)
         
         Ellipse()
             .fill(.shapePink)
             .frame(width: 30, height: 15)
-            .offset(x: 65, y: 135)
+            .offset(x: 65, y: -105)
     }
 }
 
@@ -437,3 +455,43 @@ struct ShapeFivetailView: Shape {
     }
 }
 
+//MARK: 애니메이션
+struct FireAnimatorView: View {
+    @Binding var start: Bool
+    
+    var body: some View {
+        Text("🔥")
+            .font(.system(size: 70))
+            .bold()
+            .keyframeAnimator(initialValue: FireValue(), trigger: start) { content, value in
+                content
+                    .scaleEffect(value.scale)
+                    .rotationEffect(value.rotation)
+                    .offset(value.translation)
+            } keyframes: { value in
+                KeyframeTrack(\.scale) {
+                    CubicKeyframe(0.4, duration: 0.1)
+                    CubicKeyframe(0.6, duration: 0.1)
+                    CubicKeyframe(0.8, duration: 0.1)
+                    CubicKeyframe(1.0, duration: 0.1)
+                    CubicKeyframe(1.2, duration: 0.1)
+                }
+                
+                KeyframeTrack(\.rotation) {
+                    CubicKeyframe(.degrees(-90), duration: 0.5)
+                    CubicKeyframe(.degrees(30), duration: 0.2)
+                }
+                
+                KeyframeTrack(\.translation) {
+                    CubicKeyframe(CGSize(width: -110, height: -30), duration: 0.7)
+                    CubicKeyframe(CGSize(width: 140, height: -170), duration: 0.5)
+                }
+            }
+    }
+}
+
+struct FireValue {
+    var scale = 0.2
+    var rotation: Angle = .degrees(-90)
+    var translation = CGSize(width: -120, height: -30)
+}
