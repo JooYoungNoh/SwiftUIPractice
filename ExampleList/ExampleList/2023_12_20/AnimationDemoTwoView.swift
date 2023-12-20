@@ -15,28 +15,38 @@ struct AnimationDemoTwoView: View {
     let menuItems = ["Travel", "Nature", "Architecture"]
     
     var body: some View {
-        HStack {
-            Spacer()
-            ForEach(menuItems.indices, id: \.self) { index in
-                if selectIndex == index {
-                    MenuView(title: menuItems[index])
-                        .background(Capsule().foregroundStyle(.purple))
-                        .matchedGeometryEffect(id: "menuItem", in: menuItemTransition)
-                        .onTapGesture {
-                            selectIndex = index
+        ZStack {
+            AniGradientView()
+            
+            VStack(spacing: 30) {
+                Spacer().frame(height: 60)
+                HStack {
+                    Spacer()
+                    ForEach(menuItems.indices, id: \.self) { index in
+                        if selectIndex == index {
+                            MenuView(title: menuItems[index])
+                                .background(Capsule().foregroundStyle(.purple))
+                                .matchedGeometryEffect(id: "menuItem", in: menuItemTransition)
+                                .onTapGesture {
+                                    selectIndex = index
+                                }
+                        } else {
+                            MenuView(title: menuItems[index])
+                                .background(Capsule().foregroundStyle(Color(uiColor: .systemGray4)))
+                                .onTapGesture {
+                                    selectIndex = index
+                                }
                         }
-                } else {
-                    MenuView(title: menuItems[index])
-                        .background(Capsule().foregroundStyle(Color(uiColor: .systemGray4)))
-                        .onTapGesture {
-                            selectIndex = index
-                        }
+                        Spacer()
+                    }
                 }
+                .padding()
+                .animation(.easeInOut, value: selectIndex)
+                
                 Spacer()
             }
         }
-        .padding()
-        .animation(.easeInOut, value: selectIndex)
+        .ignoresSafeArea()
     }
 }
 
@@ -51,3 +61,17 @@ struct MenuView: View {
     }
 }
 
+struct AniGradientView: View {
+    @State private var animateGradient: Bool = false
+    
+    var body: some View {
+        LinearGradient(colors: [.shapeGreen, .shapePink],
+                       startPoint: animateGradient ? .topLeading : .bottomLeading,
+                       endPoint: animateGradient ? .bottomTrailing : .topTrailing)
+        .onAppear {
+            withAnimation(.linear(duration: 1).repeatForever(autoreverses: true)) {
+                animateGradient.toggle()
+            }
+        }
+    }
+}
