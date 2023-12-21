@@ -79,6 +79,7 @@
 		73A7645E2AFB22AD0090B71B /* NaviSplitOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7645D2AFB22AD0090B71B /* NaviSplitOne.swift */; };
 		73A764602AFB29900090B71B /* NaviSplitTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7645F2AFB29900090B71B /* NaviSplitTwo.swift */; };
 		73ACFB5E2B326BD40089FFD7 /* AnimationDemoTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ACFB5D2B326BD40089FFD7 /* AnimationDemoTwoView.swift */; };
+		73C4B3F42B33FE1E005C0371 /* GesturePracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4B3F32B33FE1E005C0371 /* GesturePracticeView.swift */; };
 		73F6C9C42AFC67900069DA60 /* GridRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6C9C32AFC67900069DA60 /* GridRowView.swift */; };
 /* End PBXBuildFile section */
 
@@ -157,6 +158,7 @@
 		73A7645D2AFB22AD0090B71B /* NaviSplitOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSplitOne.swift; sourceTree = "<group>"; };
 		73A7645F2AFB29900090B71B /* NaviSplitTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSplitTwo.swift; sourceTree = "<group>"; };
 		73ACFB5D2B326BD40089FFD7 /* AnimationDemoTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDemoTwoView.swift; sourceTree = "<group>"; };
+		73C4B3F32B33FE1E005C0371 /* GesturePracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturePracticeView.swift; sourceTree = "<group>"; };
 		73F6C9C32AFC67900069DA60 /* GridRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -262,6 +264,7 @@
 				7391FDC02B186AB500F876ED /* 2023_11_30 */,
 				738F244B2B311C9B0042FDC7 /* 2023_12_19 */,
 				73ACFB5C2B326BAF0089FFD7 /* 2023_12_20 */,
+				73C4B3F22B33FDFF005C0371 /* 2023_12_21 */,
 				731A3DDE2AE232950044B2BA /* FontFile */,
 				731A3DD32AE2306F0044B2BA /* Preview Content */,
 			);
@@ -404,6 +407,14 @@
 			path = 2023_12_20;
 			sourceTree = "<group>";
 		};
+		73C4B3F22B33FDFF005C0371 /* 2023_12_21 */ = {
+			isa = PBXGroup;
+			children = (
+				73C4B3F32B33FE1E005C0371 /* GesturePracticeView.swift */,
+			);
+			path = 2023_12_21;
+			sourceTree = "<group>";
+		};
 		73F6C9C22AFC67610069DA60 /* 2023_11_09 */ = {
 			isa = PBXGroup;
 			children = (
@@ -490,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7316F98D2AF2057B00657E53 /* DivSection.swift in Sources */,
+				73C4B3F42B33FE1E005C0371 /* GesturePracticeView.swift in Sources */,
 				73A764602AFB29900090B71B /* NaviSplitTwo.swift in Sources */,
 				738F244F2B3135B50042FDC7 /* ShapeDrawView.swift in Sources */,
 				739B24EB2AEFA2AB007D0FC4 /* SortExampleFour.swift in Sources */,
