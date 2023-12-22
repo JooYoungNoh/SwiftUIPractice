@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ExampleList: View {
-    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate", "OddEven", "SubSmall", "NumberOfBox", "Variousfunction", "UIPractice", "Counter", "Arrangement", "AsyncPractice", "WithTaskGroup", "Lifecycle", "Observable", "StorageView", "SortExampleOne", "SortExampleTwo", "SortExampleThree", "SortExampleFour", "SortExampleFive", "SortExampleSix", "SortExampleSeven", "ListPractice", "DivSection", "NaviFirst", "ListNavi", "NaviSplit", "NaviSplitOne", "NaviSplitTwo", "NaviSplitThree", "OutLineGroupView", "OLGSettings", "GroupPractice", "GridPratice", "GridRowView", "CombineUIKitView", "ApiPractice", "AniPracticeView", "ShapeDrawView", "AnimationDemoView", "AnimationDemoTwoView", "GesturePracticeView"]
+    private var list: [String] = ["FourOperations", "DivideOranges", "ThrowHundred", "SeatOne", "Average", "DivideSeconds", "HourlyRate", "OddEven", "SubSmall", "NumberOfBox", "Variousfunction", "UIPractice", "Counter", "Arrangement", "AsyncPractice", "WithTaskGroup", "Lifecycle", "Observable", "StorageView", "SortExampleOne", "SortExampleTwo", "SortExampleThree", "SortExampleFour", "SortExampleFive", "SortExampleSix", "SortExampleSeven", "ListPractice", "DivSection", "NaviFirst", "ListNavi", "NaviSplit", "NaviSplitOne", "NaviSplitTwo", "NaviSplitThree", "OutLineGroupView", "OLGSettings", "GroupPractice", "GridPratice", "GridRowView", "CombineUIKitView", "ApiPractice", "AniPracticeView", "ShapeDrawView", "AnimationDemoView", "AnimationDemoTwoView", "GesturePracticeView", "ChartPracticeView"]
     private let layouts : [GridItem] = [GridItem(.flexible()) ,GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -132,6 +132,7 @@ enum ChangeStringToFileName: String {
     case AnimationDemoView = "AnimationDemoView"
     case AnimationDemoTwoView = "AnimationDemoTwoView"
     case GesturePracticeView = "GesturePracticeView"
+    case ChartPracticeView = "ChartPracticeView"
 }
 
 //MARK: ExampleList View 함수
@@ -231,6 +232,8 @@ extension ExampleList {
             AnimationDemoTwoView()
         case .GesturePracticeView:
             GesturePracticeView()
+        case .ChartPracticeView:
+            ChartPracticeView()
         }
     }
 }
